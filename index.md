@@ -13,33 +13,9 @@ description: Learn how to use Vanilla OS.
         </div>
         <div class="suggestArea" id="suggestArea">
             <div class="suggestItem card">
-                <b>Install Vanilla OS</b>
+                <b>Vanilla OS Installation</b>
                 <p>Learn how to install Vanilla OS to your device.</p>
-                <a href="#" class="buttonLink readLink">
-                    <span>Read</span>
-                    <span class="material-icons-outlined">arrow_forward</span>
-                </a>
-            </div>
-            <div class="suggestItem card">
-                <b>Install Vanilla OS</b>
-                <p>Learn how to install Vanilla OS to your device.</p>
-                <a href="#" class="buttonLink readLink">
-                    <span>Read</span>
-                    <span class="material-icons-outlined">arrow_forward</span>
-                </a>
-            </div>
-            <div class="suggestItem card">
-                <b>Install Vanilla OS</b>
-                <p>Learn how to install Vanilla OS to your device.</p>
-                <a href="#" class="buttonLink readLink">
-                    <span>Read</span>
-                    <span class="material-icons-outlined">arrow_forward</span>
-                </a>
-            </div>
-            <div class="suggestItem card">
-                <b>Install Vanilla OS</b>
-                <p>Learn how to install Vanilla OS to your device.</p>
-                <a href="#" class="buttonLink readLink">
+                <a href="/2022/11/05/installation.html" class="buttonLink readLink">
                     <span>Read</span>
                     <span class="material-icons-outlined">arrow_forward</span>
                 </a>
