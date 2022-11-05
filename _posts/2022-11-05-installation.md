@@ -8,24 +8,24 @@ authors:
     - kbdharun
 ---
 
-# Preparation
-## You will need
+## Preparation
+### You will need
 - A flash drive with at least 8GB of capacity.
 - A drive with at least 25GB of storage space.
 - 30 minutes to an hour of your time.
 
-## Creating a bootable USB stick
+### Creating a bootable USB stick
 This section will guide you through creating a bootable USB stick with Vanilla OS on it.
 
-### Downloading Vanilla OS
+#### Downloading Vanilla OS
 First, download the Vanilla OS disk image that will be written to your USB flash drive from [here](https://vanillaos.org/).
 
-### Installing Etcher
+#### Installing Etcher
 To flash the disk image to your USB stick, download and install [balenaEtcher](https://www.balena.io/etcher/).
 
 If you wish, you can also use different software that you are familiar with, such as [Ventoy](https://www.ventoy.net/) or [Rufus](https://rufus.ie/).
 
-### Flashing the image
+#### Flashing the image
 **Warning**: this will erase **all data** on your USB flash drive. Make sure to back up all your important data before proceeding!
 
 Open Etcher, select the downloaded disk image and your USB flash drive, then click "Flash!".
@@ -34,7 +34,7 @@ Open Etcher, select the downloaded disk image and your USB flash drive, then cli
 
 When the process is done, you will have a bootable USB stick with Vanilla OS on it.
 
-## Booting from the USB flash drive
+### Booting from the USB flash drive
 Insert the USB flash drive into the computer to which you want to install Vanilla OS and power up or restart the device.
 
 If your device does not automatically boot into the Vanilla OS installation media, reboot, and while it is starting up, hold down the key to `select boot device` or for `boot menu` indicated by a prompt on the boot screen. The most common keys are F2, F10, F11, F12, Delete and Escape. If the prompt isn't present, try searching online for your specific model. Select Vanilla OS or the name of your USB flash drive from the boot menu.
@@ -45,18 +45,18 @@ When your device has successfully booted from the USB stick, you should see a we
 
 You can try Vanilla OS without making any changes to your device. If you are satisfied, you can re-open the installer (the first icon in the dash) and proceed with the installation.
 
-# Installing Vanilla OS
-## First steps
+## Installing Vanilla OS
+### First steps
 Click "Install Vanilla OS" and set your preferred language, keyboard layout and timezone.
 
-## Types of installation
+### Types of installation
 Depending on whether you want to dual- or multiboot Vanilla OS alongside other operating systems, you will need to follow different steps when selecting your disk.
 
 This guide will help you with the following types of installation:
 - [Installing only Vanilla OS](/2022/11/05/installation.html#title8)
 - [Advanced installation](/2022/11/05/installation.html#title9)
 
-## Installing only Vanilla OS
+### Installing only Vanilla OS
 This section will guide you through installing Vanilla OS to an entire disk, **erasing all previous data on it**. Make sure to back up all your important data before proceeding!
 
 Select the disk you want to install Vanilla OS to, click "Configure", select "Use Entire Disk", click "Apply" and review your changes.
@@ -67,7 +67,7 @@ Create your user account and review the changes that will be made to your system
 
 ![Confirming the installation](/assets/uploads/installer-confirm-installation.webp)
 
-## Advanced installation
+### Advanced installation
 This section will help you with manual partitioning in case this guide doesn't cover your particular needs for installation.
 
 Select the disk to which you want to install Vanilla OS and click "Configure". Select "Manual Partitioning" and click on the arrow next to it. Click on "Open GParted" to manually partition your disk.
@@ -82,15 +82,15 @@ Create your user account and review the changes that will be made to your system
 
 ![Confirming the installation](/assets/uploads/installer-confirm-installation.webp)
 
-# Booting into Vanilla OS
-## If you only have Vanilla OS installed
+## Booting into Vanilla OS
+### If you only have Vanilla OS installed
 After the installer finishes, all you need to do is reboot and remove the USB stick. Vanilla OS will be waiting for you.
 
-## If you dual- or multiboot
-### On the same drive
+### If you dual- or multiboot
+#### On the same drive
 After the installer finishes, all you need to do is reboot and you will see a boot menu with your installed operating systems. Select Vanilla OS, wait for it to boot and remove the USB stick.
 
-### On different drives
+#### On different drives
 After the installer finishes, you need to reboot and select Vanilla OS from your device's boot menu that you can access by holding down a specific key while the device is starting up indicated by a prompt on the boot screen. If the prompt isn't present, try searching online for your specific model. Once you're in Vanilla OS, remove the USB stick.
 
 You can configure the default boot order in your device's firmware settings.
