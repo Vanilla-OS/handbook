@@ -1,0 +1,40 @@
+@media screen and (max-width: 745px) {
+    .suggestArea {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .suggestArea .suggestItem:nth-of-type(3),.suggestArea .suggestItem:nth-of-type(4) {
+        display: none;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .articleHeader h1 {
+        font-size: 24px;
+    }
+    
+    .articleHeader p {
+        font-size: 16px;
+    }
+    
+    .article {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .articleSidebar {
+        max-width: initial;
+        margin: 0;
+    }
+    
+    .articleSidebar .summary:not(.show) ul {
+        display: none;
+    }
+
+    .toggleSummary {
+        display: block;
+    }
+}

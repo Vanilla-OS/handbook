@@ -1,0 +1,12 @@
+title: Vanilla OS Handbook
+author: Vanilla OS Contributors
+email: send@mirko.pm
+
+assets: /assets
+uploads: /uploads
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

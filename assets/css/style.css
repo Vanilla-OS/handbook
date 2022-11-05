@@ -1,0 +1,386 @@
+html::-webkit-scrollbar{
+    background:0 0;
+    height:20px;
+    width:20px
+}
+
+html::-webkit-scrollbar-track{
+    border-radius:20px;
+    box-sizing:content-box;
+    width:6px;
+    border:7px solid #F2F1ED;
+    background-color:#f0f0f0;
+}
+
+html::-webkit-scrollbar-track:hover{
+    background-color:rgb(224, 224, 224);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-clip:content-box;
+    border:7px solid transparent;
+    border-radius:20px;
+    box-sizing:content-box;
+    min-height:30px;
+    width:6px;
+    background-color:#c0baba;
+}
+
+html::-webkit-scrollbar-thumb:window-inactive{
+    background-color:#cecdc9
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    background-color:#000
+}
+
+body {
+    background-color: #F2F1ED;
+    font-family: 'Work Sans', sans-serif;
+    color: #151c2c;
+    line-height: 30px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+a:hover {
+    border-bottom: 1px dotted #000;
+}
+
+.searchField,.card {
+    box-shadow: 0 1px 1px 0px #d1cec5, 0 3px 10px 0 #e1dccc;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.suggestArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.searchArea {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.searchArea .container {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 780px;
+    gap: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.searchField {
+    background: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+.searchField input {
+    flex: 1;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.resultsArea {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.hasResults .searchArea {
+    bottom: auto;
+}
+
+.hasResults .suggestArea {
+    display: none;
+}
+
+.resultsAreaWrapper {
+    margin-top: 87px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    border-radius: 30px;
+    padding: 7px 15px;
+    color: #fff;
+}
+
+foorter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #f2f1ed;
+}
+
+.navigation a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-family: "Pacifico", serif;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+a.buttonLink {
+    font-weight: 500;
+}
+
+a.buttonLink .material-icons-outlined {
+    font-size: 16px;
+}
+
+.hasResults .searchArea .logo {
+    display: none;
+}
+
+.readLink {
+    margin: 10px 0 0 0;
+}
+
+.article {
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: 220px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.articleSidebar {
+    max-width: 200px;
+    margin: 20px 0 0 0;
+}
+
+.articleBody {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.articleBody h1 {
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.articleBody h1:after {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 60px;
+    margin: 10px 0 10px;
+    border-radius: 10px;
+    background-color: #FFBF48;
+}
+
+.articleBody h2 {
+	font-weight: 600;
+	font-size: 32px;
+}
+
+.articleBody h2:after {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 40px;
+    margin: 10px 0 10px;
+    border-radius: 10px;
+    background-color: #FFBF48;
+}
+
+.articleBody h3 {
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.articleBody h3:after {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 20px;
+    margin: 10px 0 10px;
+    border-radius: 10px;
+    background-color: #FFBF48;
+}
+
+.articleBody h4 {
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.articleBody h5 {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.articleHeader {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #e4e3df;
+}
+
+.articleSidebar .summary b {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.summary a.active {
+    font-weight: 600;
+}
+
+.articleBody ul li {
+    list-style: disc;
+}
+
+.articleBody ul {
+    margin: 20px;
+}
+
+.summary .H2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.summary .H3 {
+    border-left: 1px solid;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 10px;
+}
+
+.summary li {
+    margin: 0 0 10px 0;
+}
+
+.articleBody img {
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.page {
+    background-color: #fff;
+}
+
+code.language-plaintext.highlighter-rouge {
+    color: #8d6708;
+    background-color: #ffbf482e;
+}
+
+.articleBody h1:after {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 60px;
+    margin: 10px 0 10px;
+    border-radius: 10px;
+    background-color: #FFBF48;
+}
+
+h2:after {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 40px;
+    margin: 10px 0 10px;
+    border-radius: 10px;
+    background-color: #FFBF48;
+}
+
+.articleHeader h1 {
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.articleHeader p {
+    margin: 10px 0 0 0;
+    font-size: 19px;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card b {
+    font-size: 18px;
+}
+
+.summary {
+    position: relative;
+}
+
+.toggleSummary {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.toggleSummary {
+    display: none;
+}
