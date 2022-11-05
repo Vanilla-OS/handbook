@@ -53,8 +53,8 @@ Click "Install Vanilla OS" and set your preferred language, keyboard layout and 
 Depending on whether you want to dual- or multiboot Vanilla OS alongside other operating systems, you will need to follow different steps when selecting your disk.
 
 This guide will help you with the following types of installation:
-- [Installing only Vanilla OS](/2022/11/05/installation.html/#title10)
-- [Advanced installation](/2022/11/05/installation.html/#title11)
+- [Installing only Vanilla OS](/2022/11/05/installation.html#title8)
+- [Advanced installation](/2022/11/05/installation.html#title9)
 
 ## Installing only Vanilla OS
 This section will guide you through installing Vanilla OS to an entire disk, **erasing all previous data on it**. Make sure to back up all your important data before proceeding!
