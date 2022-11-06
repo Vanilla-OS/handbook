@@ -28,17 +28,28 @@ layout: default
       </div>
     </div>
   </div>
+  <div class="articleFooter">
+    <div class="authors">
+      <b>Written by</b>
+      <div class="authorsWrapper">
+        {% for author in page.authors %}
+          <div class="authorInfo">
+            <span class="authorGitHubPic" github-user="{{ author }}"></span>
+            <a class="authorName" href="https://github.com/{{ author }}" target="_blank">{{ author }}</a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/dracula.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
 <script type="text/javascript" src="/assets/js/autosummary.js"></script>
-<script>hljs.highlightAll();</script>
+<script type="text/javascript" src="/assets/js/mobile-summary.js"></script>
+<script type="text/javascript" src="/assets/js/github-profile-pic.js"></script>
 <script>
+  hljs.highlightAll();
   autosummary(".articleBody", ".articleSidebar .summary>ul");
-  // clicking on .toggleSummary will toggle the .show class to the .summary element
-  // use vanilla js
-  document.getElementById("toggleSummary").addEventListener("click", function() {
-    document.querySelector(".summary").classList.toggle("show");
-  });
+  getGitHubProfilePic();
 </script>
