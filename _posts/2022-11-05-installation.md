@@ -4,7 +4,7 @@ description: Learn how to install Vanilla OS to your device.
 date: 2022-11-05
 layout: article
 authors: 
-    - kramo
+    - kra-mo
     - kbdharun
 ---
 
