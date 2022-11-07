@@ -69,6 +69,16 @@
 		color: #fafafa;
 	}
 
+	.articleHeader {
+		text-align: center;
+		padding: 30px 20px;
+		background-color: #2d2d2d;
+	}
+
+	.page {
+		background-color: #181818;
+	}
+
 	foorter {
 		background-color: #242424;
 		color: #fafafa;
