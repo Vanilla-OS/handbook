@@ -79,6 +79,11 @@
 		background-color: #181818;
 	}
 
+	code.language-plaintext.highlighter-rouge {
+		color: #ffb600;
+		background-color: #ffbf482e;
+	}
+
 	foorter {
 		background-color: #242424;
 		color: #fafafa;
