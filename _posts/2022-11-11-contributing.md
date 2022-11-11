@@ -1,5 +1,5 @@
 ---
-title: Contributing to Handbook
+title: Contribute to Handbook
 description: Learn how to contribute to Vanilla OS Handbook.
 date: 2022-11-11
 layout: article
@@ -8,7 +8,6 @@ authors:
     - kra-mo
 ---
 
-# Contributing to Handbook
 
 - The handbook uses Jekyll for generating pages.
 - Thank you for your interest in our project. This guide will help you with writing and translating articles.
