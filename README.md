@@ -2,8 +2,8 @@
 
 - This is the official handbook for Vanilla OS. It contains tutorials, guides and
 other information to help you get the most out of your Vanilla OS installation.
-- The handbook uses Jekyll for generating pages.
 - Thank you for your interest in our project. This guide will help you with writing and translating articles.
+- The handbook uses Jekyll for generating pages.
 
 ## Writing a guide
 
@@ -16,7 +16,7 @@ author field to have working links when the post is published.
 - Set the layout as
 `article`.
 - Headings must follow a proper hierarchy.
-- See [markdownlint](https://github.com/DavidAnson/markdownlint) for markdown best practices.
+- See [**markdownlint**](https://github.com/DavidAnson/markdownlint) for markdown best practices.
 - The guide must use the following structure at the beginning:
 
 ```md
@@ -46,6 +46,16 @@ and author names to your native language.
 article along with the original author names. 
 - Once you ensured that everything looks correct, open a new pull
 request for the translated guide.
+
+## Testing the guide locally using jekyll
+
+- You can install **jekyll** from this [page](https://jekyllrb.com/docs/installation/).
+- Clone your forked repository using `git` or `gh`. 
+- Add the guide to the correct destination in the cloned directory.
+- Run `jekyll build` to build the page to `./_site` once. Then you can either test the pages manually or use the `jekyll serve` command.
+- Run `jekyll serve` to build your site any time a source file changes and serve it locally.
+	- Navigate to `http://127.0.0.1:4000/` in your browser to preview and test the page.
+- Now, commit the changes using `git` and create a PR in GitHub.
 
 ## Discussions 
 
