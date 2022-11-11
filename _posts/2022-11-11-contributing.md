@@ -1,7 +1,14 @@
-# Vanilla OS Handbook
+---
+title: Contribute to Handbook
+description: Learn how to contribute to Vanilla OS Handbook.
+date: 2022-11-11
+layout: article
+authors: 
+    - kbdharun
+    - kra-mo
+---
 
-- This is the official handbook for Vanilla OS. It contains tutorials, guides and
-other information to help you get the most out of your Vanilla OS installation.
+
 - The handbook uses Jekyll for generating pages.
 - Thank you for your interest in our project. This guide will help you with writing and translating articles.
 
