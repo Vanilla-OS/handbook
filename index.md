@@ -20,6 +20,14 @@ description: Learn how to use Vanilla OS.
                     <span class="material-icons-outlined">arrow_forward</span>
                 </a>
             </div>
+            <div class="suggestItem card">
+                <b><a href="/2022/11/11/contributing.html">Contribute to Handbook</a></b>
+                <p>Learn how to contribute to Vanilla OS Handbook.</p>
+                <a href="/2022/11/11/contributing.html" class="buttonLink readLink">
+                    <span>Read</span>
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
