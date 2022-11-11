@@ -9,7 +9,7 @@ description: Learn how to use Vanilla OS.
         </div>
         <div class="searchField">
             <span class="material-icons-outlined">search</span>
-            <input type="text" placeholder="Search for an article" id="searchField" />
+            <input type="text" placeholder="Search for a topic" id="searchField" />
         </div>
         <div class="suggestArea" id="suggestArea">
             <div class="suggestItem card">
