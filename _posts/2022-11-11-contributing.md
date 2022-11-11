@@ -15,7 +15,7 @@ authors:
 ## Writing a guide
 
 - If you want to write a guide for the handbook, add the
-new article to the `_posts` directory.
+new article to the [`_posts` directory](https://github.com/Vanilla-OS/handbook/tree/main/_posts).
 - The filename must be in the format
 `YYYY-MM-DD-title.md`. 
 - Add your GitHub username along with the co-authors' in the
