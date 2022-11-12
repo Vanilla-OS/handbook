@@ -23,7 +23,7 @@ Esta sección te guiará para crear una memoria USB arrancable con Vanilla OS en
 
 #### Descargando Vanilla OS
 
-Primero, descarga ka imagen de disco de Vanilla OS que será escrita en tu memoria USB desde [aquí](https://vanillaos.org/).
+Primero, descarga la imagen de disco de Vanilla OS que será escrita en tu memoria USB desde [aquí](https://vanillaos.org/).
 
 #### Instalando Etcher
 
