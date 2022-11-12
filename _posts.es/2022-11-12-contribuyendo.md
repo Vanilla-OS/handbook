@@ -11,7 +11,7 @@ authors:
 
 
 - El manual usa Jekyll para generar las páginas.
-- Gracias por su interés en nuestro proyecto. Esta guía le ayudará a escribir y traducir artículos.
+- Gracias por tu interés en nuestro proyecto. Esta guía te ayudará a escribir y traducir artículos.
 
 ## Escribiendo una guía
 
@@ -46,7 +46,7 @@ _pull request_ para la guía.
 ## Traduciendo una guía
 
 - Si quieres traducir una guía existente a tu idioma nativo, puedes agregar el artículo
-traducido al directorio `_posts.ab`, donde `ab` es el código de tu idioma. Puede referir a
+traducido al directorio `_posts.ab`, donde `ab` es el código de tu idioma. Puedes consultar
 [esta](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) página para los códigos de idiomas.
 - El nombre de archivo debe estar en el formato `AAAA-MM-DD-titulo.md`. No traduzcas la disposición
 ni los nombres de los autores a tu idioma.
