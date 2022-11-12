@@ -33,7 +33,7 @@ authors:
 ```
 
 - Add the link to your article in all `index` files with English titles and descriptions.
-- The `index` file will be replaced by the translated version of the page later.
+- The links in the `index` file will be replaced by the translated version of the page later.
 - Once you have ensured everything looks correct, open a new pull
 request for the guide.
 
