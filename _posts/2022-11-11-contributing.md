@@ -65,12 +65,12 @@ request for the translated guide.
 
 ## Testing the guide locally using jekyll
 
-- You can install **jekyll** from this [page](https://jekyllrb.com/docs/installation/).
+- You can install **jekyll** from [**this page**](https://jekyllrb.com/docs/installation/).
 - Clone your forked repository using `git` or `gh`. 
 - Add the guide to the correct destination in the cloned directory.
 - Run `jekyll build` to build the page to `./_site` once. Then you can either test the pages manually or use the `jekyll serve` command.
 - Run `jekyll serve` to build your site any time a source file changes and serve it locally.
-	- Navigate to `http://127.0.0.1:4000/` or `https://localhost:4000/` in your browser to preview and test the page.
+	- Navigate to `http://127.0.0.1:4000/` or `http://localhost:4000/` in your browser to preview and test the page.
 - Now, commit the changes using `git` and create a PR in GitHub.
 
 ## Discussions 
