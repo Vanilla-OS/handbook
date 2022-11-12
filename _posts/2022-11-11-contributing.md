@@ -48,7 +48,7 @@ request for the guide.
 -  Refer to 
 [**this page**](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for language codes.
 - Create a directory named `_posts.ab`, where `ab` is your language code.
-- Create an index file named `index.ab.md` where `ab` is your language code.
+- Create an index file named `index.ab.md`, where `ab` is your language code.
 - Initially link the articles in the `index` to English pages in the `_posts` directory. When a translated page gets added, replace the current link with the translated page link in the respective `_posts.ab` directory, where `ab` is your language code.
 
 ## Translating a guide
@@ -75,5 +75,5 @@ request for the translated guide.
 
 ## Discussions 
 
-Discussions regarding the handbook are done in the [official Discord server](https://discord.com/invite/34J8PFsk) in [#docs-writing](https://discord.com/channels/1023243680829681704/1035287786330263703), and for Discussions regarding translations go to the [#translations](https://discord.com/channels/1023243680829681704/1037028192583692358) channel.
+Discussions regarding the handbook are done in the [**official Discord server**](https://discord.com/invite/34J8PFsk) in [`#docs-writing`](https://discord.com/channels/1023243680829681704/1035287786330263703), and for Discussions regarding translations go to the [`#translations`](https://discord.com/channels/1023243680829681704/1037028192583692358) channel.
 
