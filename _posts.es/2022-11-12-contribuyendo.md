@@ -9,9 +9,9 @@ authors:
     - mastergeekmx
 ---
 
-
+- Gracias por su interés en nuestro proyecto. Esta guía le ayudará a escribir y traducir artículos.
 - El manual usa Jekyll para generar las páginas.
-- Gracias por tu interés en nuestro proyecto. Esta guía te ayudará a escribir y traducir artículos.
+
 
 ## Escribiendo una guía
 
@@ -39,14 +39,23 @@ authors:
     - ...
 ---
 ```
-
+- Agrega el enlace a tu artículo en todos los archivos `index` con títulos en inglés y sus descripciones.
+- El archivo `index` será reemplazado por la versión traducida de tu página después.
 - Una vez que tengas la certeza de que todo está correcto, abre un nuevo
 _pull request_ para la guía.
+
+## Añadiendo un idioma al Manual
+
+- Consulta
+[**esta página**](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) para los códigos de los idiomas.
+- Crea un directorio llamado `_posts.ab`, donde `ab` es el código de tu idioma.
+- Crea un archivo de índice llamado `index.ab.md`, donde `ab` es el código de tu idioma.
+- En principio enlaza los artículos en `index` a las páginas en inglés en el directorio `_posts`. Cuando una página traducida sea añadida, reemplaza el enlace con el enlace a la página traducida en el directorio `_posts.ab` correspondiente, donde `ab` es el código de tu idioma.
 
 ## Traduciendo una guía
 
 - Si quieres traducir una guía existente a tu idioma nativo, puedes agregar el artículo
-traducido al directorio `_posts.ab`, donde `ab` es el código de tu idioma. Puedes consultar
+traducido al directorio `_posts.ab`, donde `ab` es el código de tu idioma. Puede referir a
 [esta](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) página para los códigos de idiomas.
 - El nombre de archivo debe estar en el formato `AAAA-MM-DD-titulo.md`. No traduzcas la disposición
 ni los nombres de los autores a tu idioma.
@@ -55,7 +64,16 @@ traducido junto con los nombres de los autores originales.
 - Una vez que tengas la certeza de que todo está correcto, abre un nuevo
 _pull request_ para la guía.
 
+## Probando la guía localmente usando jekyll
+
+- Puedes instalar **jekyll** desde esta [página](https://jekyllrb.com/docs/installation/).
+- Clona tu repositorio _forkeado_ usando `git` o `gh`.
+- Agrega la guía al destino correcto en el directorio clonado.
+- Corre `jekyll build` para construir una vez la página en `./_site`. Entonces puedes probar las páginas manualmente o usar el comando `jekyll serve`.
+- Corre `jekull serve`  para construir tu propio sitio cada vez un archivo fuente cambia y servirlo localmente.
+	- Navega a `http://127.0.0.1:4000/` o `https://localhost:4000/` en tu navegador para previsualizar y probar la página.
+- Ahora, haz un _commit_ con los cambios usando `git` y crea un _pull request_ en GitHub.
+
 ## Discusiones
 
-Discusiones acerca del manual se hacen en el [servidor de Discord oficial (en inglés)](https://discord.com/invite/34J8PFsk) in [#docs-writing](https://discord.com/channels/1023243680829681704/1035287786330263703).
-
+Discusiones acerca del manual se hacen en el [**servidor de Discord oficial** (en inglés)](https://discord.com/invite/34J8PFsk) en [#docs-writing](https://discord.com/channels/1023243680829681704/1035287786330263703), y para discusiónes acerca de las traducciones ve al canal [#translations](https://discord.com/channels/1023243680829681704/1037028192583692358).
