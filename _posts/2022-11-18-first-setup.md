@@ -15,7 +15,7 @@ This guide will help you set your system up for the first time.
 
 ## First Setup app
 
-After booting into Vanilla OS for the first time, you will be presented with a First Setup app. This section will guide you through each page in the app.
+After booting into Vanilla OS for the first time, you will be presented with a First Setup app. This section will guide you through each step in detail.
 
 ![Welcome](/assets/uploads/first-setup-welcome.webp)
 
