@@ -33,7 +33,7 @@ Choose your preferred package managers. These are the ways you will be able to i
 
 ### Restricted Codecs
 
-This will install popular patented codecs and fonts. Recommended for most users.
+This will install popular patented codecs and fonts, that Vanilla OS cannot ship for copyright reasons. \(**Recommended for most users.**\)
 
 ![Restricted Codecs](/assets/uploads/first-setup-restricted-codecs.webp)
 
@@ -45,7 +45,7 @@ Extra system settings for automatic crash detection and bug reporting. If unsure
 
 ### NVIDIA® Drivers
 
-If you have an NVIDIA® graphics card, you will be prompted to install proprietary drivers for your card to improve compatibility and performance. (**Recommended for most users.**)
+If you have an NVIDIA® graphics card, you will be prompted to install proprietary drivers for your card to improve compatibility and performance. \(**Recommended for most users.**\)
 
 ![NVIDIA® Drivers](/assets/uploads/first-setup-nvidia-drivers.webp)
 
