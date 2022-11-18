@@ -10,7 +10,7 @@ authors:
 
 ## Introduction
 
-Congratulations, you now have Vanilla OS installed.
+Congratulations, you have successfully installed Vanilla OS.
 This guide will help you set your system up for the first time.
 
 ## First Setup app
