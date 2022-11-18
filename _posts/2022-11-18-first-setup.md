@@ -27,7 +27,7 @@ Your preferred color scheme. Default \(meaning that apps decide for themselves\)
 
 ### Package Manager
 
-Choose your preferred package managers. These are the ways you will be able to install applications. If unsure, leave it on the default (Flatpak). You can install the required dependencies for each one later if you change your mind.
+Choose your preferred package managers. These are the ways you will be able to install applications. If unsure, leave it on the default \(Flatpak\). You can install the required dependencies for each one later if you change your mind.
 
 ![Package Manager](/assets/uploads/first-setup-package-manager.webp)
 
