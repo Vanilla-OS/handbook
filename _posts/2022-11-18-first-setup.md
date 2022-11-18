@@ -39,7 +39,7 @@ This will install popular patented codecs and fonts. Recommended for most users.
 
 ### Extra Settings
 
-Extra system settings. If unsure, it is recommended to leave them on the default.
+Extra system settings for automatic crash detection and bug reporting. If unsure, it is recommended to leave it disabled.
 
 ![Extra Settings](/assets/uploads/first-setup-extra-settings.webp)
 
