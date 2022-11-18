@@ -111,3 +111,7 @@ After the installer finishes, all you need to do is reboot and you will see a bo
 After the installer finishes, you need to reboot and select Vanilla OS from your device's boot menu that you can access by holding down a specific key while the device is starting up indicated by a prompt on the boot screen. If the prompt isn't present, try searching online for your specific model. Once you're in Vanilla OS, remove the USB stick.
 
 You can configure the default boot order in your device's firmware settings.
+
+## First Setup
+
+After installing Vanilla OS, you can follow the [First Setup guide](/2022/11/18/first-setup.html) to set up your system.
