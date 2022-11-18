@@ -28,6 +28,14 @@ description: Learn how to use Vanilla OS.
                     <span class="material-icons-outlined">arrow_forward</span>
                 </a>
             </div>
+             <div class="suggestItem card">
+                <b><a href="/2022/11/18/first-setup.html">First Setup</a></b>
+                <p> Set up Vanilla OS after installation.</p>
+                <a href="/2022/11/18/first-setup.html" class="buttonLink readLink">
+                    <span>Read</span>
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
