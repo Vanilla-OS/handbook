@@ -38,7 +38,7 @@ If you have an NVIDIA® graphics card, you will be prompted to install proprieta
 
 ### Open VM Tools
 
-If you are running Vanilla OS inside a virtual machine, you will be prompred to install Open VM Tools to use with the VM. If unsure, it is recommended to skip this step.
+If you are running Vanilla OS inside a virtual machine, you will be prompted to install Open VM Tools to use with the VM. If unsure, it is recommended to skip this step.
 
 ## Other Settings
 
