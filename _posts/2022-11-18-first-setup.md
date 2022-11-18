@@ -53,6 +53,8 @@ If you have an NVIDIA® graphics card, you will be prompted to install proprieta
 
 If you are running Vanilla OS inside a virtual machine, you will be prompted to install Open VM Tools to use with the VM. If unsure, it is recommended to skip this step.
 
+![Open VM Tools](/assets/uploads/first-setup-open-vm-tools.webp)
+
 ## Other Settings
 
 You can find other options in Settings, Vanilla OS Control Center or tweak your graphical environment in GNOME Tweaks.
