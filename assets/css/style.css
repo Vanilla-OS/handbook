@@ -141,6 +141,11 @@ a:hover {
     justify-content: center;
 }
 
+.navigation ul {
+    display: flex;
+    gap: 20px;
+}
+
 header {
     padding: 10px;
     display: flex;
