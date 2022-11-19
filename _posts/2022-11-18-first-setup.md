@@ -27,13 +27,13 @@ Your preferred color scheme. Default \(meaning that apps decide for themselves\)
 
 ### Package Manager
 
-Choose your preferred package managers. These are the ways you will be able to install applications. If unsure, leave it on the default \(Flatpak\). You can install the required dependencies for each one later if you change your mind.
+Choose your preferred package managers. These are the ways you will be able to install applications. If unsure, leave it on the default \(Flatpak and AppImage\). You can install the required dependencies for each one later if you change your mind.
 
 ![Package Manager](/assets/uploads/first-setup-package-manager.webp)
 
 ### Restricted Codecs
 
-This will install popular patented codecs and fonts, that Vanilla OS cannot ship for copyright reasons. \(**Recommended for most users.**\)
+This will install popular patented codecs and fonts, that Vanilla OS cannot ship for copyright reasons. **Recommended for most users.**
 
 ![Restricted Codecs](/assets/uploads/first-setup-restricted-codecs.webp)
 
@@ -45,7 +45,7 @@ Extra system settings for automatic crash detection and bug reporting. If unsure
 
 ### NVIDIA® Drivers
 
-If you have an NVIDIA® graphics card, you will be prompted to install proprietary drivers for your card to improve compatibility and performance. \(**Recommended for most users.**\)
+If you have an NVIDIA® graphics card, you will be prompted to install proprietary drivers for your card to improve compatibility and performance. **Recommended for most users.**
 
 ![NVIDIA® Drivers](/assets/uploads/first-setup-nvidia-drivers.webp)
 
