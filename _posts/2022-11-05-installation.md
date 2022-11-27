@@ -13,7 +13,7 @@ authors:
 ### You will need
 
 - A flash drive with at least 8GB of capacity.
-- A drive with at least 25GB of storage space.
+- A drive with at least 50GB of storage space (required for ABRoot A/B partitions).
 - 30 minutes to an hour of your time.
 
 ### Creating a bootable USB stick
