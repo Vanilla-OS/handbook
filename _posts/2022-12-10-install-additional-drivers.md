@@ -23,8 +23,8 @@ menu, then click on the "Drivers" tab.
 ![Vanilla Control Center](/assets/uploads/vanilla-control-center.png)
 
 Here you can see a list of all the drivers available, organized by category. To
-install a driver, simply click on it, then press the "Install" button in the
-top-right corner.
+install a driver, simply click on it, then press the "Apply Changes" button in
+the top-right corner.
 
 ![Vanilla Control Center - Drivers](/assets/uploads/vanilla-control-center-install-driver.png)
 
