@@ -205,7 +205,7 @@ a.buttonLink .material-icons-outlined {
 .article {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 220px auto;
+    grid-template-columns: 220px calc(100% - 220px);
     padding: 20px;
     gap: 20px;
 }
