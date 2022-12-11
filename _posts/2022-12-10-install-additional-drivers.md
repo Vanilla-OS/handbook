@@ -21,13 +21,13 @@ Vanilla Control Center is a graphical tool that allows you to configure the
 operating system and install additional drivers. Launch it from the Applications
 menu, then click on the "Drivers" tab.
 
-![Vanilla Control Center](/assets/uploads/vanilla-control-center.png)
+![Vanilla Control Center](/assets/uploads/vanilla-control-center.webp)
 
 Here you can see a list of all the drivers available, organized by category. To
 install a driver, simply click on it, then press the "Apply Changes" button in
 the top-right corner.
 
-![Vanilla Control Center - Drivers](/assets/uploads/vanilla-control-center-install-driver.png)
+![Vanilla Control Center - Drivers](/assets/uploads/vanilla-control-center-install-driver.webp)
 
 Once the installation is complete, you will be asked to reboot the system.
 
