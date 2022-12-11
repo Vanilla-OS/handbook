@@ -85,7 +85,7 @@ This section will help you with manual partitioning in case this guide doesn't c
 
 Select the disk to which you want to install Vanilla OS and click "Configure". Select "Manual Partitioning" and click on the arrow next to it. Click on "Open GParted" to manually partition your disk.
 
-![Partitioning](/home/dharunkrishna/Downloads/VanillaOS-handbook/assets/uploads/installation-partitioning.webp)
+![Partitioning](/assets/uploads/installation-partitioning.webp)
 
 After you're done, select mount points and file systems for each of your partitions. You might need to close and re-open the installer for new partitions to appear.
 
