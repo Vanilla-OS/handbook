@@ -81,7 +81,7 @@ Create your user account and review the changes that will be made to your system
 
 ### Advanced installation
 
-**Note: Currently Manual Partitioning is disabled and the feature may be looked upon in future.**
+**Note: Manual Partitioning is disabled currently. This feature may be available in future.**
 
 This section will help you with manual partitioning in case this guide doesn't cover your particular needs for installation.
 
