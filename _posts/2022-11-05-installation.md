@@ -65,7 +65,7 @@ Depending on whether you want to dual- or multiboot Vanilla OS alongside other o
 
 This guide will help you with the following types of installation:
 - [Installing only Vanilla OS](/2022/11/05/installation.html#title10)
-- [Advanced installation](/2022/11/05/installation.html#title11)
+- [~~Advanced installation~~ (Disabled currently)](/2022/11/05/installation.html#title11)
 
 ### Installing only Vanilla OS
 
@@ -73,13 +73,15 @@ This section will guide you through installing Vanilla OS to an entire disk, **e
 
 Select the disk you want to install Vanilla OS to, click "Configure", select "Use Entire Disk", click "Apply" and review your changes.
 
-![Use Entire Disk](/assets/uploads/installer-use-entire-disk.webp)
+![Use Entire Disk](/assets/uploads/installation-partitioning.webp)
 
 Create your user account and review the changes that will be made to your system. Click on "Install Vanilla OS" and the installation will begin.
 
 ![Confirming the installation](/assets/uploads/installer-confirm-installation.webp)
 
 ### Advanced installation
+
+**Note: Manual Partitioning is disabled currently. This feature may be available in future.**
 
 This section will help you with manual partitioning in case this guide doesn't cover your particular needs for installation.
 
