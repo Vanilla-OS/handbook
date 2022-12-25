@@ -34,7 +34,7 @@ Choose your preferred package managers. These are the ways you will be able to i
 
 ## Applications
 
-Choose which application you need to install in your Vanilla OS Installation. There are various categories for installing applications. The applications listed in the categories respect your package manager preference and only lists applications available in your package manager.
+Choose which applications you need to install in your Vanilla OS Installation. There are various categories for installing applications. The applications listed in the categories respect your package manager preference and only lists applications available in your package manager.
 
 ![Install Applications](/assets/uploads/first-setup-applications.webp)
 
