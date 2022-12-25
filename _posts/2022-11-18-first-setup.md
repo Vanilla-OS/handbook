@@ -32,6 +32,20 @@ Choose your preferred package managers. These are the ways you will be able to i
 
 ![Package Manager](/assets/uploads/first-setup-package-manager.webp)
 
+## Applications
+
+Choose which application you need to install in your Vanilla OS Installation. There are various categories for installing applications. The applications listed in the categories respect your package manager preference and only lists applications available in your package manager.
+
+![Install Applications](/assets/uploads/first-setup-applications.webp)
+
+The below images demonstrate the difference between Application listings based on your package manager preference.
+
+| ![Install Core Applications Flatpak](/assets/uploads/first-setup-applications-flatpak-core.webp) | ![Install Core Applications Snap](/assets/uploads/first-setup-applications-snap-core.webp) |
+|:---:|:---:|
+| **Core Applications - Flatpak** | **Core Applications - Snap** |
+
+<br>
+
 ### Restricted Codecs
 
 This will install popular patented codecs and fonts, that Vanilla OS cannot ship for copyright reasons. **Recommended for most users.**
