@@ -10,7 +10,7 @@ published: true
 ---
 
 - Thank you for your interest in our project. This guide will help you with writing and translating articles.
-- The [**handbook**](https://github.com/Vanilla-OS/handbook) uses Jekyll, GitHub pages for generating the website.
+- The [**Handbook**](https://github.com/Vanilla-OS/handbook) uses Jekyll, GitHub pages for generating the website.
 - Handbook progress with a to-do list is present at our [GitHub Project](https://github.com/orgs/Vanilla-OS/projects/2).
 
 ## Writing a guide
@@ -71,7 +71,7 @@ request for the translated guide.
 
 ## Testing the guide locally using Jekyll, Bundler
 
-- You can install **Jekyll** from [**this page**](https://jekyllrb.com/docs/installation/) and **Bundler** can be installed from [this page](https://bundler.io).
+- You can install **Jekyll** from [**this page**](https://jekyllrb.com/docs/installation/) and **Bundler** can be installed from [**this page**](https://bundler.io).
 - Clone your forked repository using `git` or `gh`.
 - Add the guide to the correct destination in the cloned directory.
 - Run `bundler install` to install necessary packages (this step must be done only once).
