@@ -32,6 +32,8 @@ Choose your preferred package managers. These are the ways you will be able to i
 
 ![Package Manager](/assets/uploads/first-setup-package-manager.webp)
 
+**Update**: Due to some issues, the option to install snaps is currently disabled and will be fixed in future.
+
 ## Applications
 
 Choose which applications you need to install in your Vanilla OS Installation. There are various categories for installing applications. The applications listed in the categories respect your package manager preference and only lists applications available in your package manager.
@@ -45,6 +47,8 @@ The below images demonstrate the difference between Application listings based o
 | **Core Applications - Flatpak** | **Core Applications - Snap** |
 
 <br>
+
+**Update**: Due to some issues, the option to install snaps is currently disabled and will be fixed in future.
 
 ### Restricted Codecs
 
