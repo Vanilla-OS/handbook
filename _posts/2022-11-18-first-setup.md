@@ -32,7 +32,7 @@ Choose your preferred package managers. These are the ways you will be able to i
 
 ![Package Manager](/assets/uploads/first-setup-package-manager.webp)
 
-**Update**: Due to some issues, the option to install snaps is currently disabled and will be fixed in future.
+**Update**: Due to some issues, the option to install snaps is currently disabled. It will be fixed in future.
 
 ## Applications
 
@@ -48,7 +48,7 @@ The below images demonstrate the difference between Application listings based o
 
 <br>
 
-**Update**: Due to some issues, the option to install snaps is currently disabled and will be fixed in future.
+**Update**: Due to some issues, the option to install snaps is currently disabled. It will be fixed in future.
 
 ### Restricted Codecs
 
