@@ -57,14 +57,15 @@ article along with the original author names.
 - Once you have ensured everything looks correct, open a new pull
 request for the translated guide.
 
-## Testing the guide locally using jekyll
+## Testing the guide locally using Jekyll, Bundler
 
-- You can install **jekyll** from [**this page**](https://jekyllrb.com/docs/installation/).
-- Clone your forked repository using `git` or `gh`. 
+- You can install **Jekyll** from [**this page**](https://jekyllrb.com/docs/installation/) and **Bundler** can be installed from [**this page**](https://bundler.io).
+- Clone your forked repository using `git` or `gh`.
 - Add the guide to the correct destination in the cloned directory.
-- Run `jekyll build` to build the page to `./_site` once. Then you can either test the pages manually or use the `jekyll serve` command.
-- Run `jekyll serve` to build your site any time a source file changes and serve it locally.
-	- Navigate to `http://127.0.0.1:4000/` or `http://localhost:4000/` in your browser to preview and test the page.
+- Run `bundler install` to install necessary packages (this step must be done only once).
+- Run `bundler exec jekyll build` to build the page to `./_site` once. Then you can either test the pages manually or use the `jekyll serve` command.
+- Run `bundler exec jekyll serve` to build your site any time a source file changes and serve it locally.
+  - Navigate to `http://127.0.0.1:4000/` or `http://localhost:4000/` in your browser to preview and test the page.
 - Now, commit the changes using `git` and create a PR in GitHub.
 
 ## Discussions 
