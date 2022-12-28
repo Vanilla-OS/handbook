@@ -1,6 +1,6 @@
 ---
-title:
-description: Aprende como usar Vanilla OS.
+Título:
+Descripción: Aprenda cómo usar Vanilla OS.
 ---
 <div class="searchArea">
     <div class="container">
@@ -14,7 +14,7 @@ description: Aprende como usar Vanilla OS.
         <div class="suggestArea" id="suggestArea">
             <div class="suggestItem card">
                 <b><a href="/2022/11/12/instalacion.html">Instalación de Vanilla OS</a></b>
-                <p>Aprende como instalar Vanilla OS en tu dispositivo.</p>
+                <p>Aprenda cómo instalar Vanilla OS en su dispositivo.</p>
                 <a href="/2022/11/12/instalacion.html" class="buttonLink readLink">
                     <span>Leer</span>
                     <span class="material-icons-outlined">arrow_forward</span>
@@ -22,7 +22,7 @@ description: Aprende como usar Vanilla OS.
             </div>
             <div class="suggestItem card">
                 <b><a href="/2022/11/12/contribuyendo.html">Contribuir al manual</a></b>
-                <p>Aprende como contribuir al manual de Vanilla OS.</p>
+                <p>Aprenda cómo contribuir al manual de Vanilla OS.</p>
                 <a href="/2022/11/12/contribuyendo.html" class="buttonLink readLink">
                     <span>Leer</span>
                     <span class="material-icons-outlined">arrow_forward</span>
