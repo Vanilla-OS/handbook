@@ -10,3 +10,6 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+plugins:
+  - jekyll-feed
