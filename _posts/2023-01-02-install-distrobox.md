@@ -1,7 +1,7 @@
 ---
 title: Install Distrobox
 description: Learn how to install Distrobox on Vanilla OS.
-date: 2022-01-02
+date: 2023-01-02
 layout: article
 authors: 
     - mirkobrombin
