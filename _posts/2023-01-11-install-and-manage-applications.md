@@ -239,7 +239,7 @@ exit
 apx export --aur <packages>
 ```
 
-_**Tip**_: Inside a container to install AUR packages, first run `sudo pacman -S --needed git base-devel`, then run `yay -S <packages>` to install the packages using yay.
+_**Tip**_: Inside a container to install AUR packages, first run `sudo pacman -S --needed git base-devel`, then run `yay -S <packages>` to install the packages using `yay`.
 
 ### Uninstalling Applications from the Arch Linux Container
 
