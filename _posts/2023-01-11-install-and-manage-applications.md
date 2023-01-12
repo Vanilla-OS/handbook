@@ -13,15 +13,14 @@ published: true
 
 Vanilla OS allows installing packages and software from multiple sources. This guide will discuss them in detail.
 
-Vanilla OS comes with Flatpaks and AppImages enabled by default. It allows the installation of native packages using the `apx` package manager.
+Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the initial setup. It allows the installation of native packages using the `apx` package manager. (_Note_: At the time of writing this guide, Snap is not yet supported in Vanilla OS)
 
 ## Terminologies
 
-- **Flatpaks**:- Flatpaks are a popular packaging format allowing the installation of Desktop applications in a sandboxed environment isolated from the system with shared libraries between them. Flatpak provides developers with a unified way to distribute apps for most GNU/Linux distributions. Flatpaks supports adding various remote repositories, the most popular repository being Flathub.
-
+- **Flatpak**:- Flatpak is a popular packaging format allowing the installation of Desktop applications in a sandboxed environment isolated from the system with shared libraries between them. Flatpak provides developers with a unified way to distribute apps for most GNU/Linux distributions. Flatpak supports adding various remote repositories, the most popular repository being Flathub.
 - **Flathub**:- Flathub is the largest repository of Flatpak applications spanning various categories.
-Snaps:- Snaps is an alternative packaging format by Canonical (the creators of Ubuntu) for installing thousands of applications from the Snapcraft repository. They facilitate installing applications in Servers and various GNU/Linux distributions. Snaps contain hundreds of verified packages and software from publishers.
-- **AppImages**:- AppImage is a format for distributing portable software or executables on Linux without needing superuser permissions to install the application.
+- **Snap**:- Snap is an alternative packaging format by Canonical (the creators of Ubuntu) for installing thousands of applications from the Snapcraft repository. They facilitate installing applications in Servers and various GNU/Linux distributions. Snapcraft contains hundreds of verified packages and software from publishers. (_Note_: At the time of writing this guide, Snap is not yet supported in Vanilla OS)
+- **AppImage**:- AppImage is a format for distributing portable software or executables on Linux without needing superuser permissions to install the application.
 - **GNOME Software**:- GNOME Software allows you to find, install and remove new applications and system extensions. It showcases screenshots, metadata and user reviews of various applications. In Vanilla OS, It supports installing Flatpaks and Snaps. GNOME Software is the Linux equivalent of the Microsoft Store, Play Store and App Store.
 - **Package Manager**:- A package manager or package-management system is a utility with a collection of software tools that automates the process of installing, upgrading, configuring, and removing applications or packages.
 `apx` is the package manager which comes with Vanilla OS. It is the equivalent command for Winget on Windows.
@@ -29,17 +28,17 @@ Snaps:- Snaps is an alternative packaging format by Canonical (the creators of U
 - **APT**:- `apt` is an Advanced Package Tool which allows installing and managing software on Debian and Debian-based systems like Ubuntu.
 - **DNF**:- `dnf` (Dandified YUM) is the successor to YUM. It is a powerful package manager for installing and managing applications on rpm-based distributions. 
 - **AUR**:- `aur` (Arch User Repository) is the largest community-maintained repository with thousands of native packages for Arch Linux and its derivatives.
-- **APK**:- `apk`(Alpine Linux package keeper) is a package manager which allows installing and managing applications on Alpine Linux.
-- **DEB**:- deb (Debian Packages) is a file format for installing and managing applications on Debian-based systems. It's an equivalent file extension to `.exe` in Windows and `.rpm` in GNU/Linux.
-- **RPM**:- rpm (Red Hat package manager) is a file format for installing and managing applications on Red Hat-based systems. It's an equivalent file extension to `.exe` in Windows and `.deb` in GNU/Linux.
+- **APK**:- `apk` (Alpine Linux package keeper) is a package manager which allows installing and managing applications on Alpine Linux.
+- **DEB**:- `deb` (Debian Packages) is a file format for installing and managing applications on Debian-based systems. It's an equivalent file extension to `.exe` in Windows and `.rpm` in GNU/Linux.
+- **RPM**:- `rpm` (Red Hat package manager) is a file format for installing and managing applications on Red Hat-based systems. It's an equivalent file extension to `.exe` in Windows and `.deb` in GNU/Linux.
 
 ## Installing Applications through GNOME Software
 
 - Flatpaks and Snaps can be installed with ease using the GNOME Software graphically. It is the recommended method to install packages.
 
-- If you have disabled snaps, you can still install Flatpaks using GNOME Software and install applications from the evergrowing [Flathub](https://flathub.org/home) repository.
+- If you have disabled Snap, you can still install Flatpaks using GNOME Software and install applications from the evergrowing [Flathub](https://flathub.org/home) repository.
 
-- If you have disabled Flatpaks, you can install applications as a Snap through GNOME Software.
+- If you have disabled Flatpak, you can still install Snaps through GNOME Software.
 
 ![GNOME Software](/assets/uploads/gnome-software-43.webp)
 
@@ -59,11 +58,11 @@ Snaps:- Snaps is an alternative packaging format by Canonical (the creators of U
 ### Removing Applications
 
 - You can remove the installed Flatpaks and Snaps from the Installed Panel in GNOME Software. 
-(Note: Some native applications installed in the host will not support removing using this method in Vanilla OS)
+(_Note_: Some native applications installed in the host will not support removing using this method in Vanilla OS)
 
 ## Installing AppImages
 
-- AppImages is one of the recommended ways to execute applications. If you have enabled AppImages in the first setup, You can run it graphically using the following steps:-
+- AppImage is one of the recommended formats for installing your applications. If you have enabled AppImage in the first setup, You can run it graphically using the following steps:-
     - Right-click on the file, then click on `Properties`.
     
    ![AppImages Properties](/assets/uploads/appimages-nautilus-properties.webp)
@@ -79,7 +78,7 @@ chmod +x <file>.appimage
 ./<file>.appimage
 ```
 
-Note:- `chmod +x <file>.AppImage` makes the file executable.
+_Note_:- `chmod +x <file>.AppImage` makes the file executable.
 
  ![Running Krita using AppImage](/assets/uploads/appimages-nautilus-properties.webp)
 
@@ -88,7 +87,7 @@ Note:- `chmod +x <file>.AppImage` makes the file executable.
 - Flatpaks if enabled in the First Setup, can be installed from the command line using the command:-
 
 ```bash
-flatpak install flathub <application-id>
+flatpak install <remote> <application-id>
 ```
 - You can run the applications using the desktop entry (icon) from the application menu, or you can run it manually through:-
 
@@ -101,17 +100,23 @@ flatpak run <application-id>
 flatpak uninstall <application-id>
 ```
 
+- You can remove the unused dependencies along with the Flatpak by using the following command:-
+
+```bash
+flatpak uninstall --unused
+```
+
 - You can remove all the leftover data of the application using the following command (Disclaimer: Proceed with caution as this might lead to data loss):-
 
 ```bash
 flatpak uninstall <application-id> --delete-data
 ```
 
-- If you want to install Flatpaks but have disabled it in the first setup, follow the guide [here](/2022/12/09/install-flatpaks.html).
+- If you want to install Flatpaks but have disabled it in the first setup, follow the guide [**here.**](/2022/12/09/install-flatpaks.html)
 
 ## Installing Snaps from the Command line
 
-- If you have selected Snaps in the first setup, you can run the following command to install Snaps:-
+- If you have selected Snap in the first setup, you can run the following command to install Snaps:-
 
 ```bash
 snap install <packages>
@@ -229,12 +234,12 @@ apx install --aur <packages>
 
 ```bash
 apx enter --aur
-sudo pacman -S <packages>
+sudo pacman -Syu <packages>
 exit
 apx export --aur <packages>
 ```
 
-Tip:`yay -S <packages>`  also allows installing AUR packages.
+_Tip_:`yay -S <packages>`  also allows installing AUR packages.
 
 ### Uninstalling Applications from the Arch Linux Container
 
@@ -304,7 +309,7 @@ apx install --sideload <path/to/package.deb>
 apx export <package>
 ```
 
-- Note:- Using `apx export` is optional. It creates a desktop file entry (icon) in the Application menu for the installed DEB package.
+- _Note_:- Using `apx export` is optional. It creates a desktop file entry (icon) in the Application menu for the installed DEB package.
 
 ### Uninstalling DEBs
 
@@ -314,7 +319,7 @@ apx export <package>
 apx remove <package>
 ```
 
-- Note:- If the desktop entry is still present, execute this command `apx unexport <package>`.
+- _Note_:- If the desktop entry is still present, execute this command `apx unexport <package>`.
 
 ### Sideloading RPMs
 
@@ -325,7 +330,7 @@ apx install --dnf --sideload <path/to/package.rpm>
 apx export --dnf <package>
 ```
 
-- Note:- Using `apx export --dnf` is optional. It creates a desktop file entry (icon) in the Application menu for the installed RPM package. If a desktop entry is available, skip this command.
+- _Note_:- Using `apx export --dnf` is optional. It creates a desktop file entry (icon) in the Application menu for the installed RPM package. If a desktop entry is available, skip this command.
 
 ### Uninstalling RPMs
 
@@ -335,8 +340,8 @@ apx export --dnf <package>
 apx remove --dnf <package>
 ```
 
-- Note:- If the desktop entry is still present, execute this command `apx unexport --dnf <package>`.
+- _Note_:- If the desktop entry is still present, execute this command `apx unexport --dnf <package>`.
 
 ## Conclusion
 
-These are some ways to install and remove applications in Vanilla OS.
+These are some ways to install and manage applications in Vanilla OS.
