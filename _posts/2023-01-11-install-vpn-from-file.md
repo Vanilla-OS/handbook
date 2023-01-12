@@ -29,7 +29,7 @@ This guide provides a step-by-step process for installing an OpenVPN file graphi
 
 ![Plus Button beside VPN](/assets/uploads/install-openvpn-from-file-vpn-add.webp)
 
-- Various options will be displayed in the menu, then select "**Import from file...**"
+- Various options will be displayed in the menu, select "**Import from file...**"
 - This will open a Files dialogue box to select the file to import.
 - Select the **`.ovpn`** config file downloaded from your VPN provider.
 - This will install the OpenVPN profile on your computer. 
