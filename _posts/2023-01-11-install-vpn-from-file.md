@@ -25,7 +25,7 @@ This guide provides a step-by-step process for installing an OpenVPN file graphi
 	
 ## Importing the OpenVPN file
 
-- Once you have navigated to the Network panel, Click on the plus (`+`) button beside the VPN.
+- Once you have navigated to the Network panel, click on the plus (`+`) button beside the VPN.
 
 ![Plus Button beside VPN](/assets/uploads/install-openvpn-from-file-vpn-add.webp)
 
