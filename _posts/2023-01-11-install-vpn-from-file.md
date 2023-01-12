@@ -1,25 +1,41 @@
 ---
 title: Installing an OpenVPN File Without Using Terminal
-description: This guide provides a step-by-step process for installing an OpenVPN file without using the terminal. It is designed to help users who may be uncomfortable with command-line interfaces or who simply prefer a more user-friendly approach.
+description: Learn how to install an OpenVPN File graphically
 date: 2023-01-11
 layout: article
 authors: 
-    - [Jacob Gonzales](https://kutt.it/jacobgonzales)
+    - gonzoknows
 published: true
 ---
 
-# Step-by-Step Guide: 
+## Introduction
 
-1. Press the Windows key (super key)
-2. Search for "vpn"
-![Photo Example](/assets/uploads/install-openvpn-from-file-search.webp)
-3. Select the result shown next to the settings icon, called "Network"
-4. This will bring you to the "Network" interface
-5. Click the plus button next to the VPN icon
-![Photo Example](/assets/uploads/install-openvpn-from-file-vpn-add.webp)
-6. Three options will be displayed; select "Import from file..."
-7. This will open your file explorer 
-8. Select the .ovpn config file downloaded from your VPN provider
-9. The OpenVPN profile will now be installed. 
+This guide provides a step-by-step process for installing an OpenVPN file graphically without using the terminal. It helps users who may be uncomfortable with command-line interfaces prefer a more user-friendly approach.
 
-`Note: You may be prompted to enter login credentials after installing the OpenVPN configuration file.`
+## Navigating to Network Settings
+
+- Press the Windows/Super key.
+- Search for "VPN" or "vpn" in the search.
+
+![Search for vpn](/assets/uploads/install-openvpn-from-file-search.webp)
+
+- Select "Network" from the Settings search result.
+-  This will bring you to the "Network" panel interface.
+	- Alternatively, you can directly navigate to the "Network" panel by opening Settings from the Control Center in the top right corner.
+	
+## Importing the OpenVPN file
+
+- Once you have navigated to the Network panel, Click on the plus (`+`) button beside the VPN.
+
+![Plus Button beside VPN](/assets/uploads/install-openvpn-from-file-vpn-add.webp)
+
+- Various options will be displayed in the menu, then select "**Import from file...**"
+- This will open a Files dialogue box to select the file to import.
+- Select the **`.ovpn`** config file downloaded from your VPN provider.
+- This will install the OpenVPN profile on your computer. 
+
+_**Note**_: You may be prompted to enter login credentials after installing the OpenVPN configuration file.
+
+## Conclusion
+
+- Now, you can successfully connect to the OpenVPN profile seamlessly.
