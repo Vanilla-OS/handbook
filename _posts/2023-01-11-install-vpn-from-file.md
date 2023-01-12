@@ -10,7 +10,7 @@ published: true
 
 ## Introduction
 
-This guide provides a step-by-step process for installing an OpenVPN file graphically without using the terminal. It helps users who may be uncomfortable with command-line interfaces prefer a more user-friendly approach.
+This guide provides a step-by-step process for installing an OpenVPN file graphically without using the terminal. It helps users who may be uncomfortable with command-line interfaces or who prefer a more user-friendly approach.
 
 ## Navigating to Network Settings
 
