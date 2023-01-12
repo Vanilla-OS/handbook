@@ -98,7 +98,8 @@ On Ubuntu, we need to add the `multiverse` repository to our sources list:
 
 ```bash
 apx --apt enter
-su -c 'echo "deb http://archive.ubuntu.com/ubuntu/ $(lsb_release -sc) multiverse" >> /etc/apt/sources.list'
+sudo apt install software-properties-common
+sudo add-apt-repository multiverse
 exit
 ```
 
