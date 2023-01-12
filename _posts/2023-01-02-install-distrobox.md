@@ -12,8 +12,7 @@ published: true
 
 - [**Distrobox**](https://github.com/89luca89/distrobox) is an utility that allows you to run multiple Linux distributions in your system without the need to dual boot or install them in a virtual machine. It enables backward and forward compatibility with software and provides freedom to use whatever distribution you need.
 
-- It uses Podman or Docker to create containers using the Linux 
-distribution of your choice. The container created will be tightly integrated with the host, allowing sharing the `/home` directory of the user, hardware (like external storage, pen drives, speakers) and graphical apps (X11/Wayland).
+- It uses Podman or Docker to create containers using the Linux distribution of your choice. The container created will be tightly integrated with the host, allowing sharing the `/home` directory of the user, hardware (like external storage, pen drives, speakers) and graphical apps (X11/Wayland).
 
 ## Install Distrobox
 

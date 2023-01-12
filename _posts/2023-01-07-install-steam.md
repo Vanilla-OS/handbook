@@ -16,7 +16,7 @@ published: true
 
 ## Install Steam
 
-In Vanilla OS there are many ways to install the software. The easiest way is to use
+In Vanilla OS there are many ways to install applications. The easiest way is to use
 [Flatpak](https://flatpak.org), which is a universal package manager for Linux.
 But it is also possible to install Steam using [Apx](https://documentation.vanillaos.org/docs/apx/)
 the default package manager of Vanilla OS.
@@ -30,7 +30,7 @@ explained [**here**](/2022/12/09/install-flatpaks.html#title3).
 You can also install the Steam Flatpak from the terminal using the following command:
 
 ```bash
-flatpak install --user flathub com.valvesoftware.Steam
+flatpak install flathub com.valvesoftware.Steam
 ```
 
 ### Apx
@@ -44,7 +44,7 @@ flatpak install --user flathub com.valvesoftware.Steam
 
 ```bash
 apx --dnf enter
-su -c 'dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm'
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 exit
 ```
 
