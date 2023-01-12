@@ -323,7 +323,7 @@ apx remove <package>
 
 ### Sideloading RPMs
 
-- You can install RPM packages in the Ubuntu container using the following commands:-
+- You can install RPM packages in the Fedora container using the following commands:-
 
 ```bash
 apx install --dnf --sideload <path/to/package.rpm>
