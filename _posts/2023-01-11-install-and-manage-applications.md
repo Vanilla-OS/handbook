@@ -80,7 +80,7 @@ chmod +x <file>.appimage
 
 _**Note**_:- `chmod +x <file>.AppImage` makes the file executable.
 
- ![Running Krita using AppImage](/assets/uploads/appimages-nautilus-properties.webp)
+ ![Running Krita using AppImage](/assets/uploads/appimage-krita.webp)
 
 ## Installing Flatpaks from the Command line
 
