@@ -23,13 +23,13 @@ This section will guide you through creating a bootable USB stick with Vanilla O
 
 #### Downloading Vanilla OS
 
-First, download the Vanilla OS disk image that will be written to your USB flash drive from [here](https://vanillaos.org/).
+First, download the Vanilla OS disk image that will be written to your USB flash drive from [**here**](https://vanillaos.org/).
 
 #### Installing Etcher
 
-To flash the disk image to your USB stick, download and install [balenaEtcher](https://www.balena.io/etcher/).
+To flash the disk image to your USB stick, download and install [**balenaEtcher**](https://www.balena.io/etcher/).
 
-If you wish, you can also use different software that you are familiar with, such as [Ventoy](https://www.ventoy.net/) or [Rufus](https://rufus.ie/).
+If you wish, you can also use different software that you are familiar with, such as [**Ventoy**](https://www.ventoy.net/) or [**Rufus**](https://rufus.ie/).
 
 #### Flashing the image
 
@@ -117,4 +117,4 @@ You can configure the default boot order in your device's firmware settings.
 
 ## First Setup
 
-After installing Vanilla OS, you can follow the [First Setup guide](/2022/11/18/first-setup.html) to set up your system.
+After installing Vanilla OS, you can follow the [**First Setup guide**](/2022/11/18/first-setup.html) to set up your system.
