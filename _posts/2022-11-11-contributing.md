@@ -11,7 +11,7 @@ published: true
 ---
 
 - Thank you for your interest in our project. This guide will help you with writing articles.
-- The [**Handbook**](https://github.com/Vanilla-OS/handbook) uses Jekyll, GitHub pages for generating the website.
+- The [**Handbook**](https://github.com/Vanilla-OS/handbook) uses Jekyll and GitHub pages for generating the website.
 - Handbook progress with a to-do list is present at our [**GitHub Project**](https://github.com/orgs/Vanilla-OS/projects/2).
 
 ## Prerequisites for Writing a guide
@@ -97,7 +97,7 @@ sudo vso trigger-update --now
 sudo vso trigger-update --now
 ```
 
-- Some terms like "Note:" and "Tip:" should be highlighted with bold and italics. For example:- `_**Note**_:-`.
+- Some terms like "Note:" and "Tip:" should be highlighted with bold and italics. For example:- `**_Note_**:-`.
 
 ## Testing the guide locally using Jekyll, Bundler
 
