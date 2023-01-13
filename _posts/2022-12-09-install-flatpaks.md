@@ -45,11 +45,11 @@ flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flath
 
 ## Install an application
 
-There are two ways to install a Flatpak applications using _GNOME Software or through the command line_.
+There are two ways to install a Flatpak applications: using GNOME Software or through the command line.
 
 ### GNOME Software
 
-Open GNOME Software, search for the application you want to install and click on the "**Install**" button.
+Open GNOME Software, search for the application you want to install and click on the "Install" button.
 
 ![GNOME Software](/assets/uploads/flatpak-gnome-software.webp)
 

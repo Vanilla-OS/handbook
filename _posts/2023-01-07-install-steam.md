@@ -12,13 +12,13 @@ published: true
 
 - [**Steam**](https://steampowered.com) is the most popular gaming platform. It allows you to download and play a vast library of games. It's client is available natively on Linux.
 
-- On 21 August 2018, Steam introduced the [Proton](https://github.com/ValveSoftware/Proton) project, which allows you to run Windows games on Linux. It is an essential tool for Linux gamers as it extends the number of games available on the platform. Check out [**ProtonDB**](https://www.protondb.com) to see how well your favourite games work with Proton.
+- On 21 August 2018, Steam introduced the [**Proton**](https://github.com/ValveSoftware/Proton) project, which allows you to run Windows games on Linux. It is an essential tool for Linux gamers as it extends the number of games available on the platform. Check out [**ProtonDB**](https://www.protondb.com) to see how well your favourite games work with Proton.
 
 ## Install Steam
 
 In Vanilla OS there are many ways to install Steam. The easiest way is to use
-[Flatpak](https://flatpak.org), which is a universal package manager for Linux.
-But it is also possible to install Steam using [apx](https://documentation.vanillaos.org/docs/apx/)
+[**Flatpak**](https://flatpak.org), which is a universal package manager for Linux.
+But it is also possible to install Steam using [**apx**](https://documentation.vanillaos.org/docs/apx/)
 the default package manager of Vanilla OS.
 
 ### Flatpak
@@ -36,7 +36,7 @@ flatpak install flathub com.valvesoftware.Steam
 ### Apx
 
 **apx** is a package manager which installs software in containers thanks to
-[Distrobox](https://github.com/89luca89/distrobox). In our tests, Fedora is the best distro to run Steam in a container. We highly recommend using it to install Steam.
+[**Distrobox**](https://github.com/89luca89/distrobox). In our tests, Fedora is the best distro to run Steam in a container. We highly recommend using it to install Steam.
 
 #### Fedora container
 

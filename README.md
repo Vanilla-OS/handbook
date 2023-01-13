@@ -4,12 +4,12 @@
 other information to help you get the most out of your Vanilla OS installation.
 - Thank you for your interest in our project. This guide will help you with writing articles.
 - The [**Handbook**](https://github.com/Vanilla-OS/handbook) uses Jekyll, GitHub pages for generating the website.
-- Handbook progress with a to-do list is present at our [GitHub Project](https://github.com/orgs/Vanilla-OS/projects/2).
+- Handbook progress with a to-do list is present at our [**GitHub Project**](https://github.com/orgs/Vanilla-OS/projects/2).
 
 ## Writing a guide
 
 - If you want to write a guide for the handbook, add the
-new article to the [`_posts` directory](https://github.com/Vanilla-OS/handbook/tree/main/_posts).
+new article to the [**`_posts` directory**](https://github.com/Vanilla-OS/handbook/tree/main/_posts).
 - The filename must be in the format
 `YYYY-MM-DD-title.md`.
 - Add your GitHub username along with the co-authors in the
@@ -50,4 +50,4 @@ request for the guide.
 
 ## Discussions
 
-Discussions regarding the handbook are done in the [**official Discord server**](https://discord.gg/3cD2Q7Ht3S) in [`#docs-writing`](https://discord.com/channels/1023243680829681704/1035287786330263703), and for Discussions regarding translations go to the [`#translations`](https://discord.com/channels/1023243680829681704/1037028192583692358) channel.
+Discussions regarding the handbook are done in the [**official Discord server**](https://discord.gg/3cD2Q7Ht3S) in [**`#docs-writing`**](https://discord.com/channels/1023243680829681704/1035287786330263703), and for Discussions regarding translations go to the [**`#translations`**](https://discord.com/channels/1023243680829681704/1037028192583692358) channel.
