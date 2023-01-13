@@ -13,13 +13,13 @@ published: true
 
 Vanilla OS allows installing packages and software from multiple sources. This guide will discuss them in detail.
 
-Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the initial setup. It allows the installation of native packages using the `apx` package manager. (_**Note**_: At the time of writing this guide, Snap is not yet supported in Vanilla OS)
+Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the initial setup. It allows the installation of native packages using the `apx` package manager. (**_Note_**: At the time of writing this guide, Snap is not yet supported in Vanilla OS)
 
 ## Terminologies
 
 - **Flatpak**:- Flatpak is a popular packaging format allowing the installation of Desktop applications in a sandboxed environment isolated from the system with shared libraries between them. Flatpak provides developers with a unified way to distribute apps for most GNU/Linux distributions. Flatpak supports adding various remote repositories, the most popular repository being Flathub.
 - **Flathub**:- Flathub is the largest repository of Flatpak applications spanning various categories.
-- **Snap**:- Snap is an alternative packaging format by Canonical (the creators of Ubuntu) for installing thousands of applications from the Snapcraft repository. They facilitate installing applications in Servers and various GNU/Linux distributions. Snapcraft contains hundreds of verified packages and software from publishers. (_**Note**_: At the time of writing this guide, Snap is not yet supported in Vanilla OS)
+- **Snap**:- Snap is an alternative packaging format by Canonical (the creators of Ubuntu) for installing thousands of applications from the Snapcraft repository. They facilitate installing applications in Servers and various GNU/Linux distributions. Snapcraft contains hundreds of verified packages and software from publishers. (**_Note_**: At the time of writing this guide, Snap is not yet supported in Vanilla OS)
 - **AppImage**:- AppImage is a format for distributing portable software or executables on Linux without needing superuser permissions to install the application.
 - **GNOME Software**:- GNOME Software allows you to find, install and remove new applications and system extensions. It showcases screenshots, metadata and user reviews of various applications. In Vanilla OS, It supports installing Flatpaks and Snaps. GNOME Software is the Linux equivalent of the Microsoft Store, Play Store and App Store.
 - **Package Manager**:- A package manager or package-management system is a utility with a collection of software tools that automates installing, upgrading, configuring, and removing applications or packages.
@@ -58,7 +58,7 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 ### Removing Applications
 
 - You can remove the installed Flatpaks and Snaps from the Installed Panel in GNOME Software. 
-(_**Note**_: Some native applications installed in the host will not support removing using this method in Vanilla OS)
+(**_Note_**: Some native applications installed in the host will not support removing using this method in Vanilla OS)
 
 ## Installing AppImages
 
@@ -78,7 +78,7 @@ chmod +x <file>.appimage
 ./<file>.appimage
 ```
 
-_**Note**_:- `chmod +x <file>.AppImage` makes the file executable.
+**_Note_**:- `chmod +x <file>.AppImage` makes the file executable.
 
  ![Running Krita using AppImage](/assets/uploads/appimage-krita.webp)
 
@@ -239,7 +239,7 @@ exit
 apx export --aur <packages>
 ```
 
-_**Tip**_: Inside a container to install AUR packages, first run `sudo pacman -S --needed git base-devel`, then run `yay -S <packages>` to install the packages using `yay`.
+**_Tip_**: Inside a container to install AUR packages, first run `sudo pacman -S --needed git base-devel`, then run `yay -S <packages>` to install the packages using `yay`.
 
 ### Uninstalling Applications from the Arch Linux Container
 
@@ -309,7 +309,7 @@ apx install --sideload <path/to/package.deb>
 apx export <package>
 ```
 
-- _**Note**_:- Using `apx export` is optional. It creates a desktop file entry (icon) in the Application menu for the installed DEB package.
+- **_Note_**:- Using `apx export` is optional. It creates a desktop file entry (icon) in the Application menu for the installed DEB package.
 
 ### Uninstalling DEBs
 
@@ -319,7 +319,7 @@ apx export <package>
 apx remove <package>
 ```
 
-- _**Note**_:- If the desktop entry is still present, execute this command `apx unexport <package>`.
+- **_Note_**:- If the desktop entry is still present, execute this command `apx unexport <package>`.
 
 ### Sideloading RPMs
 
@@ -330,7 +330,7 @@ apx install --dnf --sideload <path/to/package.rpm>
 apx export --dnf <package>
 ```
 
-- _**Note**_:- Using `apx export --dnf` is optional. It creates a desktop file entry (icon) in the Application menu for the installed RPM package. If a desktop entry is available, skip this command.
+- **_Note_**:- Using `apx export --dnf` is optional. It creates a desktop file entry (icon) in the Application menu for the installed RPM package. If a desktop entry is available, skip this command.
 
 ### Uninstalling RPMs
 
@@ -340,7 +340,7 @@ apx export --dnf <package>
 apx remove --dnf <package>
 ```
 
-- _**Note**_:- If the desktop entry is still present, execute this command `apx unexport --dnf <package>`.
+- **_Note_**:- If the desktop entry is still present, execute this command `apx unexport --dnf <package>`.
 
 ## Conclusion
 

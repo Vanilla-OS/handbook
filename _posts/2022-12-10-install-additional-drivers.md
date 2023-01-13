@@ -56,7 +56,8 @@ sudo abroot exec apt install nvidia-driver-525
 ```bash
 cp <path/to/driver.deb> /tmp
 ```
-	- Now, Enter ABRoot Shell using the following command, `cd` to the required directory:-
+
+- Now, Enter ABRoot Shell using the following command and `cd` to the required directory:-
 
 ```bash
 sudo abroot shell

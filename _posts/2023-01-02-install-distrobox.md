@@ -24,7 +24,7 @@ curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sh -
 
 - In this way, Distrobox will be installed in the `~/.local` directory, which is already in the PATH variable for Vanilla OS. 
 
-_**Note**_:  We are going to install Distrobox in your `home` directory to avoid altering the root file system.
+**_Note_**:  We are going to install Distrobox in your `home` directory to avoid altering the root file system.
 
 ## Uninstall Distrobox
 
