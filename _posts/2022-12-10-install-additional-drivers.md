@@ -11,7 +11,7 @@ published: true
 
 Drivers are software components that allow the operating system to communicate with hardware devices.
 
-In Vanilla OS, primary drivers are installed automatically during the first setup, but some devices may still need additional drivers to work ideally. You can install them using two methods: 
+In Vanilla OS, primary drivers are installed automatically during the first setup, but some devices may need additional drivers to work ideally. You can install them using two methods: 
 - **Vanilla Control Center** 
 - **Manual installation in the transactional shell.**
 
@@ -27,20 +27,20 @@ the top-right corner.
 
 ![Vanilla Control Center - Drivers](/assets/uploads/vanilla-control-center-install-driver.webp)
 
-Once the installation is complete, you will get asked to reboot the system.
+Once the installation is complete, you will be requested to reboot the system.
 
 ## Manual installation
 
 ### APT Package
 
-- If you prefer to install drivers manually, you can do it using the transactional shell. Open the terminal and run the following command:
+- If you prefer to install drivers manually, you can do so using the transactional shell. Open the terminal and run the following command:
 
 ```bash
 sudo abroot exec apt install <driver>
 ```
 
 Where `<driver>` is the package name that offers the driver you want to
-install. For example,  Installing the NVIDIA driver at version 525 can be done by executing the following command:
+install. For example, installing the NVIDIA driver at version 525 can be done by executing the following command:
 
 ```bash
 sudo abroot exec apt install nvidia-driver-525
@@ -54,7 +54,7 @@ sudo abroot exec apt install nvidia-driver-525
 	- In a non-privileged terminal, you can copy the DEB file to `/tmp` using the following command:-
 
 ```bash
-sudo cp <path/to/driver.deb> /tmp
+cp <path/to/driver.deb> /tmp
 ```
 	- Now, Enter ABRoot Shell using the following command, `cd` to the required directory:-
 

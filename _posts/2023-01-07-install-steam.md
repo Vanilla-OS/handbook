@@ -12,13 +12,13 @@ published: true
 
 - [**Steam**](https://steampowered.com) is the most popular gaming platform. It allows you to download and play a vast library of games. It's client is available natively on Linux.
 
-- On 21 August 2018, Steam introduced the [Proton](https://github.com/ValveSoftware/Proton) project, which allows you to run Windows games on Linux. It is an essential feature for Linux gamers as it extends the number of games available on the platform. Check out [**ProtonDB**](https://www.protondb.com) to see how well your favourite games work with Proton.
+- On 21 August 2018, Steam introduced the [Proton](https://github.com/ValveSoftware/Proton) project, which allows you to run Windows games on Linux. It is an essential tool for Linux gamers as it extends the number of games available on the platform. Check out [**ProtonDB**](https://www.protondb.com) to see how well your favourite games work with Proton.
 
 ## Install Steam
 
-In Vanilla OS there are many ways to install applications. The easiest way is to use
+In Vanilla OS there are many ways to install Steam. The easiest way is to use
 [Flatpak](https://flatpak.org), which is a universal package manager for Linux.
-But it is also possible to install Steam using [Apx](https://documentation.vanillaos.org/docs/apx/)
+But it is also possible to install Steam using [apx](https://documentation.vanillaos.org/docs/apx/)
 the default package manager of Vanilla OS.
 
 ### Flatpak
@@ -35,8 +35,8 @@ flatpak install flathub com.valvesoftware.Steam
 
 ### Apx
 
-**Apx** is a package manager which installs software in containers thanks to
-[Distrobox](https://github.com/89luca89/distrobox). In our tests, Fedora is the best distro to run Steam in a container . We highly recommend using it to install Steam.
+**apx** is a package manager which installs software in containers thanks to
+[Distrobox](https://github.com/89luca89/distrobox). In our tests, Fedora is the best distro to run Steam in a container. We highly recommend using it to install Steam.
 
 #### Fedora container
 
@@ -68,7 +68,7 @@ apx --dnf install xorg-x11-drv-amdgpu mesa-libGL.i686 mesa-dri-drivers.i686
 apx --dnf xorg-x11-drv-intel mesa-libGL.i686 mesa-dri-drivers.i686
 ```
 
-- Now we can install Steam using the following command:
+- We can now install Steam using the following command:
 
 ```bash
 apx --dnf install steam
@@ -87,7 +87,7 @@ apx --dnf export steam
 
 #### Ubuntu container
 
-- On Ubuntu, we need to add the `multiverse` repository to our sources list using the follow:
+- On Ubuntu, we need to add the `multiverse` repository to our sources list using the following command:
 
 ```bash
 apx --apt enter
@@ -118,7 +118,7 @@ apx install nvidia-driver-525
 apx --apt install mesa-utils mesa-utils-extra
 ```
 
-Now we can install Steam using the following command:
+- We can now install Steam using the following command:
 
 ```bash
 apx --apt install steam-launcher
@@ -129,7 +129,7 @@ apx --apt install steam-launcher
 - To run Steam, you can use the icon from the applications menu or issue the 
 command `apx run steam`.
 
-- If the icon doesn't appear in the applications menu, you can add it manually:
+- If the icon doesn't appear in the applications menu, you can add it manually using the following command:
 
 ```bash
 apx export steam
@@ -142,4 +142,4 @@ apx export steam
 
 ![Steam Play](/assets/uploads/steam-play.webp)
 
-- To do so, open Steam and go to `Steam` > `Settings` > `Steam Play`. Then enable  the `Enable Steam Play for all other titles` option.
+- To do so, open Steam and go to `Steam` > `Settings` > `Steam Play`. Then enable the `Enable Steam Play for all other titles` option.

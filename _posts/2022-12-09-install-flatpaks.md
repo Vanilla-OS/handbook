@@ -12,8 +12,8 @@ Flatpak is a universal package format for Linux desktop applications. It works o
 
 ## Install Flatpak
 
-- The preferred way to install Flatpak is to choose it in the **First Setup**
-wizard. If you didn't do it, then you can install it manually using the transactional shell:
+- The preferred way to install Flatpak is to toggle it in the **First Setup**
+wizard. If you didn't toggle it, you can install it manually using the transactional shell:
 
 ```bash
 sudo abroot exec apt install flatpak gnome-software-plugin-flatpak
@@ -21,13 +21,13 @@ sudo abroot exec apt install flatpak gnome-software-plugin-flatpak
 
 - Reboot once the installation is complete.
 
-- Alternatively, you can install Flatpak inside the Managed Container using `apx`:
+- Alternatively, you can install Flatpak inside a managed container using `apx`:
 
 ```bash
 apx install flatpak
 ```
 
-In this case, you will always need to run Flatpak commands inside the Apx container:
+In this case, you will always need to run Flatpak commands inside the `apx` container:
 
 ```bash
 apx run flatpak install flathub org.gnome.gedit
@@ -35,7 +35,7 @@ apx run flatpak install flathub org.gnome.gedit
 
 ## Configure Flathub
 
-Flatpak needs to know where to look for applications. The default and most popular repository for installing Flatpaks are Flathub, which can get added using the following command:
+Flatpak needs to know where to look for applications. The default and most popular repository for installing Flatpaks is Flathub, which you can add using the following command:
 
 ```bash
 flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -45,11 +45,11 @@ flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flath
 
 ## Install an application
 
-There are two ways to install a Flatpak application: using _GNOME Software or through the command line_.
+There are two ways to install a Flatpak applications using _GNOME Software or through the command line_.
 
 ### GNOME Software
 
-Open GNOME Software, search for the application you want to install and click on the "*Install**" button.
+Open GNOME Software, search for the application you want to install and click on the "**Install**" button.
 
 ![GNOME Software](/assets/uploads/flatpak-gnome-software.webp)
 
