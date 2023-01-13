@@ -3,7 +3,7 @@
 - This is the official handbook for Vanilla OS. It contains tutorials, guides and
 other information to help you get the most out of your Vanilla OS installation.
 - Thank you for your interest in our project. This guide will help you with writing articles.
-- The [**Handbook**](https://github.com/Vanilla-OS/handbook) uses Jekyll and GitHub pages for generating the website.
+- The [**Handbook**](https://github.com/Vanilla-OS/handbook) uses Jekyll, GitHub pages for generating the website.
 - Handbook progress with a to-do list is present at our [**GitHub Project**](https://github.com/orgs/Vanilla-OS/projects/2).
 
 ## Prerequisites for Writing a guide
@@ -50,7 +50,7 @@ published: true
 - Add your GitHub username with the co-author's username(s) in the author's field to have working links when the post is published.
 - Ensure images are in **WebP format** and placed in `uploads` under the `assets` directory with a descriptive name for future reference.
 
-**__Tip__**: We suggest using [**cwebp**](https://developers.google.com/speed/webp/docs/cwebp) for converting the images to WebP.
+**_Tip_**: We suggest using [**cwebp**](https://developers.google.com/speed/webp/docs/cwebp) for converting the images to WebP.
 
 ## Style Guide
 
@@ -76,9 +76,11 @@ For example:-
 
 ```md
 - To update your Vanilla OS system now, run the following command:-
-```bash
+
+"```bash
 sudo vso trigger-update --now
-```
+```" 
+(Note: " isn't required, and it is used for quoting the syntax here)
 ```
 
 - The codeblock will have the following output:-

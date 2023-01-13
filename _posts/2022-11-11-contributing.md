@@ -6,6 +6,7 @@ layout: article
 authors: 
     - kbdharun
     - kra-mo
+    - MonsterObserver
 published: true
 ---
 
@@ -19,7 +20,7 @@ published: true
 
 ## Writing a guide
 
-If you want to write a guide for the handbook, follow the following instructions:-
+If you want to write a guide for the handbook, follow these instructions:-
 - Add the new article to the [**`_posts` directory**](https://github.com/Vanilla-OS/handbook/tree/main/_posts).
 - The filename must be in the format `YYYY-MM-DD-title.md`.
 - See [**markdownlint**](https://github.com/DavidAnson/markdownlint) for best markdown practices.
@@ -38,7 +39,7 @@ authors:
 published: true
 ---
 ```
-	- You must fill in your article's metadata here.
+- You must fill in your article's metadata here.
 
 For example:-
 
@@ -46,10 +47,10 @@ For example:-
 ---
 title: Installing a package
 description: Learn how to install a package in Vanilla OS
-date: YYYY-01-13
+date: 2023-01-13
 layout: article
 authors: 
-    - GitHub Username
+    - MonsterObserver
 published: true
 ---
 ```
@@ -57,7 +58,7 @@ published: true
 - Add your GitHub username with the co-author's username(s) in the author's field to have working links when the post is published.
 - Ensure images are in **WebP format** and placed in `uploads` under the `assets` directory with a descriptive name for future reference.
 
-**__Tip__**: We suggest using [**cwebp**](https://developers.google.com/speed/webp/docs/cwebp) for converting the images to WebP.
+**_Tip_**: We suggest using [**cwebp**](https://developers.google.com/speed/webp/docs/cwebp) for converting the images to WebP.
 
 ## Style Guide
 
@@ -67,15 +68,15 @@ published: true
 For example:-
 
 ```md
- [**example**](https://example.com/)
+[**example**](https://example.com/)
 [**`apx`**](https://github.com/Vanilla-OS/apx)
 ```
 
-Which will have the following outputs:-  [**example**](https://example.com/), [**`apx`**](https://github.com/Vanilla-OS/apx)
+Which will have the following outputs:- [**example**](https://example.com/), [**`apx`**](https://github.com/Vanilla-OS/apx)
 
 - Buttons in applications can be highlighted using double quotes (""). For example, the Install button gets highlighted as the "Install" button.
 
-- Menus and command names must be enclosed with backticks (`).
+- Menus, command names and directories must be enclosed with backticks (`).
 
 - For displaying commands, we suggest code blocks with the correct shell or programming language.
 
@@ -83,12 +84,14 @@ For example:-
 
 ```md
 - To update your Vanilla OS system now, run the following command:-
-```bash
+
+"```bash
 sudo vso trigger-update --now
-```
+```" 
+(Note: " isn't required, and it is used for quoting the syntax here)
 ```
 
-	- The codeblock will have the following output:-
+- The codeblock will have the following output:-
 
 ```bash
 sudo vso trigger-update --now
