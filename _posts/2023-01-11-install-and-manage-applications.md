@@ -142,6 +142,12 @@ snap remove <packages>
 
 - You can initialize the container graphically by clicking on the `+` icon in the Vanilla Control Center. (Vanilla Control Center also allows you to enter the apx container graphically.)
 
+![Vanilla Control Center - Sub System](/assets/uploads/vanilla-control-center-subsystem.webp)
+
+- After initialization, you can enter the container graphically by clicking on the `terminal` icon.
+
+![Vanilla Control Center - Sub System post initialization](/assets/uploads/vanilla-control-center-subsystem-example.webp)
+
 - apx works by creating minimal containers from the distribution's docker image. And it tightly integrates with the host using a distrobox backend.
 
 ### Installing Applications in Ubuntu Container
