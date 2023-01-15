@@ -3,7 +3,7 @@
   {% include head.html %}
   <body>
     <div id="top"></div>
-    {% include header.html %}
+    {% if page.url != "/" %} {% include header.html %} {% endif %}
     <main>{{ content }}</main>
     {% include footer.html %}
   </body>

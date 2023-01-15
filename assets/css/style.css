@@ -69,18 +69,18 @@ a:hover {
 }
 
 .searchArea {
-    position: fixed;
-    top: 25px;
-    left: 0;
-    bottom: 0;
-    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 20px 10vh 20px;
+}
+
+.hasResults .searchArea {
+    padding-bottom: 0;
 }
 
 .searchArea .container {
+    margin: 20vh 0 0 0;
     flex: 1;
     display: flex;
     align-items: stretch;
@@ -88,6 +88,10 @@ a:hover {
     flex-direction: column;
     max-width: 780px;
     gap: 20px;
+}
+
+.hasResults .searchArea .container {
+    margin: 0;
 }
 
 .container {
@@ -128,11 +132,15 @@ a:hover {
 }
 
 .resultsAreaWrapper {
-    margin-top: 87px;
-    display: flex;
+    display: none;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 10vh;
+}
+
+.hasResults .resultsAreaWrapper {
+    display: flex;
 }
 
 .navigation {
