@@ -16,7 +16,7 @@ Vanilla OS allows you to change your Default Shell to better fit your workflow. 
 
 ## Change your Default Shell to Zsh
 
-- Firstly, we need to install Zsh on the Host System with the following command:-
+- First, we need to install Zsh on the Host System with the following command:-
 
 ```bash
 sudo abroot exec apt install zsh
