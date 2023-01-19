@@ -36,7 +36,7 @@ chsh -s /usr/bin/zsh
 
 ## Change your Default Shell to Fish
 
-- Firstly, we need to install Fish on the Host System with the following command:-
+- First, we need to install Fish on the Host System with the following command:-
 
 ```bash
 sudo abroot exec apt install fish
