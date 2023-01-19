@@ -62,6 +62,6 @@ chsh -s /usr/bin/fish
 chsh -s /usr/bin/bash
 ```
 
-- You will now have to reboot to apply the changes. Simply run `reboot`.
+- You will now have to reboot the system to apply the changes. Simply run `reboot`.
 
 - The next time you open your Terminal Emulator you will be using Bash.
