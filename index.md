@@ -36,6 +36,14 @@ description: Learn how to use Vanilla OS.
                     <span class="material-icons-outlined">arrow_forward</span>
                 </a>
             </div>
+             <div class="suggestItem card">
+                <b><a href="/glossary">All Guides</a></b>
+                <p>See all the available guides for Vanilla OS.</p>
+                <a href="/glossary" class="buttonLink readLink">
+                    <span>Go to Glossary</span>
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
