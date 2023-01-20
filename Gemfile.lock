@@ -264,6 +264,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-gist
   jekyll-seo-tag
+  jekyll-sitemap
   webrick
 
 BUNDLED WITH
