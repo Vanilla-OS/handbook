@@ -1,16 +1,16 @@
 ---
-title: Summary
-description: Summary of the book
+title: Glossary
+description: Summary of the handbook
 ---
 <div class="container">
 {% for post in site.posts %}
-    {% assign first_letter = post.title | slice: 0, 1 | downcase %}
+    {% assign first_letter = post.title | slice: 0 | downcase %}
     {% if first_letter != current_letter %}
         {% unless forloop.first %}
             </ul>
             <br />
         {% endunless %}
-        <a id="{{ first_letter }}" href="#{{ first_letter }}"><h2>{{ first_letter | upcase }}</h2></a>
+        <a id="{{ first_letter }}" href="#{{ first_letter }}"><h2><b>{{ first_letter | upcase }}</b></h2></a>
         <ul>
         {% assign current_letter = first_letter %}
     {% endif %}
@@ -18,3 +18,4 @@ description: Summary of the book
 - {{ post.title }}
 </a></li>
 {% endfor %}
+<br><br>

@@ -10,9 +10,9 @@ published: true
 
 ## Introduction
 
-Vanilla OS allows you to change your Default Shell to better fit your workflow. This guide will show you how to change your Default Shell to [**`Zsh`**](https://zsh.sourceforge.io/) or [**`Fish`**](https://fishshell.com/).
+Vanilla OS allows you to change your Default Shell to optimize your workflow. This guide will show you how to change your Default Shell to [**Zsh**](https://zsh.sourceforge.io/) or [**Fish**](https://fishshell.com/).
 
-**_Note_**:- Changing the Default Shell is only recommended for advanced users.
+**_Note_**:- Changing the Default Shell isn't recommended, and this guide is for advanced users only.
 
 ## Change your Default Shell to Zsh
 
@@ -30,9 +30,9 @@ sudo abroot exec apt install zsh
 chsh -s /usr/bin/zsh
 ```
 
-- After changing the Default Shell to Zsh, we need to reboot the system one last time to apply the changes. Simply run `reboot` again.
+- After changing the Default Shell to Zsh, we need to reboot the system to apply the changes.
 
-- The next time you open your Terminal Emulator you will be prompted to setup Zsh.
+- The next time you open your Terminal Emulator, you will be prompted to set up Zsh.
 
 ## Change your Default Shell to Fish
 
@@ -50,18 +50,18 @@ sudo abroot exec apt install fish
 chsh -s /usr/bin/fish
 ```
 
-- After changing the Default Shell to Fish, we need to reboot the system one last time to apply the changes. Simply run `reboot` again.
+- After changing the Default Shell to Fish, we need to reboot the system one last time to apply the changes.
 
-- The next time you open your Terminal Emulator you will be using Fish.
+- The next time you open your Terminal Emulator, you will be in Fish Shell.
 
 ## Revert your Default Shell to Bash
 
-- You can run the following command to revert your Default Shell back to Bash:
+- You can run the following command to revert your Default Shell to Bash:
 
 ```bash
 chsh -s /usr/bin/bash
 ```
 
-- You will now have to reboot the system to apply the changes. Simply run `reboot`.
+- You will now have to reboot the system to apply the changes. You can do this by simply running `reboot`.
 
-- The next time you open your Terminal Emulator you will be using Bash.
+- The next time you open your Terminal Emulator, you will be in Bash Shell.
