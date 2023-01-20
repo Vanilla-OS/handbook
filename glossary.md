@@ -2,7 +2,7 @@
 title: Summary
 description: Summary of the book
 ---
-<div class="container">
+<div class="glossary container">
 {% assign posts = site.posts | sort_natural %}
 {% for post in posts %}
     {% assign first_letter = post.title | slice: 0, 1 | downcase %}

@@ -33,4 +33,8 @@
     .toggleSummary {
         display: block;
     }
+
+    .glossary.container {
+        max-width: 90%;
+    }
 }

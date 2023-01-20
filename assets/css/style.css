@@ -94,6 +94,10 @@ a:hover {
     margin: 0;
 }
 
+.glossary.container {
+    padding-bottom: 10vh;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
