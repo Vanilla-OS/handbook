@@ -50,13 +50,13 @@ sudo abroot exec apt install fish
 chsh -s /usr/bin/fish
 ```
 
-- After changing the Default Shell to Fish, we need to reboot the system one last time to apply the changes.
+- After changing the Default Shell to Fish, we need to reboot the system to apply the changes.
 
 - The next time you open your Terminal Emulator, you will be in Fish Shell.
 
 ## Revert your Default Shell to Bash
 
-- You can run the following command to revert your Default Shell to Bash:
+- You can run the following command to revert your Default Shell to Bash:-
 
 ```bash
 chsh -s /usr/bin/bash
@@ -65,3 +65,30 @@ chsh -s /usr/bin/bash
 - You will now have to reboot the system to apply the changes. You can do this by simply running `reboot`.
 
 - The next time you open your Terminal Emulator, you will be in Bash Shell.
+
+## Changing Container's Default Shell
+
+- `apx` containers initialized after changing your Default Shell will use your current Shell. You can check what Shell you are using by running the following command:-
+
+```bash
+echo $SHELL
+```
+
+- If you already initialized your containers before changing your Default Shell, you will have to reinitialize them with the following commands:-
+
+```bash
+apx init
+apx init --aur
+apx init --dnf
+apx init --apk
+```
+**_Warning_**: This will remove all applications installed inside the container!
+
+- If you wish to use a specific Shell for your container, you can manually set the SHELL variable before creating the container with the following commands:-
+
+```bash
+env SHELL=/usr/bin/zsh apx init
+env SHELL=/usr/bin/zsh apx init --aur
+env SHELL=/usr/bin/zsh apx init --dnf
+env SHELL=/usr/bin/zsh apx init --apk
+```
