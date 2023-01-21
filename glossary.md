@@ -5,7 +5,7 @@ description: Summary of the handbook
 <div class="glossary container">
 {% assign posts = site.posts | sort_natural %}
 {% for post in posts %}
-    {% assign first_letter = post.title | slice: 0 | downcase %}
+    {% assign first_letter = post.title | slice: 0, 1 | downcase %}
     {% if first_letter != current_letter %}
         {% unless forloop.first %}
             </ul>
