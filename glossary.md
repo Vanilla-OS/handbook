@@ -2,8 +2,9 @@
 title: Glossary
 description: Summary of the handbook
 ---
-<div class="container">
-{% for post in site.posts %}
+<div class="glossary container">
+{% assign posts = site.posts | sort_natural %}
+{% for post in posts %}
     {% assign first_letter = post.title | slice: 0 | downcase %}
     {% if first_letter != current_letter %}
         {% unless forloop.first %}

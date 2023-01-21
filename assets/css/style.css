@@ -99,6 +99,10 @@ a:hover {
     margin: 0 auto;
 }
 
+.glossary.container {
+    padding-bottom: 10vh;
+}
+
 .searchField {
     background: #fff;
     padding: 15px 20px;
