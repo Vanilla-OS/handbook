@@ -36,7 +36,7 @@ For the application to function ideally, add UDEV rules to your system.
 sudo mv ~/Downloads/60-openrgb.rules /etc/udev/rules.d/
 ```
 
-- After moving the UDEV rules, we need to reload the rules by running the following command:-
+- After moving the UDEV rules, you need to reload the rules by running the following command:-
 
 ```bash
 sudo udevadm control --reload-rules && sudo udevadm trigger
