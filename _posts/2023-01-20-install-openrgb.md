@@ -26,7 +26,7 @@ flatpak install flathub org.openrgb.OpenRGB
 
 ## Setting Up UDEV Rules
 
-For the application to function ideally, add UDEV rules to your system.
+For the application to function, add UDEV rules to your system.
 
 - First, install the UDEV rules by clicking [**here**](https://gitlab.com/CalcProgrammer1/OpenRGB/-/jobs/artifacts/master/raw/60-openrgb.rules?job=Linux+64+AppImage&inline=false).
 
