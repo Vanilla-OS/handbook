@@ -1,6 +1,6 @@
 ---
 title: Install OpenRGB
-description: Learn how to correctly install OpenRGB on Vanilla OS.
+description: Learn how to install OpenRGB on Vanilla OS.
 date: 2023-01-20
 layout: article
 authors: 
@@ -10,7 +10,7 @@ published: true
 
 ## Introduction
 
-[**OpenRGB**](https://openrgb.org/) is a great application for managing your RGB, however the Flatpak doesn't work correctly out of the box. This guide will help you install it.
+[**OpenRGB**](https://openrgb.org/) is an essential application for managing your RGB appliances. This guide will help you install the Flatpak version of OpenRGB correctly.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ published: true
 
 ## Installing OpenRGB
 
-- You can install OpenRGB from the "Gnome Software" application. Alternatively you can install it from the command line with the following command:-
+- You can install OpenRGB from the "Gnome Software" application. Alternatively, you can install it from the command line with the following command:-
 
 ```bash
 flatpak install flathub org.openrgb.OpenRGB
