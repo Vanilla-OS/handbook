@@ -10,18 +10,43 @@ published: true
 
 ## Introduction
 
-[**OpenRGB**](https://openrgb.org/) is an essential application for managing your RGB appliances. This guide will help you install the Flatpak version of OpenRGB correctly.
+[**OpenRGB**](https://openrgb.org/) is an essential application for managing your RGB appliances. This guide will help you install the Flatpak and AppImage of OpenRGB correctly.
 
-## Prerequisites
+## Flatpak
+
+### Prerequisites
 
 - Flatpak: You can find out how to install it [**here**](/2022/12/09/install-flatpaks.html).
 
-## Installing OpenRGB
+### Installing OpenRGB
 
 - You can install OpenRGB from the "Gnome Software" application. Alternatively, you can install it from the command line with the following command:-
 
 ```bash
 flatpak install flathub org.openrgb.OpenRGB
+```
+
+## AppImage
+
+### Prerequisites
+
+- AppImage Support: If you enabled AppImage in the "First Setup" when installing Vanilla OS, you won't have to do anything. If you didn't enable AppImage, run this command:-
+
+```bash
+sudo abroot exec apt install libfuse2
+```
+
+- After the installation is complete reboot the system. You can do this by typing `reboot`.
+
+### Installing OpenRGB
+
+- Install "Linux 64-bit" from the "Linux Binaries (AppImage)" section [**here**](https://gitlab.com/CalcProgrammer1/OpenRGB/-/releases/permalink/latest#Linux-64-bit).
+
+- Go to the directory where the AppImage is installed and make it an executable with these commmands:-
+
+```bash
+cd ~/Downloads/
+chmod +x <appimage-filename>
 ```
 
 ## Setting Up UDEV Rules
