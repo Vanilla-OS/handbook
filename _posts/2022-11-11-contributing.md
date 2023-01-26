@@ -88,7 +88,7 @@ For example:-
 "```bash
 sudo vso trigger-update --now
 ```" 
-(Note: " isn't required, and it is used for quoting the syntax here)
+(Note: " isn't required, and is used for quoting the syntax here)
 ```
 
 - The codeblock will have the following output:-
@@ -109,6 +109,18 @@ sudo vso trigger-update --now
 - Run `bundler exec jekyll serve` to build your site any time a source file changes and serve it locally.
   - Navigate to `http://127.0.0.1:4000/` or `http://localhost:4000/` in your browser to preview and test the page.
 - Now, commit the changes using `git` and create a PR in GitHub.
+
+**_Tip_**:-
+- You can test your pages on your phone using `bundler exec jekyll serve --host=<ip>`. 
+- Using `0.0.0.0` instead of a specific IP binds to port 4000 to any interface, which is prone to be blocked by your routers firewalls, so we recommended using a particular IP address with the `--host` flag. Now, after executing the command in any browser on your phone, go to this address `<ip>:4000`.
+- For example, if the IP you used is `192.168.0.123`, then you need to visit `192.168.0.123:4000` on mobile.
+
+## Embedding GitHub Gists
+
+- GitHub gists is allowed in posts for displaying and referencing custom mods and scripts.
+- For example, embedding this `<script src="https://gist.github.com/kbdharun/feca3da0c8213ae2b5cd02f3ea8e380c.js"></script>` will have the following output:-
+
+<script src="https://gist.github.com/kbdharun/feca3da0c8213ae2b5cd02f3ea8e380c.js"></script>
 
 ## Archiving guides
 

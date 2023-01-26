@@ -107,6 +107,13 @@ sudo vso trigger-update --now
 - Using `0.0.0.0` instead of a specific IP binds to port 4000 to any interface, which is prone to be blocked by your routers firewalls, so we recommended using a particular IP address with the `--host` flag. Now, after executing the command in any browser on your phone, go to this address `<ip>:4000`.
 - For example, if the IP you used is `192.168.0.123`, then you need to visit `192.168.0.123:4000` on mobile.
 
+## Embedding GitHub Gists
+
+- GitHub gists is allowed in posts for displaying and referencing custom mods and scripts.
+- For example, embedding this `<script src="https://gist.github.com/kbdharun/feca3da0c8213ae2b5cd02f3ea8e380c.js"></script>` will have the following output:-
+
+<script src="https://gist.github.com/kbdharun/feca3da0c8213ae2b5cd02f3ea8e380c.js"></script>
+
 ## Archiving guides
 
 - Removing guides and images from the repository isn't advised.
