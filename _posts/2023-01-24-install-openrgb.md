@@ -42,7 +42,7 @@ sudo abroot exec apt install libfuse2
 
 - Install "Linux 64-bit" from the "Linux Binaries (AppImage)" section [**here**](https://gitlab.com/CalcProgrammer1/OpenRGB/-/releases/permalink/latest#Linux-64-bit).
 
-- Go to the directory where the AppImage is installed and make it an executable with these commmands:-
+- Go to the directory where the AppImage is installed and make it an executable with these commands:-
 
 ```bash
 cd ~/Downloads/
