@@ -122,4 +122,4 @@ sudo vso trigger-update --now
 
 ## Discussions
 
-For discussions regarding the handbook, go to our [**official Discord server**](https://discord.gg/3cD2Q7Ht3S) in [**`#docs-writing`**](https://discord.com/channels/1023243680829681704/1035287786330263703) channel and for Discussions regarding translations go to the [**`#translations`**](https://discord.com/channels/1023243680829681704/1037028192583692358) channel. Alternatively, you can collaborate with the docs team on our [**Matrix room**](https://matrix.to/#/#vanillaos-docs:matrix.org).
+For discussions regarding the handbook, go to the [**`#docs-writing`**](https://discord.com/channels/1023243680829681704/1035287786330263703) channel in the [**official Discord server**](https://discord.gg/3cD2Q7Ht3S). For Discussions regarding translations go to the [**`#translations`**](https://discord.com/channels/1023243680829681704/1037028192583692358) channel. Alternatively, you can collaborate with the docs team in our [**Matrix room**](https://matrix.to/#/#vanillaos-docs:matrix.org).
