@@ -20,12 +20,12 @@ In Vanilla OS, primary drivers are installed automatically during the first setu
 **Vanilla Control Center** is a graphical tool that allows you to configure the
 operating system and install additional drivers. Launch it from the Applications menu, then click on the "Drivers" tab.
 
-![Vanilla Control Center](/assets/uploads/vanilla-control-center.webp)
+![Vanilla Control Center](/assets/uploads/Vanilla_Control_Center/vanilla-control-center.webp)
 
 Here you can see a list of all the drivers available, organized by category. To install a driver, click on it, then press the "Apply Changes" button in
 the top-right corner.
 
-![Vanilla Control Center - Drivers](/assets/uploads/vanilla-control-center-install-driver.webp)
+![Vanilla Control Center - Drivers](/assets/uploads/Vanilla_Control_Center/vanilla-control-center-install-driver.webp)
 
 Once the installation is complete, you will be requested to reboot the system.
 

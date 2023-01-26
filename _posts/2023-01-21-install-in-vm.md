@@ -37,26 +37,26 @@ flatpak run org.gnome.Boxes
 
 - Click on the "+" icon:-
 
-![Gnome Boxes 1](/assets/uploads/Boxes Assets/vm-boxes1.webp)
+![Gnome Boxes 1](/assets/uploads/VM_Post/vm-boxes1.webp)
 
 - Click on "Create virtual machine from file":-
 
-![Gnome Boxes 2](/assets/uploads/Boxes Assets/vm-boxes2.webp)
+![Gnome Boxes 2](/assets/uploads/VM_Post/vm-boxes2.webp)
 
 - Choose the Vanilla OS ISO from the file picker and click on "Open":-
 
-![Gnome Boxes 3](/assets/uploads/Boxes Assets/vm-boxes3.webp)
+![Gnome Boxes 3](/assets/uploads/VM_Post/vm-boxes3.webp)
 
 - Leave the Template on "Unknown OS" and click on "Next":-
 
-![Gnome Boxes 4](/assets/uploads/Boxes Assets/vm-boxes4.webp)
+![Gnome Boxes 4](/assets/uploads/VM_Post/vm-boxes4.webp)
 
 - We recommend you use a minimum of 4GB Memory to ensure good performance. You also need to use a minimum of 50GB Storage for ABRoot. Now click on "Create":-
 
-![Gnome Boxes 5](/assets/uploads/Boxes Assets/vm-boxes5.webp)
+![Gnome Boxes 5](/assets/uploads/VM_Post/vm-boxes5.webp)
 
 - Vanilla OS will now boot:-
 
-![Gnome Boxes 6](/assets/uploads/Boxes Assets/vm-boxes6.webp)
+![Gnome Boxes 6](/assets/uploads/VM_Post/vm-boxes6.webp)
 
 - For the installation steps, refer to [**this guide**](https://handbook.vanillaos.org/2022/11/05/installation.html#title7).

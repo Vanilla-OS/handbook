@@ -40,7 +40,7 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 
 - If you have disabled Flatpak, you can still install Snaps through GNOME Software.
 
-![GNOME Software](/assets/uploads/gnome-software-43.webp)
+![GNOME Software](/assets/uploads/Applications_Post/gnome-software-43.webp)
 
 ### Searching Applications
 
@@ -53,7 +53,7 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 - Updates are visible in the `Updates` panel in GNOME Software. In Vanilla OS, Updates are available for Snaps and Flatpaks through it. 
 - Automatic Updates are configured by clicking on `Update Preferences` in the Sidebar and enabling Automatic Updates. Optionally, you can switch on `Automatic Update Notifications` to be informed about updated applications.
 
-![GNOME Software Update Proferences](/assets/uploads/gnome-software-update-preferences.webp)
+![GNOME Software Update Proferences](/assets/uploads/Applications_Post/gnome-software-update-preferences.webp)
 
 ### Removing Applications
 
@@ -65,7 +65,7 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 - AppImage is one of the recommended formats for installing your applications. If you have enabled AppImage in the first setup, You can run it graphically using the following steps:-
     - Right-click on the file, then click on **Properties**.
     
-   ![AppImages Properties](/assets/uploads/appimages-nautilus-properties.webp)
+   ![AppImages Properties](/assets/uploads/Applications_Post/appimages-nautilus-properties.webp)
     
     - Enable the **Executable as Program** option.
     - Now, you can run the AppImage by right-clicking it and pressing run or by pressing enter/return key on the keyboard.
@@ -80,7 +80,7 @@ chmod +x <file>.appimage
 
 **_Note_**:- `chmod +x <file>.AppImage` makes the file executable.
 
- ![Running Krita using AppImage](/assets/uploads/appimage-krita.webp)
+ ![Running Krita using AppImage](/assets/uploads/Applications_Post/appimage-krita.webp)
 
 ## Installing Flatpaks from the Command line
 
@@ -142,11 +142,11 @@ snap remove <packages>
 
 - You can initialize the container graphically by clicking on the `+` icon in the Vanilla Control Center. (Vanilla Control Center also allows you to enter the apx container graphically.)
 
-![Vanilla Control Center - Sub System](/assets/uploads/vanilla-control-center-subsystem.webp)
+![Vanilla Control Center - Sub System](/assets/uploads/Applications_Post/vanilla-control-center-subsystem.webp)
 
 - After initialization, you can enter the container graphically by clicking on the `terminal` icon.
 
-![Vanilla Control Center - Sub System post initialization](/assets/uploads/vanilla-control-center-subsystem-example.webp)
+![Vanilla Control Center - Sub System post initialization](/assets/uploads/Applications_Post/vanilla-control-center-subsystem-example.webp)
 
 - apx works by creating minimal containers from the distribution's docker image. And it tightly integrates with the host using a distrobox backend.
 

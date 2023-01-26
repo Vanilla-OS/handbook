@@ -13,7 +13,8 @@ published: true
 
 ### You will need
 
-- A flash drive with at least 8GB of capacity.
+- A flash drive with at least 5-8GB of capacity.
+- An 64 bit (x64) processor.
 - A drive with at least 50GB of storage space (required for ABRoot A/B partitions).
 - 30 minutes to an hour of your time.
 
@@ -37,7 +38,7 @@ If you wish, you can also use different software that you are familiar with, suc
 
 Open Etcher, select the downloaded disk image and your USB flash drive, then click "Flash!".
 
-![Flashing](/assets/uploads/installation-flashing.webp)
+![Flashing](/assets/uploads/Installation/installation-flashing.webp)
 
 When the process is done, you will have a bootable USB stick with Vanilla OS on it.
 
@@ -49,7 +50,7 @@ If your device does not automatically boot into the Vanilla OS installation medi
 
 When your device has successfully booted from the USB stick, you should see a welcome screen inviting you to try or install Vanilla OS.
 
-![Welcome](/assets/uploads/installer-welcome.webp)
+![Welcome](/assets/uploads/Installation/installer-welcome.webp)
 
 You can try Vanilla OS without making any changes to your device. If you are satisfied, you can re-open the installer (the first icon in the dash) and proceed with the installation.
 
@@ -73,11 +74,11 @@ This section will guide you through installing Vanilla OS to an entire disk, **e
 
 Select the disk you want to install Vanilla OS to, click "Configure", select "Use Entire Disk", click "Apply" and review your changes.
 
-![Use Entire Disk](/assets/uploads/installation-partitioning.webp)
+![Use Entire Disk](/assets/uploads/Installation/installation-partitioning.webp)
 
 Create your user account and review the changes that will be made to your system. Click on "Install Vanilla OS" and the installation will begin.
 
-![Confirming the installation](/assets/uploads/installer-confirm-installation.webp)
+![Confirming the installation](/assets/uploads/Installation/installer-confirm-installation.webp)
 
 ### Advanced installation
 
@@ -87,7 +88,7 @@ This section will help you with manual partitioning in case this guide doesn't c
 
 Select the disk to which you want to install Vanilla OS and click "Configure". Select "Manual Partitioning" and click on the arrow next to it. Click on "Open GParted" to manually partition your disk.
 
-![Partitioning](/assets/uploads/installation-partitioning.webp)
+![Partitioning](/assets/uploads/Installation/installation-partitioning.webp)
 
 After you're done, select mount points and file systems for each of your partitions. You might need to close and re-open the installer for new partitions to appear.
 
@@ -95,7 +96,7 @@ Click "Apply" and review your changes.
 
 Create your user account and review the changes that will be made to your system. Click on "Install Vanilla OS" and the installation will begin.
 
-![Confirming the installation](/assets/uploads/installer-confirm-installation.webp)
+![Confirming the installation](/assets/uploads/Installation/installer-confirm-installation.webp)
 
 ## Booting into Vanilla OS
 
