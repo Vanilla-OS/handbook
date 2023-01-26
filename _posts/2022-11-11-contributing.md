@@ -91,7 +91,7 @@ sudo vso trigger-update --now
 (Note: " isn't required, and is used for quoting the syntax here)
 ```
 
-- The codeblock will have the following output:-
+- The code block will have the following output:-
 
 ```bash
 sudo vso trigger-update --now
@@ -112,7 +112,7 @@ sudo vso trigger-update --now
 
 **_Tip_**:-
 - You can test your pages on your phone using `bundler exec jekyll serve --host=<ip>`. 
-- Using `0.0.0.0` instead of a specific IP binds to port 4000 to any interface, which is prone to be blocked by your routers firewalls, so we recommended using a particular IP address with the `--host` flag. Now, after executing the command in any browser on your phone, go to this address `<ip>:4000`.
+- Using `0.0.0.0` instead of a specific IP binds port 4000 to any interface, which is prone to be blocked by your routers firewalls, so we recommended using a particular IP address with the `--host` flag. Now, after executing the command in any browser on your phone, go to this address `<ip>:4000`.
 - For example, if the IP you used is `192.168.0.123`, then you need to visit `192.168.0.123:4000` on your mobile.
 
 ## Embedding GitHub Gists
@@ -130,4 +130,4 @@ sudo vso trigger-update --now
 
 ## Discussions
 
-For discussions regarding the handbook, go to our [**official Discord server**](https://discord.gg/3cD2Q7Ht3S) in [**`#docs-writing`**](https://discord.com/channels/1023243680829681704/1035287786330263703), channel and for Discussions regarding translations go to the [**`#translations`**](https://discord.com/channels/1023243680829681704/1037028192583692358) channel. Alternatively, you can collaborate with the docs team on our [**Matrix room**](https://matrix.to/#/#vanillaos-docs:matrix.org).
+For discussions regarding the handbook, go to our [**official Discord server**](https://discord.gg/3cD2Q7Ht3S) in [**`#docs-writing`**](https://discord.com/channels/1023243680829681704/1035287786330263703) channel and for Discussions regarding translations go to the [**`#translations`**](https://discord.com/channels/1023243680829681704/1037028192583692358) channel. Alternatively, you can collaborate with the docs team on our [**Matrix room**](https://matrix.to/#/#vanillaos-docs:matrix.org).

@@ -125,7 +125,7 @@ apx export --aur --bin bundler
 **_Tip_**:-
 
 - You can test your pages on your phone using `bundler exec jekyll serve --host=<ip>`. 
-- Using `0.0.0.0` instead of a specific IP binds to port 4000 to any interface, which is prone to be blocked by your routers firewalls, so we recommended using a particular IP address with the `--host` flag. Now, after executing the command in any browser on your phone, go to this address `<ip>:4000`.
+- Using `0.0.0.0` instead of a specific IP binds port 4000 to any interface, which is prone to be blocked by your routers firewalls, so we recommended using a particular IP address with the `--host` flag. Now, after executing the command in any browser on your phone, go to this address `<ip>:4000`.
 - For example, if the IP you used is `192.168.0.123`, then you need to visit `192.168.0.123:4000` on your mobile.
 
 ## Conclusion

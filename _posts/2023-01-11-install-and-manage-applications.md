@@ -169,6 +169,12 @@ exit
 apx export <packages>
 ```
 
+- You can export the installed binary to use it with the host directly using the following command:-
+
+```bash
+apx export --bin <package>
+```
+
 ### Uninstalling Applications from the Ubuntu Container
 
 - You can uninstall applications from the Ubuntu container using the following command:-
@@ -186,6 +192,12 @@ apx enter
 sudo apt remove <packages>
 exit
 apx unexport <packages>
+```
+
+- You can unexport the exported binary from the host using the following command:-
+
+```bash
+apx unexport --bin <package>
 ```
 
 ### Installing Applications in the Fedora Container
@@ -207,6 +219,12 @@ exit
 apx export --dnf <packages>
 ```
 
+- You can export the installed binary to use it with the host directly using the following command:-
+
+```bash
+apx export --dnf --bin <package>
+```
+
 ### Uninstalling Applications from the Fedora Container
 
 - You can uninstall applications from the Fedora container using the following command:-
@@ -224,6 +242,12 @@ apx enter --dnf
 sudo dnf remove <packages>
 exit
 apx unexport --dnf <packages>
+```
+
+- You can unexport the exported binary from the host using the following command:-
+
+```bash
+apx unexport --dnf --bin <package>
 ```
 
 ### Installing Applications in the Arch Linux Container
@@ -247,6 +271,12 @@ apx export --aur <packages>
 
 **_Tip_**: Inside a container to install AUR packages, first run `sudo pacman -S --needed git base-devel`, then run `yay -S <packages>` to install the packages using `yay`.
 
+- You can export the installed binary to use it with the host directly using the following command:-
+
+```bash
+apx export --aur --bin <package>
+```
+
 ### Uninstalling Applications from the Arch Linux Container
 
 - You can uninstall applications from the Arch Linux container using the following command:-
@@ -264,6 +294,12 @@ apx enter --aur
 sudo pacman -Rs <packages>
 exit
 apx unexport --aur <packages>
+```
+
+- You can unexport the exported binary from the host using the following command:-
+
+```bash
+apx unexport --aur --bin <package>
 ```
 
 ### Installing Applications in the Alpine Linux Container
@@ -285,6 +321,12 @@ exit
 apx export --apk <packages>
 ```
 
+- You can export the installed binary to use it with the host directly using the following command:-
+
+```bash
+apx export --apk --bin <package>
+```
+
 ### Uninstalling Applications from the Alpine Linux Container
 
 - You can uninstall applications from the Alpine Linux container using the following command:-
@@ -304,6 +346,12 @@ exit
 apx unexport --apk <packages>
 ```
 
+- You can unexport the exported binary from the host using the following command:-
+
+```bash
+apx unexport --aur --bin <package>
+```
+
 ## Installing DEBs and RPMs in apx
 
 ### Sideloading DEBs
@@ -317,12 +365,24 @@ apx export <package>
 
 - **_Note_**:- Using `apx export` is optional. It creates a desktop file entry (icon) in the Application menu for the installed DEB package.
 
+- You can export the installed binary to use it with the host directly using the following command:-
+
+```bash
+apx export --bin <package>
+```
+
 ### Uninstalling DEBs
 
 - You can uninstall DEBs from the Ubuntu container using the following command:-
 
 ```bash
 apx remove <package>
+```
+
+- You can unexport the exported binary from the host using the following command:-
+
+```bash
+apx unexport --bin <package>
 ```
 
 - **_Note_**:- If the desktop entry is still present, execute this command `apx unexport <package>`.
@@ -338,6 +398,12 @@ apx export --dnf <package>
 
 - **_Note_**:- Using `apx export --dnf` is optional. It creates a desktop file entry (icon) in the Application menu for the installed RPM package. If a desktop entry is available, skip this command.
 
+- You can export the installed binary to use it with the host directly using the following command:-
+
+```bash
+apx export --dnf --bin <package>
+```
+
 ### Uninstalling RPMs
 
 - You can uninstall RPM packages from the Fedora container using the following command:-
@@ -347,6 +413,11 @@ apx remove --dnf <package>
 ```
 
 - **_Note_**:- If the desktop entry is still present, execute this command `apx unexport --dnf <package>`.
+- You can unexport the exported binary from the host using the following command:-
+
+```bash
+apx unexport --dnf --bin <package>
+```
 
 ## Conclusion
 
