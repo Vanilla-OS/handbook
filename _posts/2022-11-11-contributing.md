@@ -101,7 +101,7 @@ sudo vso trigger-update --now
 
 ## Testing the guide locally using Jekyll, Bundler
 
-- You can install **Jekyll** from [**this page**](https://jekyllrb.com/docs/installation/) and **Bundler** can be installed from [**this page**](https://bundler.io).
+- You can install **Jekyll** from [**this page**](https://jekyllrb.com/docs/installation/) and **Bundler** can be installed from [**this page**](https://bundler.io). Or you can follow these steps in [**Vanilla OS**](/2023/01/23/install-jekyll-and-bundler.html).
 - Clone your forked repository using `git` or `gh`.
 - Add the guide to the correct destination in the cloned directory.
 - Run `bundler install` to install necessary packages (this step is required only once and doesn't require re-running it in future).
