@@ -29,6 +29,8 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 - **DNF**:- `dnf` (Dandified YUM) is the successor to YUM. It is a powerful package manager for installing and managing applications on rpm-based distributions. 
 - **AUR**:- `aur` (Arch User Repository) is the largest community-maintained repository with thousands of native packages for Arch Linux and its derivatives.
 - **APK**:- `apk` (Alpine Linux package keeper) is a package manager which allows installing and managing applications on Alpine Linux.
+- **ZYPPER**:- `zypper` is a package manager on openSUSE for installing, updating and removing packages. And also for managing repositories.
+- **XBPS**:- `xbps` (X Binary Package System) is a fast package manager on Void Linux that has been designed and implemented from scratch for efficiently managing your packages.
 - **DEB**:- `deb` (Debian Packages) is a file format for installing and managing applications on Debian-based systems. It's an equivalent file extension to `.exe` in Windows and `.rpm` in GNU/Linux.
 - **RPM**:- `rpm` (Red Hat package manager) is a file format for installing and managing applications on Red Hat-based systems. It's an equivalent file extension to `.exe` in Windows and `.deb` in GNU/Linux.
 
@@ -350,6 +352,106 @@ apx unexport --apk <packages>
 
 ```bash
 apx unexport --aur --bin <package>
+```
+
+### Installing Applications in the openSUSE Container
+
+- You can install applications in the openSUSE container using the following command:-
+
+```bash
+apx install --zypper <packages>
+```
+
+- This command will automatically detect the desktop file entry in the package and add it to the Application menu and Vanilla Control Center.
+
+- Alternatively, you can install the applications by entering the openSUSE container using the following commands:-
+
+```bash
+apx enter --zypper
+sudo zypper install <packages>
+exit
+apx export --zypper <packages>
+```
+
+- You can export the installed binary to use it with the host directly using the following command:-
+
+```bash
+apx export --zypper --bin <package>
+```
+
+### Uninstalling Applications from the openSUSE Container
+
+- You can uninstall applications from the openSUSE container using the following command:-
+
+```bash
+apx remove --zypper <package>
+```
+
+- This command will automatically detect and remove the desktop file entry.
+
+- Alternatively, you can uninstall the applications by entering the openSUSE container using the following commands:-
+
+```bash
+apx enter --zypper
+sudo zypper remove <packages>
+exit
+apx unexport --zypper <packages>
+```
+
+- You can unexport the exported binary from the host using the following command:-
+
+```bash
+apx unexport --zypper --bin <package>
+```
+
+### Installing Applications in the Void Linux Container
+
+- You can install applications in the Void Linux container using the following command:-
+
+```bash
+apx install --xbps <packages>
+```
+
+- This command will automatically detect the desktop file entry in the package and add it to the Application menu and Vanilla Control Center.
+
+- Alternatively, you can install the applications by entering the Void Linux container using the following commands:-
+
+```bash
+apx enter --xbps
+sudo xbps-install <packages>
+exit
+apx export --xbps <packages>
+```
+
+- You can export the installed binary to use it with the host directly using the following command:-
+
+```bash
+apx export --xbps --bin <package>
+```
+
+### Uninstalling Applications from the Void Linux Container
+
+- You can uninstall applications from the Void Linux container using the following command:-
+
+```bash
+apx remove --xbps <package>
+```
+
+- This command will automatically detect and remove the desktop file entry.
+
+- Alternatively, you can uninstall the applications by entering the Void Linux container using the following commands:-
+
+```bash
+apx enter --xbps
+sudo xbps-remove <packages>
+exit
+apx unexport --xbps <packages>
+```
+
+- You can unexport the exported binary from the host using the following command:-
+
+```bash
+apx unexport --xbps --bin <package>
 ```
 
 ## Installing DEBs and RPMs in apx
