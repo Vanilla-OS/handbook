@@ -30,7 +30,7 @@ flatpak install flathub org.openrgb.OpenRGB
 
 ### Prerequisites
 
-- AppImage Support: If you enabled AppImage in the "First Setup" when installing Vanilla OS, you won't have to do anything. If you didn't enable AppImage, run this command:-
+- AppImage Support: If you have enabled AppImage in the "First Setup" when installing Vanilla OS, this step isn't necessary. Or else, run this command:-
 
 ```bash
 sudo abroot exec apt install libfuse2
