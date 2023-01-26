@@ -87,8 +87,8 @@ apx init --apk
 - If you wish to use a specific Shell for your container, you can manually set the SHELL variable before creating the container with the following commands:-
 
 ```bash
-env SHELL=/usr/bin/zsh apx init
-env SHELL=/usr/bin/zsh apx init --aur
-env SHELL=/usr/bin/zsh apx init --dnf
-env SHELL=/usr/bin/zsh apx init --apk
+env SHELL=/path/to/shell apx init
+env SHELL=/path/to/shell apx init --aur
+env SHELL=/path/to/shell apx init --dnf
+env SHELL=/path/to/shell apx init --apk
 ```

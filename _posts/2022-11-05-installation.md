@@ -14,7 +14,7 @@ published: true
 ### You will need
 
 - A flash drive with at least 5-8GB of capacity.
-- An 64 bit (x64) processor.
+- A 64 bit (x64) processor.
 - A drive with at least 50GB of storage space (required for ABRoot A/B partitions).
 - 30 minutes to an hour of your time.
 

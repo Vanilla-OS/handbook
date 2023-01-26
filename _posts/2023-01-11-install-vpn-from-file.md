@@ -20,7 +20,7 @@ This guide provides a step-by-step process for installing an OpenVPN file graphi
 ![Search for vpn](/assets/uploads/OpenVPN/install-openvpn-from-file-search.webp)
 
 - Select "Network" from the Settings search result.
--  This will bring you to the "Network" panel interface.
+- This will bring you to the "Network" panel interface.
 	- Alternatively, you can directly navigate to the "Network" panel by opening Settings from the Control Center in the top right corner.
 	
 ## Importing the OpenVPN file
@@ -38,4 +38,4 @@ _**Note**_: You may be prompted to enter login credentials after installing the 
 
 ## Conclusion
 
-- Now, you can successfully connect to the OpenVPN profile seamlessly.
+- You can now successfully connect to the OpenVPN profile seamlessly.

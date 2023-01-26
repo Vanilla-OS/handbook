@@ -96,7 +96,7 @@ sudo vso trigger-update --now
 - You can install **Jekyll** from [**this page**](https://jekyllrb.com/docs/installation/) and **Bundler** can be installed from [**this page**](https://bundler.io). Or you can follow these steps in [**Vanilla OS**](https://handbook.vanillaos.org/2023/01/23/install-jekyll-and-bundler.html).
 - Clone your forked repository using `git` or `gh`.
 - Add the guide to the correct destination in the cloned directory.
-- Run `bundler install` to install necessary packages (this step is required only once and doesn't require re-running it in future).
+- Run `bundler install` to install necessary packages (This step is required only once and doesn't require re-running it in future. You must have a Gemfile in the repository for this to work).
 - Run `bundler exec jekyll build` to build the page to `./_site` once. Then you can either test the pages manually or use the `jekyll serve` command.
 - Run `bundler exec jekyll serve` to build your site any time a source file changes and serve it locally.
   - Navigate to `http://127.0.0.1:4000/` or `http://localhost:4000/` in your browser to preview and test the page.
@@ -104,8 +104,8 @@ sudo vso trigger-update --now
 
 **_Tip_**:-
 - You can test your pages on your phone using `bundler exec jekyll serve --host=<ip>`. 
-- Using `0.0.0.0` instead of a specific IP binds port 4000 to any interface, which is prone to be blocked by your routers firewalls, so we recommended using a particular IP address with the `--host` flag. Now, after executing the command in any browser on your phone, go to this address `<ip>:4000`.
-- For example, if the IP you used is `192.168.0.123`, then you need to visit `192.168.0.123:4000` on your mobile.
+- Using `0.0.0.0` instead of a specific IP binds port 4000 to any interface, which is prone to be blocked by your routers firewalls. That's why we recommended using a particular IP address with the `--host` flag. After executing the command in any browser on your phone, go to this address `<ip>:4000`.
+- For example, if the IP you used is `192.168.0.123`, you will need to visit `192.168.0.123:4000` on your mobile.
 
 ## Embedding GitHub Gists
 
