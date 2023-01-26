@@ -36,7 +36,7 @@ flatpak install flathub org.openrgb.OpenRGB
 sudo abroot exec apt install libfuse2
 ```
 
-- After the installation is complete reboot the system. You can do this by typing `reboot`.
+- After the successful installation, reboot your system. You can do this by typing `reboot`.
 
 ### Installing OpenRGB
 
