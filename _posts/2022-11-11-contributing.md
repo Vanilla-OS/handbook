@@ -12,7 +12,7 @@ published: true
 
 - Thank you for your interest in our project. This guide will help you with writing articles.
 - The [**Handbook**](https://github.com/Vanilla-OS/handbook) uses Jekyll and GitHub pages for generating the website.
-- Handbook progress with a to-do list is present at our [**GitHub Project**](https://github.com/orgs/Vanilla-OS/projects/2).
+- Handbook progress with a to-do list is present at our [**GitHub project**](https://github.com/orgs/Vanilla-OS/projects/2).
 
 ## Prerequisites for Writing a guide
 
@@ -113,11 +113,11 @@ sudo vso trigger-update --now
 **_Tip_**:-
 - You can test your pages on your phone using `bundler exec jekyll serve --host=<ip>`. 
 - Using `0.0.0.0` instead of a specific IP binds to port 4000 to any interface, which is prone to be blocked by your routers firewalls, so we recommended using a particular IP address with the `--host` flag. Now, after executing the command in any browser on your phone, go to this address `<ip>:4000`.
-- For example, if the IP you used is `192.168.0.123`, then you need to visit `192.168.0.123:4000` on mobile.
+- For example, if the IP you used is `192.168.0.123`, then you need to visit `192.168.0.123:4000` on your mobile.
 
 ## Embedding GitHub Gists
 
-- GitHub gists is allowed in posts for displaying and referencing custom mods and scripts.
+- GitHub gists are allowed for referencing custom mods and scripts in posts.
 - For example, embedding this `<script src="https://gist.github.com/kbdharun/feca3da0c8213ae2b5cd02f3ea8e380c.js"></script>` will have the following output:-
 
 <script src="https://gist.github.com/kbdharun/feca3da0c8213ae2b5cd02f3ea8e380c.js"></script>
@@ -130,4 +130,4 @@ sudo vso trigger-update --now
 
 ## Discussions
 
-Discussions regarding the handbook are done in the [**official Discord server**](https://discord.gg/3cD2Q7Ht3S) in [**`#docs-writing`**](https://discord.com/channels/1023243680829681704/1035287786330263703), and for Discussions regarding translations go to the [**`#translations`**](https://discord.com/channels/1023243680829681704/1037028192583692358) channel.
+For discussions regarding the handbook, go to our [**official Discord server**](https://discord.gg/3cD2Q7Ht3S) in [**`#docs-writing`**](https://discord.com/channels/1023243680829681704/1035287786330263703), channel and for Discussions regarding translations go to the [**`#translations`**](https://discord.com/channels/1023243680829681704/1037028192583692358) channel. Alternatively, you can collaborate with the docs team on our [**Matrix room**](https://matrix.to/#/#vanillaos-docs:matrix.org).
