@@ -11,11 +11,13 @@ published: true
 
 ## Preparation
 
-### You will need
+### Requirements
 
-- A flash drive with at least 8GB of capacity.
-- A drive with at least 50GB of storage space (required for ABRoot A/B partitions).
+- A flash drive with at least **8GB** of capacity.
+- A drive with at least **50GB** of storage space (required for [ABRoot](https://documentation.vanillaos.org/docs/ABRoot/) A/B partitions).
+- At least **4GB** of **RAM** (**8GB recommended**).
 - 30 minutes to an hour of your time.
+- Good to have **Secure Boot enabled**.
 
 ### Creating a bootable USB stick
 
