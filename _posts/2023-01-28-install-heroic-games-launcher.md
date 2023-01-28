@@ -44,9 +44,13 @@ chmod +x Heroic-*.AppImage
 
 ## Troubleshooting
 
+In this section, we will show you how to fix some common issues you may encounter when using Heroic Games Launcher.
+
 ### Poor performance
 
 If you are experiencing poor performance, ensure that you have the latest graphics drivers installed. To do so, refer to the [Install additional drivers in Vanilla OS](https://handbook.vanillaos.org/2022/12/10/install-additional-drivers.html) page.
+
+Also, check the game's system requirements and ensure that your system meets them.
 
 ### Epic Games Store Login doesn't work
 
