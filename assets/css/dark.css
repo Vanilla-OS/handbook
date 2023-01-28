@@ -16,7 +16,7 @@
 		color: #fff;
 	}
 
-	a:hover {
+	a:hover, .articleBody a {
 		color: #eee;
 		border-bottom: 1px dotted #eee;
 	}
