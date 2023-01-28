@@ -98,6 +98,13 @@ a:hover, .articleBody a {
     padding-bottom: 10vh;
 }
 
+.glossary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
