@@ -39,7 +39,7 @@ sudo abroot exec apt install -y fuse3 libfuse2 appimagelauncher
 then reboot your system. You can now run the AppImage by setting the executable flag and double-clicking on it:
 
 ```bash
-chmod +x Heroic-1.10.0.AppImage
+chmod +x Heroic-*.AppImage
 ```
 
 ## Troubleshooting
