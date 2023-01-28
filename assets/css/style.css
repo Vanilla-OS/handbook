@@ -51,7 +51,7 @@ a {
     gap: 5px;
 }
 
-a:hover {
+a:hover, .articleBody a {
     border-bottom: 1px dotted #000;
 }
 
