@@ -16,7 +16,7 @@ published: true
 
 - Install AppImageLauncher through Terminal
 
-- Open Terminal and run, the following commands:-
+- Open `Terminal` and run, the following commands:-
 
 1. Entering abroot shell
 ```bash
@@ -46,5 +46,5 @@ For the application to function, double left click any .AppImage to run AppImage
 
   - AppImageLauncher will display two options 
   
-    - "Run once" - This option will temporarily run the application
-    - "Integrate and run" - This option will not only run the application, but will also integrate the .AppImage into your file system. 
+    - `Run once` - This option will temporarily run the application
+    - `Integrate and run` - This option will not only run the application, but will also integrate the .AppImage into your file system. 
