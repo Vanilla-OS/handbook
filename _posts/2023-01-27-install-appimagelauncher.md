@@ -19,23 +19,23 @@ published: true
 - Open Terminal and run, the following commands:-
 
 1. Entering abroot shell
-```
+```bash
 sudo abroot shell
 ```
 2. Installing Software Properties 
-```
+```bash
 apt install -y software-properties-common
 ```
 3. Adding Apt Repository 
-```
+```bash
 add-apt-repository --yes ppa:appimagelauncher-team/stable
 ```
 4. Installing AppImageLauncher
-```
+```bash
 apt install -y fuse3 libfuse2 appimagelauncher
 ```
 5. Exiting Shell
-```
+```bash
 exit
 ```
 6. Reboot 
