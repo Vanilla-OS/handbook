@@ -9,10 +9,11 @@ description: Summary of the handbook
     {% if first_letter != current_letter %}
         {% unless forloop.first %}
             </ul>
-            <br />
+        </div>
         {% endunless %}
-        <a id="{{ first_letter }}" href="#{{ first_letter }}"><h2><b>{{ first_letter | upcase }}</b></h2></a>
-        <ul>
+        <div class="glossary-item card">
+            <a id="{{ first_letter }}" href="#{{ first_letter }}"><h2><b>{{ first_letter | upcase }}</b></h2></a>
+            <ul>
         {% assign current_letter = first_letter %}
     {% endif %}
     <li><a href="{{ post.url }}">

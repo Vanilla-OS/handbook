@@ -51,7 +51,7 @@ a {
     gap: 5px;
 }
 
-a:hover {
+a:hover, .articleBody a {
     border-bottom: 1px dotted #000;
 }
 
@@ -96,6 +96,13 @@ a:hover {
 
 .glossary.container {
     padding-bottom: 10vh;
+}
+
+.glossary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
 }
 
 .container {
