@@ -11,6 +11,7 @@ defaults:
     values:
       layout: "default"
 
+url: https://handbook.vanillaos.org
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

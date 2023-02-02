@@ -20,4 +20,3 @@ description: Summary of the handbook
 - {{ post.title }}
 </a></li>
 {% endfor %}
-<br><br>
