@@ -14,7 +14,7 @@ published: true
 ### Requirements
 
 - A flash drive with at least **8GB** of capacity.
-- A 64 bit (x64) processor.
+- A 64 bit (amd64) [x64] processor.
 - A drive with at least **50GB** of storage space (required for [ABRoot](https://documentation.vanillaos.org/docs/ABRoot/) A/B partitions).
 - At least **4GB** of **RAM** (**8GB recommended**).
 - 30 minutes to an hour of your time.
