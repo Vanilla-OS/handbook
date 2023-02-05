@@ -110,9 +110,6 @@ sudo vso trigger-update --now
 ## Embedding GitHub Gists
 
 - GitHub gists are allowed for referencing custom mods and scripts in posts.
-- For example, embedding this `<script src="https://gist.github.com/kbdharun/feca3da0c8213ae2b5cd02f3ea8e380c.js"></script>` will have the following output:-
-
-<script src="https://gist.github.com/kbdharun/feca3da0c8213ae2b5cd02f3ea8e380c.js"></script>
 
 ## Archiving guides
 
