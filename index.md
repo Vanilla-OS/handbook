@@ -36,6 +36,22 @@ description: Learn how to use Vanilla OS.
                     <span class="material-icons-outlined">arrow_forward</span>
                 </a>
             </div>
+            <div class="suggestItem card">
+                <b><a href="/2023/01/11/install-and-manage-applications.html">Install and manage Applications</a></b>
+                <p>Learn how to install and manage applications on Vanilla OS.</p>
+                <a href="/2023/01/11/install-and-manage-applications.html" class="buttonLink readLink">
+                    <span>Read</span>
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </a>
+            </div>
+            <div class="suggestItem card">
+                <b><a href="/2023/01/21/install-in-vm.html">Install Vanilla OS in a VM</a></b>
+                <p>Learn how to install Vanilla OS in a VM.</p>
+                <a href="/2023/01/21/install-in-vm.html" class="buttonLink readLink">
+                    <span>Read</span>
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </a>
+            </div>
              <div class="suggestItem card">
                 <b><a href="/glossary">All Guides</a></b>
                 <p>See all the available guides for Vanilla OS.</p>

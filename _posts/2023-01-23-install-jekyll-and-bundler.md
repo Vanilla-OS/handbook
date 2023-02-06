@@ -1,6 +1,6 @@
 ---
 title: Installing Jekyll & Bundler
-description: Learn how to install Jekyll & Bundler on Vanilla OS
+description: Learn how to install Jekyll & Bundler on Vanilla OS.
 date: 2023-01-23
 layout: article
 authors: 
