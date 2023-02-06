@@ -399,7 +399,7 @@ sudo apt install -y build-essential linux-headers-$(uname -r)
 - `exit` the transaction shell and `reboot` your system.
 
 - In VirtualBox, select "Insert Guest Additions CD image..." from the "Devices" menu at the top bar.
-- After mounting the CD image, type `cd -r /media/<username>/Vbox_GAs_<version> /tmp/vbox` in your terminal.
+- After mounting the CD image, type `cp -r /media/<username>/Vbox_GAs_<version> /tmp/vbox` in your terminal.
 (Temporary files in `/tmp` gets removed after a reboot)
 
 **_Note_**:- Contents inside `<>` is a placeholder and must be replaced with the required details.
