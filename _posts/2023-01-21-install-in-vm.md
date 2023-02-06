@@ -174,7 +174,7 @@ virt-manager
 
 ### Installation
 
-- Open Parallels Desktop and follow the on-screen prompts, skip installing Windows 11 (for now) if this is your first time using Parallels software.
+- Open Parallels Desktop and follow the on-screen prompts. Skip installing Windows 11 (for now) if this is your first time using Parallels software.
 
 ![Parallels 0](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-0.webp)
 
@@ -236,7 +236,7 @@ virt-manager
 
 ![Parallels 14](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-14.webp)
 
-- Finish virtual machine creation, by selecting "Continue".
+- Finish virtual machine creation by selecting "Continue".
 
 ![Parallels 15](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-15.webp)
 
@@ -248,7 +248,7 @@ virt-manager
 
 ![Parallels 17](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-17.webp)
 
-- From the Vanilla OS Gnome desktop, select "Activities"
+- From the Vanilla OS GNOME desktop, select "Activities"
 
 ![Parallels 18](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-18.webp)
 
@@ -256,15 +256,15 @@ virt-manager
 
 ![Parallels 19](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-19.webp)
 
-- Type `sudo abroot shell` into the Console and press enter to open up the transactional shell. The transactional shell allows us to safely install special drivers onto our immutable filesystem. Type `y` and press enter to proceed.
+- Type `sudo abroot shell` into the Console, and press enter to open up the transactional shell. The transactional shell allows you to install drivers and essential packages onto the immutable filesystem. Type `y` and press enter to proceed.
 
 ![Parallels 20](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-20.webp)
 
-- Type `sudo apt-get install dkms libelf-dev linux-headers-$(uname -r) build-essential` and press enter to install Parallels Tools system dependencies. Type `Y` and press enter to confirm the installation.
+- Type `sudo apt-get install dkms libelf-dev linux-headers-$(uname -r) build-essential`, press enter to install Parallels Tools system dependencies. Type `Y` and press enter to confirm the installation.
 
 ![Parallels 21](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-21.webp)
 
-- Once the system dependencies have been installed, type `exit` and press enter to leave the elevated transactional shell.
+- Once the system dependencies has been installed, type `exit` and press enter to leave the elevated transactional shell.
 
 ![Parallels 22](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-22.webp)
 
@@ -272,29 +272,29 @@ virt-manager
 
 ![Parallels 23](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-23.webp)
 
-- At the top-right corner of the Vanilla OS virtual machine window, there should be a triangle warning icon. Click it.
+- In the top-right corner of the Vanilla OS virtual machine window, there should be a triangle warning icon. Click it.
 
 ![Parallels 24](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-24.webp)
 
-- If you don't see the warning icon, or you've installed Parallels Tools previously, navigate to the MacOS menu bar and select "Actions -> Install Parallels Tools...".
+- If you can't see the warning icon, or you have installed Parallels Tools previously, navigate to the MacOS menu bar and select "Actions -> Install Parallels Tools...".
 
 ![Parallels 25](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-25.webp)
 
-- Read the Parallels Tools installation pop-up window and click "Continue".
+- Read the Parallels Tools installation pop up window and click "Continue".
 
 ![Parallels 26](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-26.webp)
 
-- Inside Vanilla OS, open the Files app and navigate to the Parallels Tools disc image folder in the left-side menu. Right-click inside the Parallels Tools folder, and select "Open in Console".
+- Inside Vanilla OS, open the Files app and navigate to the Parallels Tools disc image folder in the left-side menu. Right-click inside the Parallels Tools folder and select "Open in Console".
 
 ![Parallels 27](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-27.webp)
 
-- Type `cd ../` and press enter to move up one directory in the Linux filesystem. Type `cp -r 'Parallels Tools' /tmp/copy` and press enter to copy the Parallels Tools disc image folder to a temporary directory (Temporary files in `/tmp` get removed after a reboot). Vanilla OS won't execute this mounted virtual image directly by default, so we need to copy the folder and its contents to a safe temporary directory.
+- Type `cd ../` and press enter to move up one directory in the Linux filesystem. Type `cp -r 'Parallels Tools' /tmp/copy` and press enter to copy the Parallels Tools disc image folder to a temporary directory (Temporary files in `/tmp` get removed after a reboot). Vanilla OS will not execute this mounted virtual image by default, so we must copy the folder and its contents to a safe temporary directory.
 
 ![Parallels 28](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-28.webp)
 
-- Type `sudo abroot shell` and press enter to turn open up the transactional shell again.
+- Type `sudo abroot shell` and press enter to open up the transactional shell again.
 
-- Type `cd /tmp/copy` and press enter to instruct the Console to navigate to our new temporary directory. Type `sudo ./install` and press enter to begin installing Parallels Tools.
+- Type `cd /tmp/copy` and press enter to instruct the Console to navigate to the new temporary directory. Type `sudo ./install` and press enter to begin installing Parallels Tools.
 
 ![Parallels 30](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-29-30.webp)
 
@@ -306,7 +306,7 @@ virt-manager
 
 ![Parallels 32](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-32.webp)
 
-- Wait for the installation to finish. Press the tab, and then press the spacebar to exit. We will reboot later once we've exited the transactional shell.
+- Wait for the installation to finish. Press the tab, and then press the spacebar to exit. We will reboot later once we have exited the transactional shell.
 
 ![Parallels 33](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-33.webp)
 
@@ -314,7 +314,10 @@ virt-manager
 
 ![Parallels 34](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-34.webp)
 
-- Type `reboot` and press enter. You're finished! You can change more virtual machine performance/sharing/integration options using the Parallels settings menu in the Control Center. Please refer to the Parallels knowledgebase for details.
+- Type `reboot` and press enter. You have successfully configured your VM! 
+
+You can change more virtual machine performance/sharing/integration options using the Parallels settings menu in the Control Center. Please refer to the [Parallels Knowledge Base](https://kb.parallels.com) for details.
+
 
 ![Parallels 35](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-35.webp)
 
