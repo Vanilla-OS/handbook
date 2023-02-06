@@ -12,13 +12,13 @@ published: true
 
 ## Introduction
 
-If you are interested in Vanilla OS, it's a good idea to try it out in a VM before using it on your hardware to get used to Vanilla OS components. This guide will show you how to install Vanilla OS with various VM software.
+If you are interested in Vanilla OS, it's a good idea to try it out in a VM before using it on your hardware to get used to the Vanilla OS components. This guide will guide you through installing Vanilla OS with various VM software.
 
 ## Install Vanilla OS in Gnome Boxes
 
 ### Prerequisites
 
-- Check for Flatpak installed. If it isn't present, you can check out how to install it [**here**](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html).
+- Check whether Flatpak is installed. If it isn't present, you can check out how to install it [**here**](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html).
 
 - Install "Gnome Boxes" from the "Gnome Software" application. Alternatively, you can install it with the following command:-
 
@@ -52,7 +52,7 @@ flatpak run org.gnome.Boxes
 
 ![Gnome Boxes 4](/assets/uploads/VM_Post/Boxes/vm-boxes4.webp)
 
-- We recommend you use a minimum of 4GB Memory to ensure good performance. You also need to use a minimum of 50GB Storage for ABRoot. Now click on "Create".
+- We recommend you use a minimum of 4GB Memory to ensure good performance. You're also required to use a minimum of 50GB Storage for ABRoot. Now click on "Create".
 
 ![Gnome Boxes 5](/assets/uploads/VM_Post/Boxes/vm-boxes5.webp)
 
@@ -64,7 +64,7 @@ flatpak run org.gnome.Boxes
 
 ## Install Vanilla OS in VMWare Workstation Player
 
-- A VMWare Workstation Player Installation from [**here**](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
+- A VMWare Workstation Player Installation from [**here**](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html).
 - Install the Vanilla OS ISO [**here**](https://github.com/Vanilla-OS/os/releases/latest).
 
 ### Installation
@@ -86,7 +86,7 @@ flatpak run org.gnome.Boxes
 
 ![VMWare Workstation Player 4](/assets/uploads/VM_Post/VMWare/VMWare_4.webp)
 
-- Select a minimum of 50GB for Vanilla OS.
+- Select a minimum of 50GB for Vanilla OS, this is required for ABRoot.
 
 ![VMWare Workstation Player 5](/assets/uploads/VM_Post/VMWare/VMWare_5.webp)
 
@@ -100,7 +100,7 @@ flatpak run org.gnome.Boxes
 
 ![VMWare Workstation Player 8](/assets/uploads/VM_Post/VMWare/VMWare_8.webp)
 
-- Inside the live session, Click on the top right corner and click on the "Settings" icon. Alternatively, you can press on Windows or the Super key to open the "Activities overview" and then type "Settings" to access it. Now, Navigate to "Displays", and under "Resolution", select a different resolution to adjust the window size initially.
+- Inside the live session, click on the top right corner and click on the "Settings" icon. Alternatively, you can press on the windows/super key to open the "Activities overview" and then type "Settings" to access it. Now, Navigate to "Displays", under "Resolution" select a different resolution to adjust the window size initially.
 
 ![VMWare Workstation Player 9](/assets/uploads/VM_Post/VMWare/VMWare_9.webp)
 
@@ -114,7 +114,8 @@ flatpak run org.gnome.Boxes
 
 ### Prerequisites
 
-- A Virtual Machine Manager Installation from [**here**](https://virt-manager.org/) and necessary QEMU dependencies installed.
+- A Virtual Machine Manager Installation from [**here**](https://virt-manager.org/). 
+- The necessary QEMU dependencies installed.
 - Install the Vanilla OS ISO from [**here**](https://github.com/Vanilla-OS/os/releases/latest).
 
 ### Installation
@@ -128,7 +129,7 @@ virt-manager
 
 ![Virt manager 1](/assets/uploads/VM_Post/Virt-Manager/virt_manager_1.webp)
 
-- Click  "Local install media" and confirm the architecture as x86_64. Then, click on "Forward".
+- Click "Local install media" and confirm the architecture as x86_64. Then, click on "Forward".
 
 ![Virt manager 2](/assets/uploads/VM_Post/Virt-Manager/virt_manager_2.webp)
 
@@ -136,11 +137,9 @@ virt-manager
 
 **_Note_**:- `<year>` is a placeholder meaning select the most recent year.
 
-
 ![Virt manager 3](/assets/uploads/VM_Post/Virt-Manager/virt_manager_3.webp)
 
 - Allocate the required Memory and CPUs and click on "Forward".
-
 
 ![Virt manager 4](/assets/uploads/VM_Post/Virt-Manager/virt_manager_4.webp)
 
@@ -159,7 +158,7 @@ virt-manager
 ![Virt manager 8](/assets/uploads/VM_Post/Virt-Manager/virt_manager_8.webp)
 
 - Now, "Open" the virtual machine in the Graphical console.
-- Now, proceed with the Vanilla OS Installation.
+- When the VM is opened, proceed with the Vanilla OS Installation.
 - For additional installation steps, refer to [**this guide**](https://handbook.vanillaos.org/2022/11/05/installation.html#title7).
 
 **_Optionally_**:- You can enable "Auto resize VM with window" under the "Scale Display" menu in the "View" tab.
@@ -179,7 +178,7 @@ virt-manager
 
 ![Parallels 0](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-0.webp)
 
-- Navigate to the Parallels Desktop Control Center, and select the '+' button to add a new virtual machine.
+- Navigate to the Parallels Desktop Control Center, and select the "+" button to add a new virtual machine.
 
 ![Parallels 1](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-1.webp)
 
@@ -197,22 +196,19 @@ virt-manager
 
 - Select the `VanillaOS-<release>.iso` file.
 
-**_Note_**:- Contents inside `<>` is a placeholder.
+**_Note_**:- The content inside `<>` is a placeholder.
 
 ![Parallels 5](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-5.webp)
 
 - Parallels is unable to automatically detect the operating system inside of our `VanillaOS-<release>.iso`. This is normal, click "Continue".
 
-
 ![Parallels 6](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-6.webp)
 
-- Change "Windows" to '"Ubuntu Linux" from the drop-down menu that appears (Vanilla OS benefits from Ubuntu-centric Parallels features).
-
+- Change "Windows" to "Ubuntu Linux" from the drop-down menu that appears (Vanilla OS benefits from Ubuntu-centric Parallels features).
 
 ![Parallels 7](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-7.webp)
 
 - Rename your virtual machine to Vanilla OS (or whatever you like!).
-
 
 ![Parallels 8](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-8.webp)
 
@@ -252,7 +248,7 @@ virt-manager
 
 ![Parallels 17](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-17.webp)
 
-- From the Vanilla OS Gnome desktop, select 'Activities'
+- From the Vanilla OS Gnome desktop, select "Activities"
 
 ![Parallels 18](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-18.webp)
 
@@ -260,15 +256,15 @@ virt-manager
 
 ![Parallels 19](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-19.webp)
 
-- Type `sudo abroot shell` into the Console and press enter to turn on ABroot. ABroot mode allows us to safely install special drivers onto our immutable filesystem. Type `y` and press enter to proceed.
+- Type `sudo abroot shell` into the Console and press enter to open up the transactional shell. The transactional shell allows us to safely install special drivers onto our immutable filesystem. Type `y` and press enter to proceed.
 
 ![Parallels 20](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-20.webp)
 
-- Type `sudo apt-get install dkms libelf-dev linux-headers-$(uname -r) build-essential` and press enter to install Parallels Tools' system dependencies. Type `Y` and press enter to confirm the installation.
+- Type `sudo apt-get install dkms libelf-dev linux-headers-$(uname -r) build-essential` and press enter to install Parallels Tools system dependencies. Type `Y` and press enter to confirm the installation.
 
 ![Parallels 21](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-21.webp)
 
-- Once the system dependencies have been installed, type `exit` and press enter to leave the elevated ABroot mode.
+- Once the system dependencies have been installed, type `exit` and press enter to leave the elevated transactional shell.
 
 ![Parallels 22](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-22.webp)
 
@@ -288,29 +284,29 @@ virt-manager
 
 ![Parallels 26](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-26.webp)
 
-- Inside Vanilla OS, open the Files app and navigate to the Parallels Tools disc image folder in the left-side menu. Right-click inside the Parallels Tools folder, and select 'Open in Console'.
+- Inside Vanilla OS, open the Files app and navigate to the Parallels Tools disc image folder in the left-side menu. Right-click inside the Parallels Tools folder, and select "Open in Console".
 
 ![Parallels 27](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-27.webp)
 
-- Type `cd ../` and press enter to move up one directory in the Linux filesystem. Type `cp -r 'Parallels Tools' /tmp/copy` and press enter to copy the Parallels Tools disc image folder to a temporary directory (Temporary files in `/tmp` gets removed after a reboot). Vanilla OS won't execute this mounted virtual image directly by default, so we need to copy the folder and its contents to a 'safe' temporary directory.
+- Type `cd ../` and press enter to move up one directory in the Linux filesystem. Type `cp -r 'Parallels Tools' /tmp/copy` and press enter to copy the Parallels Tools disc image folder to a temporary directory (Temporary files in `/tmp` get removed after a reboot). Vanilla OS won't execute this mounted virtual image directly by default, so we need to copy the folder and its contents to a safe temporary directory.
 
 ![Parallels 28](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-28.webp)
 
-- Type `sudo abroot shell` and press enter to turn on ABroot mode again.
+- Type `sudo abroot shell` and press enter to turn open up the transactional shell again.
 
 - Type `cd /tmp/copy` and press enter to instruct the Console to navigate to our new temporary directory. Type `sudo ./install` and press enter to begin installing Parallels Tools.
 
 ![Parallels 30](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-29-30.webp)
 
-- The Console app background should turn blue with a grey Parallels Tools Installer text window. Press the spacebar to select the 'Next >' option.
+- The Console app background should turn blue with a grey Parallels Tools Installer text window. Press the spacebar to select the "Next >" option.
 
 ![Parallels 31](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-31.webp)
 
-- Confirm installation by pressing the spacebar to select 'Next >' again.
+- Confirm installation by pressing the spacebar to select "Next >" again.
 
 ![Parallels 32](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-32.webp)
 
-- Wait for the installation to finish. Press the tab, and then press the spacebar to exit. We will reboot later once we've turned off ABroot mode.
+- Wait for the installation to finish. Press the tab, and then press the spacebar to exit. We will reboot later once we've exited the transactional shell.
 
 ![Parallels 33](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-33.webp)
 
@@ -321,7 +317,6 @@ virt-manager
 - Type `reboot` and press enter. You're finished! You can change more virtual machine performance/sharing/integration options using the Parallels settings menu in the Control Center. Please refer to the Parallels knowledgebase for details.
 
 ![Parallels 35](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-35.webp)
-
 
 ## Install Vanilla OS in VirtualBox
 
@@ -337,19 +332,19 @@ virt-manager
 ```bash
 virtualbox
 ```
-- Click on New. (This will open the "Create Virtual Machine" Popup)
+- Click on "New". (This will open the "Create Virtual Machine" Popup)
 
 ![VirtualBox 5](/assets/uploads/VM_Post/Virtualbox/VirtualBox_5.webp)
 
-- Specify the name of your Virtual Machine and Installation folder and select the Vanilla OS ISO image you downloaded initially. Click on "Next".
+- Specify the name of your Virtual Machine and Installation folder, then select the Vanilla OS ISO image you downloaded earlier. Click on "Next".
 
 ![VirtualBox 1](/assets/uploads/VM_Post/Virtualbox/VirtualBox_1.webp)
 
-- Allocate the base memory and the number of processors shared with your VM. Also, Click the checkbox for "Enable EFI (special OSes only)". Click on "Next".
+- Allocate the base memory and the number of processors shared with your VM. Click the checkbox for "Enable EFI (special OSes only)", now click on "Next".
 
 ![VirtualBox 2](/assets/uploads/VM_Post/Virtualbox/VirtualBox_2.webp)
 
-- Allocate at least 50 GB of space for your VM. And Click on "Next".
+- Allocate at least 50 GB of space for your VM, this is required for ABRoot. Now click on "Next".
 
 ![VirtualBox 3](/assets/uploads/VM_Post/Virtualbox/VirtualBox_3.webp)
 
@@ -388,24 +383,25 @@ virtualbox
 
 [Virtualbox Guest Additions](https://www.virtualbox.org/manual/ch04.html) offers enhanced features, between the virtual machine and host, like Clipboard sharing, Seamless Windows, etc. 
 
-Due to the nature of ABRoot, the process of its installation is different. Follow this guide to Install it in Vanilla OS.
+Due to the nature of ABRoot, the process of its installation is different. Follow this guide to install it in Vanilla OS.
 
-- First, enter the ABRoot shell using the `sudo abroot shell` command, then execute the `sudo apt update` command.
-- Now, Install the required packages and dependencies using the following command:-
+- First, enter the transactional shell using the `sudo abroot shell` command, then execute the `sudo apt update` command.
+- Now, install the required packages and dependencies using the following command:-
 
 ```bash
 sudo apt install -y build-essential linux-headers-$(uname -r)
 ```
+
 - `exit` the transaction shell and `reboot` your system.
 
 - In VirtualBox, select "Insert Guest Additions CD image..." from the "Devices" menu at the top bar.
 - After mounting the CD image, type `cp -r /media/<username>/Vbox_GAs_<version> /tmp/vbox` in your terminal.
 (Temporary files in `/tmp` gets removed after a reboot)
 
-**_Note_**:- Contents inside `<>` is a placeholder and must be replaced with the required details.
+**_Note_**:- The content inside `<>` is a placeholder and must be replaced with the required details.
 
-- Now, enter ABRoot using `sudo abroot shell`, then run `cd /tmp` to change the current working directory.
-- Now, execute `./VBoxLinuxAdditions.run`. Then after successful execution, build the Kernel modules by typing `/sbin/rcvboxadd quicksetup all` in the terminal.
+- Now, enter the transactional shell using `sudo abroot shell`, then run `cd /tmp` to change the current working directory.
+- Now, execute `./VBoxLinuxAdditions.run`. After the successful execution, build the Kernel modules by typing `/sbin/rcvboxadd quicksetup all` in the terminal.
 - `exit` the transaction shell and `reboot` your system.
 
 ![VirtualBox 13](/assets/uploads/VM_Post/Virtualbox/VirtualBox_13.webp)

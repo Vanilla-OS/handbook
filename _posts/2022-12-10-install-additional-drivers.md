@@ -74,7 +74,7 @@ sudo apt install ./<driver>.deb
 - Alternatively, you can install DEBs using `dpkg`:-
 
 ```bash
- sudo dpkg -i <driver>.deb
+sudo dpkg -i <driver>.deb
 sudo apt-get install -f
 ```
 
