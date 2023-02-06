@@ -10,7 +10,7 @@ published: true
 
 ## Introduction
 
-[**Docker**](https://www.docker.com/) is an open platform for developing, shipping, and running applications in containerized environments. This guide deals with the steps to install the Docker engine and Docker desktop in Vanilla OS.
+[**Docker**](https://www.docker.com/) is an open platform for developing, shipping, and running applications in containerized environments. This guide provides the steps to install the Docker engine and Docker desktop in Vanilla OS.
 
 This guide is for advanced users. If your workflow doesn't require Docker, you can use [**Podman**](https://podman.io/) instead.
 
@@ -18,7 +18,7 @@ This guide is for advanced users. If your workflow doesn't require Docker, you c
 
 You can install the Docker engine using the following steps:-
 
-- First, enter the ABRoot shell using the following command:-
+- First, enter the transactional shell using the following command:-
 
 ```bash
 sudo abroot shell
@@ -48,24 +48,24 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 echo \ "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-- Then run `sudo apt update` after its completion, execute the following command:-
+- Then run `sudo apt update` after its completion. After the update is complete, execute the following command:-
 
 ```bash
 sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
-- Now, `exit` the transaction shell and `reboot` your system.
-- After Reboot, type `sudo docker run hello-world` in your terminal window. It will pull the image locally and display a message meaning the installation is successful.
+- Now, `exit` the transactional shell and `reboot` your system.
+- After the reboot, type `sudo docker run hello-world` in your terminal window. It will pull the image locally and display a message meaning the installation is successful.
 
-**_Note_**:- Set the location for saved Images and containers to `/home` to avoid filling up the root partition.
+**_Note_**:- Set the location for saved Images and Containers to `/home` to avoid filling up the root partition.
 
 ## Installing Docker Desktop
 
-You can install the Docker Desktop using the following steps:-
+You can install the Docker Desktop application using the following steps:-
 
-- First, Download the DEB file from [**here**](https://docs.docker.com/desktop/install/ubuntu/).
-- Then copy the file to `/tmp` (Temporary files in `/tmp` gets removed after a reboot) using the command `cp -r docker-desktop-<version>-<arch>.deb /tmp` (Note:- `<>` is a placeholder, replace it with the correct details) in an unprivileged terminal session.
-- Then, enter the ABRoot shell using the `sudo abroot shell` command.
+- First, download the DEB file from [**here**](https://docs.docker.com/desktop/install/ubuntu/).
+- Then copy the file to `/tmp` (Temporary files in `/tmp` get removed after a reboot) using the command `cp -r docker-desktop-<version>-<arch>.deb /tmp` (Note:- `<>` is a placeholder, replace it with the correct details) in an unprivileged terminal session.
+- Then, enter the transactional shell using the `sudo abroot shell` command.
 - Install the application using the following command:-
 
 ```bash
