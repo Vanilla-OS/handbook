@@ -1,6 +1,6 @@
 ---
-title: Summary
-description: Summary of the book
+title: Glossary
+description: Summary of the handbook
 ---
 <div class="glossary container">
 {% assign posts = site.posts | sort_natural %}
@@ -12,7 +12,7 @@ description: Summary of the book
         </div>
         {% endunless %}
         <div class="glossary-item card">
-            <a id="{{ first_letter }}" href="#{{ first_letter }}"><h2>{{ first_letter | upcase }}</h2></a>
+            <a id="{{ first_letter }}" href="#{{ first_letter }}"><h2><b>{{ first_letter | upcase }}</b></h2></a>
             <ul>
         {% assign current_letter = first_letter %}
     {% endif %}
