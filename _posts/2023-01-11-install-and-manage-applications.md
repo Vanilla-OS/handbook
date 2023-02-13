@@ -29,8 +29,9 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 - **DNF**:- `dnf` (Dandified YUM) is the successor to YUM. It is a powerful package manager for installing and managing applications on rpm-based distributions. 
 - **AUR**:- `aur` (Arch User Repository) is the largest community-maintained repository with thousands of native packages for Arch Linux and its derivatives.
 - **APK**:- `apk` (Alpine Linux package keeper) is a package manager which allows installing and managing applications on Alpine Linux.
-- **ZYPPER**:- `zypper` is a package manager on openSUSE for installing, updating and removing packages. And also for managing repositories.
+- **ZYPPER**:- `zypper` is a package manager on openSUSE for installing, updating and removing packages, and also for managing repositories.
 - **XBPS**:- `xbps` (X Binary Package System) is a fast package manager on Void Linux that has been designed and implemented from scratch for efficiently managing your packages.
+- **NIX**:- `nix` is a powerful package manager for Linux and other Unix systems that makes package management reliable and reproducible.
 - **DEB**:- `deb` (Debian Packages) is a file format for installing and managing applications on Debian-based systems. It's an equivalent file extension to `.exe` in Windows and `.rpm` in GNU/Linux.
 - **RPM**:- `rpm` (Red Hat package manager) is a file format for installing and managing applications on Red Hat-based systems. It's an equivalent file extension to `.exe` in Windows and `.deb` in GNU/Linux.
 
@@ -132,15 +133,17 @@ snap remove <packages>
 
 ## Installing Native Applications through apx
 
-- apx allows installing native applications from Ubuntu, Fedora, Arch Linux and Alpine Linux. These applications are tightly integrated with the host and can access the host's hardware.
+- `apx` allows installing native applications from Ubuntu, Fedora, Arch Linux and Alpine Linux. These applications are tightly integrated with the host and can access the host's hardware.
 
 ### Creating a Container 
 
-- apx allows initializing/creating containers manually through the command line or graphically through Vanilla Control Center. 
+- `apx` allows initializing/creating containers manually through the command line or graphically through Vanilla Control Center. 
   - `apx init` creates/reinitializes an Ubuntu container. 
   - `apx init --dnf` creates/reinitializes a Fedora container.
   - `apx init --aur` creates/reinitializes an Arch container.
   - `apx init --apk` creates/reinitializes an Alpine container.
+  - `apx init --zypper` creates/reinitializes an openSUSE Tumbleweed container.
+  - `apx init --xbps` creates/reinitializes a Void Linux container.
 
 - You can initialize the container graphically by clicking on the `+` icon in the Vanilla Control Center. (Vanilla Control Center also allows you to enter the apx container graphically.)
 
@@ -150,7 +153,15 @@ snap remove <packages>
 
 ![Vanilla Control Center - Sub System post initialization](/assets/uploads/Applications_Post/vanilla-control-center-subsystem-example.webp)
 
-- apx works by creating minimal containers from the distribution's docker image. And it tightly integrates with the host using a distrobox backend.
+- `apx` works by creating minimal containers from the distribution's docker image. And it tightly integrates with the host using a distrobox backend.
+
+### Setting up Nix
+
+- `apx` allows setting up nix on your system through the command line with the following command:-
+
+```bash
+apx init --nix` 
+```
 
 ### Installing Applications in Ubuntu Container
 
@@ -453,6 +464,36 @@ apx unexport --xbps <packages>
 ```bash
 apx unexport --xbps --bin <package>
 ```
+
+### Installing Applications with Nix
+
+- You can install applications with nix using the following command:-
+
+```bash
+apx install --nix <packages>
+```
+
+- You can install unfree applications with the `--allow-unfree` flag:-
+
+```bash
+apx install --nix --allow-unfree <packages>
+```
+
+- This command will automatically detect the desktop file entry in the package and add it to the Application menu, but you might have to relogin for it to appear.
+
+- It will also automatically create a binary which you can use with the host directly.
+
+### Uninstalling Applications with Nix
+
+- You can uninstall applications with nix using the following command:-
+
+```bash
+apx remove --nix <package>
+```
+
+- This command will automatically detect and remove the desktop file entry, but you might have to relogin for it to disappear.
+
+- It will also automatically remove the binary from the host.
 
 ## Installing DEBs and RPMs in apx
 
