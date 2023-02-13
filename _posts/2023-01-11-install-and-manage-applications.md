@@ -133,11 +133,11 @@ snap remove <packages>
 
 ## Installing Native Applications through apx
 
-- apx allows installing native applications from Ubuntu, Fedora, Arch Linux and Alpine Linux. These applications are tightly integrated with the host and can access the host's hardware.
+- `apx` allows installing native applications from Ubuntu, Fedora, Arch Linux and Alpine Linux. These applications are tightly integrated with the host and can access the host's hardware.
 
 ### Creating a Container 
 
-- apx allows initializing/creating containers manually through the command line or graphically through Vanilla Control Center. 
+- `apx` allows initializing/creating containers manually through the command line or graphically through Vanilla Control Center. 
   - `apx init` creates/reinitializes an Ubuntu container. 
   - `apx init --dnf` creates/reinitializes a Fedora container.
   - `apx init --aur` creates/reinitializes an Arch container.
@@ -153,11 +153,11 @@ snap remove <packages>
 
 ![Vanilla Control Center - Sub System post initialization](/assets/uploads/Applications_Post/vanilla-control-center-subsystem-example.webp)
 
-- apx works by creating minimal containers from the distribution's docker image. And it tightly integrates with the host using a distrobox backend.
+- `apx` works by creating minimal containers from the distribution's docker image. And it tightly integrates with the host using a distrobox backend.
 
 ### Setting up Nix
 
-- apx allows setting up nix on your system through the command line with the following command:-
+- `apx` allows setting up nix on your system through the command line with the following command:-
 
 ```bash
 apx init --nix` 
@@ -471,6 +471,12 @@ apx unexport --xbps --bin <package>
 
 ```bash
 apx install --nix <packages>
+```
+
+- You can install unfree applications with the `--allow-unfree` flag:-
+
+```bash
+apx install --nix --allow-unfree <packages>
 ```
 
 - This command will automatically detect the desktop file entry in the package and add it to the Application menu, but you might have to relogin for it to appear.
