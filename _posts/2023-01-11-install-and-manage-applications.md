@@ -160,7 +160,7 @@ snap remove <packages>
 - `apx` allows setting up nix on your system through the command line with the following command:-
 
 ```bash
-apx init --nix` 
+apx init --nix 
 ```
 
 ### Installing Applications in Ubuntu Container
