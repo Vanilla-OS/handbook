@@ -403,7 +403,7 @@ sudo apt install -y build-essential linux-headers-$(uname -r)
 
 **_Note_**:- The content inside `<>` is a placeholder and must be replaced with the required details.
 
-- Now, enter the transactional shell using `sudo abroot shell`, then run `cd /tmp` to change the current working directory.
+- Now, enter the transactional shell using `sudo abroot shell`, then run `cd /tmp/vbox` to change the current working directory.
 - Now, execute `./VBoxLinuxAdditions.run`. After the successful execution, build the Kernel modules by typing `/sbin/rcvboxadd quicksetup all` in the terminal.
 - `exit` the transaction shell and `reboot` your system.
 
