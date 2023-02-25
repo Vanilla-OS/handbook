@@ -1,4 +1,8 @@
+<div align="center">
+
 # Vanilla OS Handbook
+
+</div>
 
 - This is the official handbook for Vanilla OS. It contains tutorials, guides and
 other information to help you get the most out of your Vanilla OS installation.
