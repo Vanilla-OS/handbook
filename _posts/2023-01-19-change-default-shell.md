@@ -54,11 +54,11 @@ apx install --nix zsh
 
 - After installing Zsh, we need to add the path to Zsh in `/etc/shells` by following these steps:-
 
-```bash
-sudo nano /etc/shells
+```text
+- Execute: sudo nano /etc/shells
+- Add: `/home/<username>/.nix-profile/bin/zsh` (Note:- Replace the given placeholder with  your username).
+- Save and Exit.
 ```
-  1. Add: `/home/<username>/.nix-profile/bin/zsh` (_**Note**_:- Replace the given placeholder with  your username).
-  2. Save and Exit.
 
 After adding the path and saving the file, we need to change the Default Shell to Zsh with the following command:-
 
@@ -109,11 +109,10 @@ apx install --nix fish
 - After installing Fish, we need to add the path to Fish in `/etc/shells` by following these steps:-
 
 ```bash
-sudo nano /etc/shells
+- Execute: sudo nano /etc/shells
+- Add: `/home/<username>/.nix-profile/bin/fish` (Note:- Replace the given placeholder with  your username).
+- Save and Exit.
 ```
-
-1. Add: `/home/<username>/.nix-profile/bin/fish` (_**Note**_:- Replace the given placeholder with  your username).
-2. Save and Exit.
 
 After adding the path and saving the file, we need to change the Default Shell to Fish with the following command:-
 
