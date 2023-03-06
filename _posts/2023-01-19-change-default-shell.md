@@ -16,6 +16,8 @@ Vanilla OS allows you to change your Default Shell to optimize your workflow. Th
 
 ## Change your Default Shell to Zsh
 
+### ABRoot
+
 - First, we need to install Zsh on the Host System with the following command:-
 
 ```bash
@@ -28,6 +30,40 @@ sudo abroot exec apt install zsh
 
 ```bash
 chsh -s /usr/bin/zsh
+```
+
+- After changing the Default Shell to Zsh, we need to reboot the system to apply the changes.
+
+- The next time you open your Terminal Emulator, you will be prompted to set up Zsh.
+
+### Nix
+
+- First, we need to initialize Nix with Apx by running the following command:-
+
+```bash
+apx init --nix
+```
+
+- After initializing Nix, we need to reboot the system to use it. You can do this by simply running `reboot`.
+
+- After rebooting the system, we need to install Zsh with Nix by running the following command:-
+
+```bash
+apx install --nix zsh
+```
+
+- After installing Zsh, we need to add the path to Zsh in `/etc/shells` by following these steps:-
+
+```bash
+sudo nano /etc/shells
+```
+  1. Add: `/home/<username>/.nix-profile/bin/zsh` (_**Note**_:- Replace the given placeholder with  your username).
+  2. Save and Exit.
+
+After adding the path and saving the file, we need to change the Default Shell to Zsh with the following command:-
+
+```bash
+chsh -s /home/<username>/.nix-profile/bin/zsh
 ```
 
 - After changing the Default Shell to Zsh, we need to reboot the system to apply the changes.
@@ -48,6 +84,41 @@ sudo abroot exec apt install fish
 
 ```bash
 chsh -s /usr/bin/fish
+```
+
+- After changing the Default Shell to Fish, we need to reboot the system to apply the changes.
+
+- The next time you open your Terminal Emulator, you will be in Fish Shell.
+
+### Nix
+
+- First, we need to initialize Nix with Apx by running the following command:-
+
+```bash
+apx init --nix
+```
+
+- After initializing Nix, we need to reboot the system to use it. You can do this by simply running `reboot`.
+
+- After rebooting the system, we need to install Fish with Nix by running the following command:-
+
+```bash
+apx install --nix fish
+```
+
+- After installing Fish, we need to add the path to Fish in `/etc/shells` by following these steps:-
+
+```bash
+sudo nano /etc/shells
+```
+
+1. Add: `/home/<username>/.nix-profile/bin/fish` (_**Note**_:- Replace the given placeholder with  your username).
+2. Save and Exit.
+
+After adding the path and saving the file, we need to change the Default Shell to Fish with the following command:-
+
+```bash
+chsh -s /home/<username>/.nix-profile/bin/fish
 ```
 
 - After changing the Default Shell to Fish, we need to reboot the system to apply the changes.
