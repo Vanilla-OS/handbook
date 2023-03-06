@@ -282,8 +282,6 @@ exit
 apx export --aur <packages>
 ```
 
-**_Tip_**: Inside a container to install AUR packages, first run `sudo pacman -S --needed git base-devel`, then run `yay -S <packages>` to install the packages using `yay`.
-
 - You can export the installed binary to use it with the host directly using the following command:-
 
 ```bash
