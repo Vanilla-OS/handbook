@@ -1,6 +1,6 @@
 ---
 title: Installing Docker Engine and Docker Desktop
-description: Learn how to Install and setup Docker Engine and Docker Desktop in Vanilla OS.
+description: Learn how to Install and set up Docker Engine and Docker Desktop in Vanilla OS.
 date: 2022-02-05
 layout: article
 authors: 
@@ -12,7 +12,7 @@ published: true
 
 [**Docker**](https://www.docker.com/) is an open platform for developing, shipping, and running applications in containerized environments. This guide provides the steps to install the Docker engine and Docker desktop in Vanilla OS.
 
-This guide is for advanced users. If your workflow doesn't require Docker, you can use [**Podman**](https://podman.io/) instead.
+This guide is for advanced users. If your workflow doesn't require Docker,  use [**Podman**](https://podman.io/) instead.
 
 ## Installing Docker Engine
 
@@ -59,13 +59,20 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 **_Note_**:- Set the location for saved Images and Containers to `/home` to avoid filling up the root partition.
 
+Alternatively, you can install the Docker engine using the nix subcommand through the following steps:-
+
+```bash
+Initialize (One time step): apx init --nix
+Install Docker Engine: apx install --nix docker
+```
+
 ## Installing Docker Desktop
 
 You can install the Docker Desktop application using the following steps:-
 
 - First, download the DEB file from [**here**](https://docs.docker.com/desktop/install/ubuntu/).
 - Then copy the file to `/tmp` (Temporary files in `/tmp` get removed after a reboot) using the command `cp -r docker-desktop-<version>-<arch>.deb /tmp` (Note:- `<>` is a placeholder, replace it with the correct details) in an unprivileged terminal session.
-- Then, enter the transactional shell using the `sudo abroot shell` command.
+- Then enter the transactional shell using the `sudo abroot shell` command.
 - Install the application using the following command:-
 
 ```bash
