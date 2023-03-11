@@ -1,6 +1,8 @@
 <div align="center">
 
-# Vanilla OS Handbook
+<img src="assets/uploads/Handbook.png" height="40">
+
+--------------
 
 </div>
 
