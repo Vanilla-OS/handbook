@@ -32,7 +32,8 @@ sudo apt install \
     ca-certificates \
     curl \
     gnupg \
-    lsb-release
+    lsb-release \
+    apt-transport-https
 ```
 
 - Add Docker's GPG key using the following command:-
