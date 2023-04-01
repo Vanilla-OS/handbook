@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="assets/uploads/Handbook.png" height="40">
+<img src="assets/uploads/handbook.png?raw=true#gh-dark-mode-only" height="40">
+<img src="assets/uploads/handbook-mono.png?raw=true#gh-light-mode-only" height="40">
 
 --------------
 
