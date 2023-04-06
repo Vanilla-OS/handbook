@@ -48,7 +48,7 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 
 - **DEB**:- `deb` (Debian Packages) is a file format for installing and managing applications on Debian-based systems. It's an equivalent file extension to `.exe` in Windows and `.rpm` in GNU/Linux.
 
-- **RPM**:- `rpm` (Red Hat package manager) is a file format for installing and managing applications on Red Hat-based systems. It's an equivalent file extension to `.exe` in Windows and `.deb` in GNU/Linux.
+- **RPM**:- `rpm` (Red Hat package manager) is a file format for installing and managing applications on RHEL-based systems. It's an equivalent file extension to `.exe` in Windows and `.deb` in GNU/Linux.
 
 ## Managing Applications through GNOME Software
 
