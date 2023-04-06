@@ -21,7 +21,7 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 
 - **Flathub**:- Flathub is the largest repository of Flatpak applications spanning various categories.
 
-- **Snap**:- Snap is an alternative packaging format by Canonical (the creators of Ubuntu) for installing thousands of applications from the Snapcraft repository. They facilitate installing applications in Servers and various GNU/Linux distributions. Snapcraft contains hundreds of verified packages and software from publishers. (**_Note_**: At the time of writing this guide, Snap is not yet supported in Vanilla OS)
+- **Snap**:- Snap is an alternative packaging format by Canonical (the creators of Ubuntu) for installing thousands of applications from the Snapcraft repository. They facilitate installing applications in Servers and various GNU/Linux distributions. Snapcraft contains hundreds of verified packages and software from publishers. (**_Note_**: Snap is currently not supported in Vanilla OS)
 
 - **AppImage**:- AppImage is a format for distributing portable software or executables on Linux without needing superuser permissions to install the application.
 
