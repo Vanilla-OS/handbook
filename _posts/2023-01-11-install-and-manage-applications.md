@@ -84,7 +84,9 @@ You can remove installed Flatpaks and Snaps from the `Installed` panel.
 
 ### Installing AppImages
 
-You can download AppImages from project pages on GitHub. Once downloaded, they won't have to be installed since they are executable binaries.
+You can download AppImages from project pages on GitHub. Another source for AppImages is [**AppImageHub**](https://www.appimagehub.com/).
+
+Once downloaded, they won't have to be installed since they are executable binaries.
 
 ### Running AppImages
 
