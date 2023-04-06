@@ -76,7 +76,7 @@ Automatic Updates are configured in the `Update Preferences` tab located in the 
 
 ### Removing Applications
 
-You can remove the installed Flatpaks and Snaps from the `Installed` panel.
+You can remove installed Flatpaks and Snaps from the `Installed` panel.
 
 (**_Note_**: Some native applications installed on the host cannot be removed using this method)
 
