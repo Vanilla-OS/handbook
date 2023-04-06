@@ -68,7 +68,7 @@ If the application you searched for does not exist, you can use an alternative m
 
 ### Updating Applications
 
-Updates are visible in the `Updates` panel in GNOME Software. In Vanilla OS, Updates are available for Flatpaks, Snaps and System Packages through it.
+Updates are visible in the `Updates` panel in GNOME Software. In Vanilla OS, Updates are available for Flatpaks, Snaps and System Packages in GNOME Software.
 
 Automatic Updates are configured in the `Update Preferences` tab located in the burger menu in the top right corner.
 
