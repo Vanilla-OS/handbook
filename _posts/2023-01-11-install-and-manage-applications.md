@@ -13,7 +13,7 @@ published: true
 
 Vanilla OS allows installing packages and software from various sources. This guide will discuss them in detail.
 
-Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the initial setup. It also allows the installation of native packages using the `apx` package manager. (**_Note_**: At the time of writing this guide, Snap is not yet supported in Vanilla OS)
+Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the initial setup. It also allows the installation of native packages using the `apx` package manager. (**_Note_**: Snap is currently not supported in Vanilla OS)
 
 ## Terminologies
 
