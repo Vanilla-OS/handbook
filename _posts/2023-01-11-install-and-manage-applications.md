@@ -117,7 +117,7 @@ If you enabled Flatpak in the First Setup, you won't have to do anything. If you
 You can install Flatpaks with the following command:-
 
 ```bash
-flatpak install <remote> <application-id>
+flatpak install <application-id>
 ```
 
 ### Running Flatpaks
