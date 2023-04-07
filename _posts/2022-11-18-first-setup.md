@@ -22,7 +22,7 @@ After booting into Vanilla OS for the first time, you will be presented with a F
 
 ### Color Scheme
 
-Your preferred color scheme. Default \(meaning that apps decide for themselves\) or Dark. This can be changed later in the Settings app.
+Your preferred color scheme. Default meaning that apps decide for themselves or Dark. This can be changed later in the Settings app.
 
 ![Color Scheme](/assets/uploads/First_Setup/first-setup-color-scheme.webp)
 
@@ -30,7 +30,7 @@ Your preferred color scheme. Default \(meaning that apps decide for themselves\)
 
 Choose your preferred package managers. These are the ways you will be able to install applications. If unsure, leave it on the default "Flatpak". You can install the required dependencies for each one later if you change your mind.
 
-![Package Manager](/assets/uploads/First_Setup/first-setup-package-manager.webp)
+![Package Manager](/assets/uploads/First_Setup/first-setup-package-managers.webp)
 
 ## Applications
 
