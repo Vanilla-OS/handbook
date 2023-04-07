@@ -14,13 +14,13 @@ published: true
 
 ## Installation
 
-The recommended way to install Lutris is through the official Debian package. But it is also available in many other formats. 
+The recommended way to install Lutris is through the official Debian package. But it is also available in many other formats.
 
 In Vanilla OS, you can install packages from other distributions using [**Apx**](https://vanillaos.org/2023/01/28/apx-the-unconventional-pkg-manager.html), the default package manager for Vanilla OS. In the following sections, we will show you how to install the Debian and Fedora packages of Lutris using Apx.
 
 ### Debian package
 
-First, you need to download the latest version of the package from the [**official website**](https://lutris.net/downloads/) under the "Debian/Ubuntu" section. 
+First, you need to download the latest version of the package from the [**official website**](https://lutris.net/downloads/) under the "Debian/Ubuntu" section.
 
 Once you have downloaded the package, you can install it using the command line. Open a console and navigate to the directory where you have downloaded the package. Then, use the following command to install the package:
 

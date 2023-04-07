@@ -22,7 +22,7 @@ The recommended way to install Distrobox is via the official script. To do so, o
 curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sh -s -- --next --prefix ~/.local
 ```
 
-In this way, Distrobox will be installed in the `~/.local` directory, which is already in the PATH variable for Vanilla OS. 
+In this way, Distrobox will be installed in the `~/.local` directory, which is already in the PATH variable for Vanilla OS.
 
 **_Note_**:  We are going to install Distrobox in your `home` directory to avoid altering the root file system.
 

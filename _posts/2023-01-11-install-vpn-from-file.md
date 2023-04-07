@@ -25,7 +25,7 @@ Select "Network" from the Settings search result.
 This will bring you to the "Network" panel interface.
 
 Alternatively, you can directly navigate to the "Network" panel by opening Settings from the Control Center in the top right corner.
-	
+
 ## Importing the OpenVPN file
 
 Once you have navigated to the Network panel, click on the plus (`+`) button beside the VPN.
@@ -38,7 +38,7 @@ This will open a Files dialogue box to select the file to import.
 
 Select the **`.ovpn`** config file downloaded from your VPN provider.
 
-This will install the OpenVPN profile on your computer. 
+This will install the OpenVPN profile on your computer.
 
 _**Note**_: You may be prompted to enter login credentials after installing the OpenVPN configuration file.
 

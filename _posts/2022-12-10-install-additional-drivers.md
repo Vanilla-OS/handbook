@@ -11,21 +11,17 @@ published: true
 
 Drivers are software components that allow the operating system to communicate with hardware devices.
 
-In Vanilla OS, primary drivers are installed automatically during the first setup, but some devices may need additional drivers to work ideally. You can install them using two methods: 
-- **Vanilla Control Center** 
-- **Manual installation in the transactional shell.**
+In Vanilla OS, primary drivers are installed automatically during the first setup, but some devices may need additional drivers to work ideally. You can install them using two methods:
 
-## Vanilla Control Center
+- **Vanilla Drivers Utility**
+- **Manual installation in the transactional shell**
 
-**Vanilla Control Center** is a graphical tool that allows you to configure the
-operating system and install additional drivers. Launch it from the Applications menu, then click on the "Drivers" tab.
+## Vanilla Drivers Utility
 
-![Vanilla Control Center](/assets/uploads/Vanilla_Control_Center/vanilla-control-center.webp)
+**Vanilla Drivers Utility** is a graphical tool that allows you to install additional drivers. Launch Settings from the Applications menu, then click on the "Additional Drivers" tab in the About panel.
 
 Here you can see a list of all the drivers available, organized by category. To install a driver, click on it, then press the "Apply Changes" button in
 the top-right corner.
-
-![Vanilla Control Center - Drivers](/assets/uploads/Vanilla_Control_Center/vanilla-control-center-install-driver.webp)
 
 Once the installation is complete, you will be requested to reboot the system.
 
@@ -64,6 +60,7 @@ Now, Enter ABRoot Shell using the following command and `cd` to the required dir
 sudo abroot shell
 cd /tmp
 ```
+
 Now, you can install DEBs using `apt`:-
 
 ```bash

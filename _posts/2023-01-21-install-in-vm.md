@@ -323,7 +323,7 @@ Type `exit` and press enter.
 
 ![Parallels 34](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-34.webp)
 
-Type `reboot` and press enter. You have successfully configured your VM! 
+Type `reboot` and press enter. You have successfully configured your VM!
 
 You can change more virtual machine performance/sharing/integration options using the Parallels settings menu in the Control Center. Please refer to the [Parallels Knowledge Base](https://kb.parallels.com) for details.
 
@@ -395,7 +395,7 @@ For additional installation steps, refer to [**this guide**](https://handbook.va
 
 ### Installing VirtualBox Guest Additions
 
-[Virtualbox Guest Additions](https://www.virtualbox.org/manual/ch04.html) offers enhanced features, between the virtual machine and host, like Clipboard sharing, Seamless Windows, etc. 
+[Virtualbox Guest Additions](https://www.virtualbox.org/manual/ch04.html) offers enhanced features, between the virtual machine and host, like Clipboard sharing, Seamless Windows, etc.
 
 Due to the nature of ABRoot, the process of its installation is different. Follow this guide to install it in Vanilla OS.
 

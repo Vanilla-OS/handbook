@@ -23,8 +23,8 @@ the default package manager of Vanilla OS.
 
 ### Flatpak
 
-If you chose to install Flatpak during [**First Setup**](/2022/11/18/first-setup.html), 
-you will be able to install applications directly from GNOME Software, as 
+If you chose to install Flatpak during [**First Setup**](/2022/11/18/first-setup.html),
+you will be able to install applications directly from GNOME Software, as
 explained [**here**](/2022/12/09/install-flatpaks.html#title3).
 
 You can also install the Steam Flatpak from the terminal using the following command:
@@ -76,8 +76,7 @@ apx --dnf install steam
 
 ##### Run Steam
 
-To run Steam, you can use the icon from the applications menu or issue the 
-command `apx --dnf run steam`.
+To run Steam, you can use the icon from the applications menu or issue the command `apx --dnf run steam`.
 
 If the icon doesn't appear in the applications menu, you can add it manually using the following command:
 
@@ -126,7 +125,7 @@ apx --apt install steam-launcher
 
 ##### Run Steam
 
-To run Steam, you can use the icon from the applications menu or issue the 
+To run Steam, you can use the icon from the applications menu or issue the
 command `apx run steam`.
 
 If the icon doesn't appear in the applications menu, you can add it manually using the following command:
@@ -139,7 +138,7 @@ apx export steam
 
 Steam comes with Proton preconfigured to run all the supported Windows games.
 
-You may want to enable the Steam Play feature to also run games that are not officially supported. 
+You may want to enable the Steam Play feature to also run games that are not officially supported.
 
 ![Steam Play](/assets/uploads/Gaming/steam-play.webp)
 
