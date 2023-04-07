@@ -13,7 +13,7 @@ published: true
 
 Vanilla OS allows installing packages and software from various sources. This guide will discuss them in detail.
 
-Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the initial setup. It also allows the installation of native packages using the `apx` package manager. (**_Note_**: At the time of writing this guide, Snap is not yet supported in Vanilla OS)
+Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the initial setup. It also allows the installation of native packages using the `apx` package manager. (**_Note_**: Snap is currently not supported in Vanilla OS)
 
 ## Terminologies
 
@@ -21,7 +21,7 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 
 - **Flathub**:- Flathub is the largest repository of Flatpak applications spanning various categories.
 
-- **Snap**:- Snap is an alternative packaging format by Canonical (the creators of Ubuntu) for installing thousands of applications from the Snapcraft repository. They facilitate installing applications in Servers and various GNU/Linux distributions. Snapcraft contains hundreds of verified packages and software from publishers. (**_Note_**: At the time of writing this guide, Snap is not yet supported in Vanilla OS)
+- **Snap**:- Snap is an alternative packaging format by Canonical (the creators of Ubuntu) for installing thousands of applications from the Snapcraft repository. They facilitate installing applications in Servers and various GNU/Linux distributions. Snapcraft contains hundreds of verified packages and software from publishers. (**_Note_**: Snap is currently not supported in Vanilla OS)
 
 - **AppImage**:- AppImage is a format for distributing portable software or executables on Linux without needing superuser permissions to install the application.
 
@@ -48,7 +48,7 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 
 - **DEB**:- `deb` (Debian Packages) is a file format for installing and managing applications on Debian-based systems. It's an equivalent file extension to `.exe` in Windows and `.rpm` in GNU/Linux.
 
-- **RPM**:- `rpm` (Red Hat package manager) is a file format for installing and managing applications on Red Hat-based systems. It's an equivalent file extension to `.exe` in Windows and `.deb` in GNU/Linux.
+- **RPM**:- `rpm` (Red Hat package manager) is a file format for installing and managing applications on RHEL-based systems. It's an equivalent file extension to `.exe` in Windows and `.deb` in GNU/Linux.
 
 ## Managing Applications through GNOME Software
 
@@ -68,7 +68,7 @@ If the application you searched for does not exist, you can use an alternative m
 
 ### Updating Applications
 
-Updates are visible in the `Updates` panel in GNOME Software. In Vanilla OS, Updates are available for Flatpaks, Snaps and System Packages through it.
+Updates are visible in the `Updates` panel in GNOME Software. In Vanilla OS, Updates are available for Flatpaks, Snaps and System Packages in GNOME Software.
 
 Automatic Updates are configured in the `Update Preferences` tab located in the burger menu in the top right corner.
 
@@ -76,7 +76,7 @@ Automatic Updates are configured in the `Update Preferences` tab located in the 
 
 ### Removing Applications
 
-You can remove the installed Flatpaks and Snaps from the `Installed` panel.
+You can remove installed Flatpaks and Snaps from the `Installed` panel.
 
 (**_Note_**: Some native applications installed on the host cannot be removed using this method)
 
@@ -84,7 +84,9 @@ You can remove the installed Flatpaks and Snaps from the `Installed` panel.
 
 ### Installing AppImages
 
-You can download AppImages from project pages on GitHub. Once downloaded, they won't have to be installed since they are executable binaries.
+You can download AppImages from project pages on GitHub. Another source for AppImages is [**AppImageHub**](https://www.appimagehub.com/).
+
+Once downloaded, they won't have to be installed since they are executable binaries.
 
 ### Running AppImages
 
@@ -117,7 +119,7 @@ If you enabled Flatpak in the First Setup, you won't have to do anything. If you
 You can install Flatpaks with the following command:-
 
 ```bash
-flatpak install <remote> <application-id>
+flatpak install <application-id>
 ```
 
 ### Running Flatpaks
