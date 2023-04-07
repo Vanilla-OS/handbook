@@ -21,8 +21,6 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 
 - **Flathub**:- Flathub is the largest repository of Flatpak applications spanning various categories.
 
-- **Snap**:- Snap is an alternative packaging format by Canonical (the creators of Ubuntu) for installing thousands of applications from the Snapcraft repository. They facilitate installing applications in Servers and various GNU/Linux distributions. Snapcraft contains hundreds of verified packages and software from publishers. (**_Note_**: Snap is currently not supported in Vanilla OS)
-
 - **AppImage**:- AppImage is a format for distributing portable software or executables on Linux without needing superuser permissions to install the application.
 
 - **GNOME Software**:- GNOME Software allows you to find, install and remove new applications and system extensions. It showcases screenshots, metadata and user reviews of various applications. In Vanilla OS, It supports installing Flatpaks and Snaps. GNOME Software is the Linux equivalent of the Microsoft Store, Play Store and App Store.
@@ -34,7 +32,7 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 
 - **APT**:- `apt` is an Advanced Package Tool which allows installing and managing software on Debian and Debian-based systems like Ubuntu.
 
-- **DNF**:- `dnf` (Dandified YUM) is the successor to YUM. It is a powerful package manager for installing and managing applications on rpm-based distributions. 
+- **DNF**:- `dnf` (Dandified YUM) is the successor to YUM. It is a powerful package manager for installing and managing applications on rpm-based distributions.
 
 - **AUR**:- `aur` (Arch User Repository) is the largest community-maintained repository with thousands of native packages for Arch Linux and its derivatives.
 
@@ -54,7 +52,7 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 
 ### Installing Applications
 
-Flatpaks and Snaps can be installed with ease using GNOME Software. It is the recommended method for installing packages.
+Flatpaks can be installed with ease using GNOME Software. It is the recommended method for installing packages.
 
 ![GNOME Software](/assets/uploads/Applications_Post/gnome-software-43.webp)
 
@@ -68,7 +66,7 @@ If the application you searched for does not exist, you can use an alternative m
 
 ### Updating Applications
 
-Updates are visible in the `Updates` panel in GNOME Software. In Vanilla OS, Updates are available for Flatpaks, Snaps and System Packages in GNOME Software.
+Updates are visible in the `Updates` panel in GNOME Software. In Vanilla OS, Updates are available for Flatpaks and System Packages in GNOME Software.
 
 Automatic Updates are configured in the `Update Preferences` tab located in the burger menu in the top right corner.
 
@@ -76,9 +74,9 @@ Automatic Updates are configured in the `Update Preferences` tab located in the 
 
 ### Removing Applications
 
-You can remove installed Flatpaks and Snaps from the `Installed` panel.
+You can remove installed Flatpaks from the `Installed` panel.
 
-(**_Note_**: Some native applications installed on the host cannot be removed using this method)
+(**_Note_**: Some native applications installed on the host cannot be removed using this method, but applications installed through the meta plugin can be removed through the panel.)
 
 ## Manage AppImages
 
@@ -93,9 +91,9 @@ Once downloaded, they won't have to be installed since they are executable binar
 If you have enabled AppImage in the first setup, you can run AppImages graphically by following these steps:-
 
 - Right-click on the file, then click on **Properties**.
-    
+
 ![AppImages Properties](/assets/uploads/Applications_Post/appimages-nautilus-properties.webp)
-    
+
 - Enable the **Executable as Program** option.
 
 You can now run the AppImage by right-clicking it and pressing run or by pressing enter/return key on your keyboard.
@@ -152,24 +150,6 @@ You can remove leftover data of Flatpaks with the following command (**_Disclaim
 flatpak uninstall --delete-data <application-id>
 ```
 
-## Managing Flatpaks through CLI
-
-### Installing Snaps
-
-You can install Snaps with the following command:-
-
-```bash
-snap install <packages>
-```
-
-### Removing Snaps
-
-You can remove Snaps with the following command:-
-
-```bash
-snap remove <packages>
-```
-
 ## Managing Applications through Apx
 
 `Apx` allows installing applications from various Linux distributions. These applications are tightly integrated with the host and can access the host's hardware.
@@ -184,7 +164,7 @@ In the commands below, `<package_manager>` will be a placeholder. It can be repl
 - `xbps`
 - `nix`
 
-### Creating a Container 
+### Creating a Container
 
 You can create a container with the following command:-
 
@@ -192,7 +172,7 @@ You can create a container with the following command:-
 apx init --<package_manager>
 ```
 
-You can also initialize the containers graphically by clicking on the `+` icon in the Vanilla Control Center. (Vanilla Control Center also allows you to enter the apx container graphically.)
+You can also initialize the containers graphically by clicking on the `+` icon in the Vanilla Control Center. (Vanilla Control Center allows you to enter the apx container graphically.)
 
 ![Vanilla Control Center - Sub System](/assets/uploads/Applications_Post/vanilla-control-center-subsystem.webp)
 
@@ -210,25 +190,25 @@ apx install --<package_manager> <package>
 
 This command will automatically detect the desktop file entry in the package and add it to the Application menu and Vanilla Control Center.
 
-You can install DEBs with the following command:-
+You can install DEB packages with the following command:-
 
 ```bash
 apx install --sideload <path/to/package.deb>
 ```
 
-You can install RPMs with the following command:-
+You can install RPM packages with the following command:-
 
 ```bash
 apx install --dnf --sideload <path/to/package.deb>
 ```
 
-If your application is not automatically detected, you can manually export it with the following command:-
+If your application's desktop entry isn't detected automatically, you can export it manually with the following command:-
 
 ```bash
 apx export --<package_manager> <package>
 ```
 
-You can export binaries to run them without `apx run` with the following command:-
+You can export binaries to run them without `apx run` prefix with the following command:-
 
 ```bash
 apx export --<package_manager> --bin <package>
@@ -244,7 +224,7 @@ apx remove <packages>
 
 This command will automatically detect and remove the desktop file entry.
 
-If your application is not automatically detected, you can manually unexport it with the following command:-
+If your application's desktop entry is not automatically removed, you can unexport it manually with the following command:-
 
 ```bash
 apx unexport --<package_manager> <package>
