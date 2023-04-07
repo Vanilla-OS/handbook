@@ -33,7 +33,7 @@ Once the installation is complete, you will be requested to reboot the system.
 
 ### APT Package
 
-- If you prefer to install drivers manually, you can do so using the transactional shell. Open the terminal and run the following command:
+If you prefer to install drivers manually, you can do so using the transactional shell. Open the terminal and run the following command:
 
 ```bash
 sudo abroot exec apt install <driver>
@@ -46,18 +46,19 @@ install. For example, installing the NVIDIA driver at version 525 can be done by
 sudo abroot exec apt install nvidia-driver-525
 ```
 
-- After installation, exit the shell using the `exit` command and wait for the changes to be applied, then reboot once the installation is complete.
+After installation, exit the shell using the `exit` command and wait for the changes to be applied, then reboot once the installation is complete.
 
 ### DEBs
 
-- You can install drivers present as DEB files through ABRoot using the following steps:-
-	- In a non-privileged terminal, you can copy the DEB file to `/tmp` using the following command:-
+You can install drivers present as DEB files through ABRoot using the following steps:-
+
+In a non-privileged terminal, you can copy the DEB file to `/tmp` using the following command:-
 
 ```bash
 cp <path/to/driver.deb> /tmp
 ```
 
-- Now, Enter ABRoot Shell using the following command and `cd` to the required directory:-
+Now, Enter ABRoot Shell using the following command and `cd` to the required directory:-
 
 ```bash
 sudo abroot shell
@@ -71,7 +72,7 @@ sudo apt install ./<driver>.deb
 
 (This will automatically install the required dependencies,)
 
-- Alternatively, you can install DEBs using `dpkg`:-
+Alternatively, you can install DEBs using `dpkg`:-
 
 ```bash
 sudo dpkg -i <driver>.deb
@@ -80,6 +81,6 @@ sudo apt-get install -f
 
 **_Note_**:- `sudo apt-get install -f` is required to fix broken or missing dependencies.
 
-- After installing the drivers, exit the shell using the `exit` command and wait for the changes to apply. Reboot your system for the transaction to take place.
+After installing the drivers, exit the shell using the `exit` command and wait for the changes to apply. Reboot your system for the transaction to take place.
 
 Congratulations, You have successfully installed the necessary drivers.
