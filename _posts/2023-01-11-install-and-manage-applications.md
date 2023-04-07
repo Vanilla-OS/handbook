@@ -13,7 +13,7 @@ published: true
 
 Vanilla OS allows installing packages and software from various sources. This guide will discuss them in detail.
 
-Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the initial setup. It also allows the installation of native packages using the `apx` package manager. (**_Note_**: Snap is currently not supported in Vanilla OS)
+Vanilla OS comes with the option to enable Flatpak and AppImage ain the initial setup. It also allows the installation of native packages using the `apx` package manager.
 
 ## Terminologies
 
@@ -23,7 +23,7 @@ Vanilla OS comes with the option to enable Flatpak, AppImage and Snap in the ini
 
 - **AppImage**:- AppImage is a format for distributing portable software or executables on Linux without needing superuser permissions to install the application.
 
-- **GNOME Software**:- GNOME Software allows you to find, install and remove new applications and system extensions. It showcases screenshots, metadata and user reviews of various applications. In Vanilla OS, It supports installing Flatpaks and Snaps. GNOME Software is the Linux equivalent of the Microsoft Store, Play Store and App Store.
+- **GNOME Software**:- GNOME Software allows you to find, install and remove new applications and system extensions. It showcases screenshots, metadata and user reviews of various applications. In Vanilla OS, It supports installing Flatpaks and Vanilla OS (Apx) meta packages. GNOME Software is the Linux equivalent of the Microsoft Store, Play Store and App Store.
 
 - **Package Manager**:- A package manager or package-management system is a utility with a collection of software tools that automates installing, upgrading, configuring, and removing applications or packages.
 `apx` is the package manager which comes with Vanilla OS. It is the equivalent command for Winget on Windows.
@@ -208,7 +208,7 @@ If your application's desktop entry isn't detected automatically, you can export
 apx export --<package_manager> <package>
 ```
 
-You can export binaries to run them without `apx run` prefix with the following command:-
+You can export binaries to run them without the `apx run` prefix with the following command:-
 
 ```bash
 apx export --<package_manager> --bin <package>
