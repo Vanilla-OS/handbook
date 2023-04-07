@@ -11,11 +11,11 @@ published: true
 
 ## Introduction
 
-Jekyll is a popular static site generator for creating blogs, documentation, and personal websites. 
+Jekyll is a popular static site generator for creating blogs, documentation, and personal websites.
 
 Bundler is a package manager for Ruby, which helps manage dependencies in Jekyll projects.
 
-This guide goes through the process of installing Jekyll and Bundler in Vanilla OS using apx. 
+This guide goes through the process of installing Jekyll and Bundler in Vanilla OS using apx.
 
 ## Installing Jekyll and Bundler
 
@@ -28,6 +28,7 @@ Enter the container using the following command:-
 ```bash
 apx enter
 ```
+
 Install the required prerequisite packages using the following command:-
 
 ```bash
@@ -65,6 +66,7 @@ Enter the container using the following command:-
 ```bash
 apx enter --dnf
 ```
+
 Install the required prerequisite packages using the following command:-
 
 ```bash
@@ -93,6 +95,7 @@ Enter the container using the following command:-
 ```bash
 apx enter --aur
 ```
+
 Install the required prerequisite packages using the following command:-
 
 ```bash
@@ -114,25 +117,21 @@ apx export --aur --bin jekyll
 apx export --aur --bin bundler
 ```
 
-## Testing sites from a repository locally
+## Testing sites using Jekyll locally
 
-Clone a repository using `git` or `gh`.
+Navigate to the required directory for the site.
 
-Move to the destination of the cloned directory using `cd <path/to/directory>`.
+Optionally, Run `bundler install` to install necessary packages (This step is required only once and doesn't require re-running it in future. You must have a Gemfile in the repository for this command to work).
 
-Run `bundler install` to install necessary packages (This step is required only once and doesn't require re-running it in future. You must have a Gemfile in the repository for this to work).
+Run `jekyll build` or `bundler exec jekyll build` to build the page to `./_site` once.
 
-Run `bundler exec jekyll build` to build the page to `./_site` once. Then you can either test the pages manually or use the `bundler exec jekyll serve` command.
-
-Run `bundler exec jekyll serve` to build your site any time a source file changes and serve it locally.
+Then you can either test the pages manually or use `jekyll serve` or `bundler exec jekyll serve` command to build your site any time a source file changes and serve it locally.
 
 Navigate to `http://127.0.0.1:4000/` or `http://localhost:4000/` in your browser to preview and test the page.
 
-Now, commit the changes using `git` and create a PR in GitHub.
-
 **_Tip_**:-
 
-You can test your pages on your phone using `bundler exec jekyll serve --host=<ip>`. 
+You can test your pages on your phone using `bundler exec jekyll serve --host=<ip>`.
 
 Using `0.0.0.0` instead of a specific IP binds port 4000 to any interface, which is prone to be blocked by your routers firewalls. That's why we recommended using a particular IP address with the `--host` flag. After executing the command in any browser on your phone, go to this address `<ip>:4000`.
 
