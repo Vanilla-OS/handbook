@@ -11,7 +11,7 @@ published: true
 ---
 Drivers are software components that allow the operating system to communicate with hardware devices.
 
-In Vanilla OS, primary drivers are installed automatically during the first setup, but some devices may need additional drivers to work ideally. You can install them using two methods:
+In Vanilla OS, primary drivers are installed automatically during the first setup, but some devices may need additional drivers to work ideally. You can install them using two methods:-
 
 - **Vanilla Drivers Utility**
 - **Manual installation in the transactional shell.**
@@ -33,14 +33,14 @@ Once the installation is complete, you will be requested to reboot the system.
 
 ### APT Package
 
-If you prefer to install drivers manually, you can do so using the transactional shell. Open the terminal and run the following command:
+If you prefer to install drivers manually, you can do so using the transactional shell. Open the terminal and run the following command:-
 
 ```bash
 sudo abroot exec apt install <driver>
 ```
 
 Where `<driver>` is the package name that offers the driver you want to
-install. For example, installing the NVIDIA driver at version 525 can be done by executing the following command:
+install. For example, installing the NVIDIA driver at version 525 can be done by executing the following command:-
 
 ```bash
 sudo abroot exec apt install nvidia-driver-525
@@ -71,7 +71,7 @@ Now, you can install DEBs using `apt`:-
 sudo apt install ./<driver>.deb
 ```
 
-(This will automatically install the required dependencies,)
+(This will automatically install the required dependencies.)
 
 Alternatively, you can install DEBs using `dpkg`:-
 
