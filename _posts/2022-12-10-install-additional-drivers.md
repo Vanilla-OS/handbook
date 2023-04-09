@@ -8,24 +8,22 @@ authors:
     - kbdharun
 published: true
 ---
-
 Drivers are software components that allow the operating system to communicate with hardware devices.
 
-In Vanilla OS, primary drivers are installed automatically during the first setup, but some devices may need additional drivers to work ideally. You can install them using two methods: 
-- **Vanilla Control Center** 
+In Vanilla OS, primary drivers are installed automatically during the first setup, but some devices may need additional drivers to work ideally. You can install them using two methods:
+
+- **Drivers Utility**
 - **Manual installation in the transactional shell.**
 
-## Vanilla Control Center
+## Drivers Utility
 
-**Vanilla Control Center** is a graphical tool that allows you to configure the
-operating system and install additional drivers. Launch it from the Applications menu, then click on the "Drivers" tab.
+**Drivers Utility** is a graphical tool that allows you to install additional drivers. Launch it from the "About" section in Settings, then click on "Additional Drivers".
 
-![Vanilla Control Center](/assets/uploads/Vanilla_Control_Center/vanilla-control-center.webp)
+![Settings](/assets/uploads/Miscellaneous/gnome-settings.webp)
 
-Here you can see a list of all the drivers available, organized by category. To install a driver, click on it, then press the "Apply Changes" button in
-the top-right corner.
+Here you can see a list of all the drivers available, organized by category. To install a driver, click on it.
 
-![Vanilla Control Center - Drivers](/assets/uploads/Vanilla_Control_Center/vanilla-control-center-install-driver.webp)
+![Drivers Utility](/assets/uploads/Miscellaneous/drivers-utility.webp)
 
 Once the installation is complete, you will be requested to reboot the system.
 
@@ -51,7 +49,7 @@ sudo abroot exec apt install nvidia-driver-525
 ### DEBs
 
 - You can install drivers present as DEB files through ABRoot using the following steps:-
-	- In a non-privileged terminal, you can copy the DEB file to `/tmp` using the following command:-
+  - In a non-privileged terminal, you can copy the DEB file to `/tmp` using the following command:-
 
 ```bash
 cp <path/to/driver.deb> /tmp
@@ -63,6 +61,7 @@ cp <path/to/driver.deb> /tmp
 sudo abroot shell
 cd /tmp
 ```
+
 Now, you can install DEBs using `apt`:-
 
 ```bash
