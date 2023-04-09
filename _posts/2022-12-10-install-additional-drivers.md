@@ -6,22 +6,26 @@ layout: article
 authors: 
     - mirkobrombin
     - kbdharun
+    - mrunix00
 published: true
 ---
-
 Drivers are software components that allow the operating system to communicate with hardware devices.
 
 In Vanilla OS, primary drivers are installed automatically during the first setup, but some devices may need additional drivers to work ideally. You can install them using two methods:
 
 - **Vanilla Drivers Utility**
-- **Manual installation in the transactional shell**
+- **Manual installation in the transactional shell.**
 
-## Vanilla Drivers Utility
+## Vanilla Control Center
 
-**Vanilla Drivers Utility** is a graphical tool that allows you to install additional drivers. Launch Settings from the Applications menu, then click on the "Additional Drivers" tab in the About panel.
+**Drivers Utility** is a graphical tool that allows you to install additional drivers. Launch it from the "About" section in Settings, then click on "Additional Drivers".
+
+![Settings](/assets/uploads/Miscellaneous/gnome-settings.webp)
 
 Here you can see a list of all the drivers available, organized by category. To install a driver, click on it, then press the "Apply Changes" button in
 the top-right corner.
+
+![Drivers Utility](/assets/uploads/Miscellaneous/drivers-utility.webp)
 
 Once the installation is complete, you will be requested to reboot the system.
 
