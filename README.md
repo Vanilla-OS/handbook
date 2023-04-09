@@ -20,6 +20,7 @@ other information to help you get the most out of your Vanilla OS installation.
 ## Writing a guide
 
 If you want to write a guide for the handbook, follow these instructions:-
+
 - Add the new article to the [**`_posts` directory**](https://github.com/Vanilla-OS/handbook/tree/main/_posts).
 - The filename must be in the format `YYYY-MM-DD-title.md`.
 - See [**markdownlint**](https://github.com/DavidAnson/markdownlint) for best markdown practices.
@@ -38,6 +39,7 @@ authors:
 published: true
 ---
 ```
+
 - You must fill in your article's metadata here.
 
 For example:-
@@ -61,8 +63,9 @@ published: true
 
 ## Style Guide
 
-- Headings should follow a proper hierarchy.
-- Links must be in bold, commands in bold and backticks. 
+Headings should follow a proper hierarchy.
+
+Links must be in bold, commands in bold and backticks.
 
 For example:-
 
@@ -73,11 +76,11 @@ For example:-
 
 Which will have the following outputs:- [**example**](https://example.com/), [**`apx`**](https://github.com/Vanilla-OS/apx)
 
-- Buttons in applications can be highlighted using double quotes (""). For example, the Install button gets highlighted as the "Install" button.
+Buttons in applications can be highlighted using double quotes (""). For example, the Install button gets highlighted as the "Install" button.
 
-- Menus, command names and directories must be enclosed with backticks (`).
+Menus, command names and directories must be enclosed with backticks (`).
 
-- For displaying commands, we suggest code blocks with the correct shell or programming language.
+For displaying commands, we suggest code blocks with the correct shell or programming language.
 
 For example:-
 
@@ -100,29 +103,37 @@ sudo vso trigger-update --now
 
 ## Testing the guide locally using Jekyll, Bundler
 
-- You can install **Jekyll** from [**this page**](https://jekyllrb.com/docs/installation/) and **Bundler** can be installed from [**this page**](https://bundler.io). Or you can follow these steps in [**Vanilla OS**](https://handbook.vanillaos.org/2023/01/23/install-jekyll-and-bundler.html).
-- Clone your forked repository using `git` or `gh`.
-- Add the guide to the correct destination in the cloned directory.
-- Run `bundler install` to install necessary packages (This step is required only once and doesn't require re-running it in future. You must have a Gemfile in the repository for this to work).
-- Run `bundler exec jekyll build` to build the page to `./_site` once. Then you can either test the pages manually or use the `jekyll serve` command.
-- Run `bundler exec jekyll serve` to build your site any time a source file changes and serve it locally.
-  - Navigate to `http://127.0.0.1:4000/` or `http://localhost:4000/` in your browser to preview and test the page.
-- Now, commit the changes using `git` and create a PR in GitHub.
+You can install **Jekyll** from [**this page**](https://jekyllrb.com/docs/installation/) and **Bundler** can be installed from [**this page**](https://bundler.io). Or you can follow these steps in [**Vanilla OS**](https://handbook.vanillaos.org/2023/01/23/install-jekyll-and-bundler.html).
+
+Clone your forked repository using `git` or `gh`.
+
+Add the guide to the correct destination in the cloned directory.
+
+Run `jekyll build` to build the page to `./_site` once. Then you can either test the pages manually or use the `jekyll serve` command.
+
+Run `jekyll serve` to build your site any time a source file changes and serve it locally.
+
+Navigate to `http://127.0.0.1:4000/` or `http://localhost:4000/` in your browser to preview and test the page.
+
+Now, commit the changes using `git` and create a PR in GitHub.
 
 **_Tip_**:-
-- You can test your pages on your phone using `bundler exec jekyll serve --host=<ip>`. 
+
+- You can test your pages on your phone using `jekyll serve --host=<ip>`.
 - Using `0.0.0.0` instead of a specific IP binds port 4000 to any interface, which is prone to be blocked by your routers firewalls. That's why we recommended using a particular IP address with the `--host` flag. After executing the command in any browser on your phone, go to this address `<ip>:4000`.
 - For example, if the IP you used is `192.168.0.123`, you will need to visit `192.168.0.123:4000` on your mobile.
 
 ## Embedding GitHub Gists
 
-- GitHub gists are allowed for referencing custom mods and scripts in posts.
+GitHub gists are allowed for referencing custom mods and scripts in posts.
 
 ## Archiving guides
 
-- Removing guides and images from the repository isn't advised.
-- For outdated articles and posts, we suggest changing the publishing status to `false` in the header, which removes it from the Glossary's listing and RSS feed.
-- For outdated images, it is recommended to move them to the [**handbook-archive**](https://github.com/Vanilla-OS/handbook-archive) repository to prevent space. 
+Removing guides and images from the repository isn't advised.
+
+For outdated articles and posts, we suggest changing the publishing status to `false` in the header, which removes it from the Glossary's listing and RSS feed.
+
+For outdated images, it is recommended to move them to the [**handbook-archive**](https://github.com/Vanilla-OS/handbook-archive) repository to prevent space.
 
 ## Discussions
 

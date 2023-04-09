@@ -20,7 +20,7 @@ published: true
 
 ### Installing OpenRGB
 
-- You can install OpenRGB from the "Gnome Software" application. Alternatively, you can install it from the command line with the following command:-
+You can install OpenRGB from the "Gnome Software" application. Alternatively, you can install it from the command line with the following command:-
 
 ```bash
 flatpak install flathub org.openrgb.OpenRGB
@@ -30,7 +30,7 @@ flatpak install flathub org.openrgb.OpenRGB
 
 ### Prerequisites
 
-- AppImage Support: If you have enabled AppImage in the "First Setup" when installing Vanilla OS, this step isn't necessary. 
+AppImage Support: If you have enabled AppImage in the "First Setup" when installing Vanilla OS, this step isn't necessary. 
 
 If you haven't enabled AppImages, run the following command:-
 
@@ -38,13 +38,13 @@ If you haven't enabled AppImages, run the following command:-
 sudo abroot exec apt install libfuse2
 ```
 
-- After the successful installation, reboot your system. You can do this by typing `reboot`.
+After the successful installation, reboot your system. You can do this by typing `reboot`.
 
 ### Installing OpenRGB
 
-- Install "Linux 64-bit" from the "Linux Binaries (AppImage)" section [**here**](https://gitlab.com/CalcProgrammer1/OpenRGB/-/releases/permalink/latest#Linux-64-bit).
+Install "Linux 64-bit" from the "Linux Binaries (AppImage)" section [**here**](https://gitlab.com/CalcProgrammer1/OpenRGB/-/releases/permalink/latest#Linux-64-bit).
 
-- Go to the directory where the AppImage is installed and make it an executable with the following commands:-
+Go to the directory where the AppImage is installed and make it an executable with the following commands:-
 
 ```bash
 cd ~/Downloads/
@@ -55,18 +55,18 @@ chmod +x <appimage-filename>
 
 For the application to function, add UDEV rules to your system.
 
-- First, install the UDEV rules by clicking [**here**](https://gitlab.com/CalcProgrammer1/OpenRGB/-/jobs/artifacts/master/raw/60-openrgb.rules?job=Linux+64+AppImage&inline=false).
+First, install the UDEV rules by clicking [**here**](https://gitlab.com/CalcProgrammer1/OpenRGB/-/jobs/artifacts/master/raw/60-openrgb.rules?job=Linux+64+AppImage&inline=false).
 
-- After downloading the UDEV rules, you need to move them to the correct directory with the following command:-
+After downloading the UDEV rules, you need to move them to the correct directory with the following command:-
 
 ```bash
 sudo mv ~/Downloads/60-openrgb.rules /etc/udev/rules.d/
 ```
 
-- After moving the UDEV rules, you need to reload the rules by running the following command:-
+After moving the UDEV rules, you need to reload the rules by running the following command:-
 
 ```bash
 sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 
-- After reloading the rules, OpenRGB works correctly.
+After reloading the rules, OpenRGB works correctly.

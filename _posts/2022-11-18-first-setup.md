@@ -22,33 +22,23 @@ After booting into Vanilla OS for the first time, you will be presented with a F
 
 ### Color Scheme
 
-Your preferred color scheme. Default \(meaning that apps decide for themselves\) or Dark. This can be changed later in the Settings app.
+Your preferred color scheme. Default meaning that apps decide for themselves or Dark. This can be changed later in the Settings app.
 
 ![Color Scheme](/assets/uploads/First_Setup/first-setup-color-scheme.webp)
 
 ### Package Manager
 
-Choose your preferred package managers. These are the ways you will be able to install applications. If unsure, leave it on the default \(Flatpak and AppImage\). You can install the required dependencies for each one later if you change your mind.
+Choose your preferred package managers. These are the ways you will be able to install applications. If unsure, leave it on the default "Flatpak". You can install the required dependencies for each one later if you change your mind.
 
-![Package Manager](/assets/uploads/First_Setup/first-setup-package-manager.webp)
-
-**Update**: Due to some issues, the option to install snaps is currently disabled. It will be fixed in future.
+![Package Manager](/assets/uploads/First_Setup/first-setup-package-managers.webp)
 
 ## Applications
 
-Choose which applications you need to install in your Vanilla OS Installation. There are various categories for installing applications. The applications listed in the categories respect your package manager preference and only lists applications available in your package manager.
+Choose which applications you need to install in your Vanilla OS Installation. There are various categories for installing applications.
 
 ![Install Applications](/assets/uploads/First_Setup/first-setup-applications.webp)
 
-The below images demonstrate the difference between Application listings based on your package manager preference.
-
-| ![Install Core Applications Flatpak](/assets/uploads/First_Setup/first-setup-applications-flatpak-core.webp) | ![Install Core Applications Snap](/assets/uploads/First_Setup/first-setup-applications-snap-core.webp) |
-|:---:|:---:|
-| **Core Applications - Flatpak** | **Core Applications - Snap** |
-
-<br>
-
-**Update**: Due to some issues, the option to install snaps is currently disabled. It will be fixed in future.
+![Install Core Applications Flatpak](/assets/uploads/First_Setup/first-setup-applications-flatpak-core.webp)
 
 ### Restricted Codecs
 

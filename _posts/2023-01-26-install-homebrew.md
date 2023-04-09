@@ -11,7 +11,8 @@ published: true
 ## Terminologies
 
 - **Package Manager**:- A package manager or package-management system is a utility with a collection of software tools that automates installing, upgrading, configuring, and removing applications or packages.
-`apx` is the package manager which comes with Vanilla OS. 
+
+`apx` is the package manager which comes with Vanilla OS.
 
 - **Homebrew**:- Homebrew is a popular package manager for installing and managing packages in Mac and Linux. It contains thousands of packages and comes built-in with powerful tools and functionality. It supports installing packages in the `home` directory and is fully compatible with Vanilla OS.
 

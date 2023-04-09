@@ -82,24 +82,6 @@ Create your user account and review the changes that will be made to your system
 
 ![Confirming the installation](/assets/uploads/Installation/installer-confirm-installation.webp)
 
-### Advanced installation
-
-**Note: Manual Partitioning is disabled currently. This feature may be available in future.**
-
-This section will help you with manual partitioning in case this guide doesn't cover your particular needs for installation.
-
-Select the disk to which you want to install Vanilla OS and click "Configure". Select "Manual Partitioning" and click on the arrow next to it. Click on "Open GParted" to manually partition your disk.
-
-![Partitioning](/assets/uploads/Installation/installation-partitioning.webp)
-
-After you're done, select mount points and file systems for each of your partitions. You might need to close and re-open the installer for new partitions to appear.
-
-Click "Apply" and review your changes.
-
-Create your user account and review the changes that will be made to your system. Click on "Install Vanilla OS" and the installation will begin.
-
-![Confirming the installation](/assets/uploads/Installation/installer-confirm-installation.webp)
-
 ## Booting into Vanilla OS
 
 ### If you only have Vanilla OS installed

@@ -12,16 +12,16 @@ Flatpak is a universal package format for Linux desktop applications. It works o
 
 ## Install Flatpak
 
-- The preferred way to install Flatpak is to toggle it in the **First Setup**
+The preferred way to install Flatpak is to toggle it in the **First Setup**
 wizard. If you didn't toggle it, you can install it manually using the transactional shell:
 
 ```bash
 sudo abroot exec apt install flatpak gnome-software-plugin-flatpak
 ```
 
-- Reboot once the installation is complete.
+Reboot once the installation is complete.
 
-- Alternatively, you can install Flatpak inside a managed container using `apx`:
+Alternatively, you can install Flatpak inside a managed container using `apx`:
 
 ```bash
 apx install flatpak
