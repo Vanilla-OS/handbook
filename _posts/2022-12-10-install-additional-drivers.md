@@ -18,7 +18,7 @@ In Vanilla OS, primary drivers are installed automatically during the first setu
 
 ## Vanilla Drivers Utility
 
-**Drivers Utility** is a graphical tool that allows you to install additional drivers. Launch it from the "About" section in Settings, then click on "Additional Drivers".
+**Vanilla Drivers Utility** is a graphical tool that allows you to install additional drivers. Launch it from the "About" section in Settings, then click on "Additional Drivers".
 
 ![Settings](/assets/uploads/Miscellaneous/gnome-settings.webp)
 
