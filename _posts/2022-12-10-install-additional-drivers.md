@@ -16,7 +16,7 @@ In Vanilla OS, primary drivers are installed automatically during the first setu
 - **Vanilla Drivers Utility**
 - **Manual installation in the transactional shell.**
 
-## Vanilla Control Center
+## Vanilla Drivers Utility
 
 **Drivers Utility** is a graphical tool that allows you to install additional drivers. Launch it from the "About" section in Settings, then click on "Additional Drivers".
 
