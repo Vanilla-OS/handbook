@@ -1,42 +1,42 @@
-html::-webkit-scrollbar{
-    background:0 0;
-    height:20px;
-    width:20px
+html::-webkit-scrollbar {
+    background: 0 0;
+    height: 20px;
+    width: 20px
 }
 
-html::-webkit-scrollbar-track{
-    border-radius:20px;
-    box-sizing:content-box;
-    width:6px;
-    border:7px solid #F2F1ED;
-    background-color:#f0f0f0;
+html::-webkit-scrollbar-track {
+    border-radius: 20px;
+    box-sizing: content-box;
+    width: 6px;
+    border: 7px solid #F2F1ED;
+    background-color: #f0f0f0;
 }
 
-html::-webkit-scrollbar-track:hover{
-    background-color:rgb(224, 224, 224);
+html::-webkit-scrollbar-track:hover {
+    background-color: rgb(224, 224, 224);
 }
 
-html::-webkit-scrollbar-thumb{
-    background-clip:content-box;
-    border:7px solid transparent;
-    border-radius:20px;
-    box-sizing:content-box;
-    min-height:30px;
-    width:6px;
-    background-color:#c0baba;
+html::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    border: 7px solid transparent;
+    border-radius: 20px;
+    box-sizing: content-box;
+    min-height: 30px;
+    width: 6px;
+    background-color: #c0baba;
 }
 
-html::-webkit-scrollbar-thumb:window-inactive{
-    background-color:#cecdc9
+html::-webkit-scrollbar-thumb:window-inactive {
+    background-color: #cecdc9
 }
 
-html::-webkit-scrollbar-thumb:hover{
-    background-color:#000
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #000
 }
 
 body {
     background-color: #F2F1ED;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
     color: #151c2c;
     line-height: 30px;
 }
@@ -51,11 +51,13 @@ a {
     gap: 5px;
 }
 
-a:hover, .articleBody a {
+a:hover,
+.articleBody a {
     border-bottom: 1px dotted #000;
 }
 
-.searchField,.card {
+.searchField,
+.card {
     box-shadow: 0 1px 1px 0px #d1cec5, 0 3px 10px 0 #e1dccc;
     background-color: #fff;
     border-radius: 6px;
@@ -248,8 +250,8 @@ p {
 }
 
 .articleBody h1 {
-	font-weight: 700;
-	font-size: 40px;
+    font-weight: 700;
+    font-size: 40px;
 }
 
 .articleBody h1:after {
@@ -263,8 +265,8 @@ p {
 }
 
 .articleBody h2 {
-	font-weight: 600;
-	font-size: 32px;
+    font-weight: 600;
+    font-size: 32px;
 }
 
 .articleBody h2:after {
@@ -278,8 +280,8 @@ p {
 }
 
 .articleBody h3 {
-	font-weight: 500;
-	font-size: 30px;
+    font-weight: 500;
+    font-size: 30px;
 }
 
 .articleBody h3:after {
@@ -293,13 +295,13 @@ p {
 }
 
 .articleBody h4 {
-	font-weight: 500;
-	font-size: 24px;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 .articleBody h5 {
-	font-weight: 500;
-	font-size: 20px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .articleHeader {
