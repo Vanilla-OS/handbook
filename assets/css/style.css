@@ -36,9 +36,16 @@ html::-webkit-scrollbar-thumb:hover {
 
 body {
     background-color: #F2F1ED;
-    font-family: 'Outfit', sans-serif;
     color: #151c2c;
     line-height: 30px;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+    font-family: 'Outfit', sans-serif;
 }
 
 a {
