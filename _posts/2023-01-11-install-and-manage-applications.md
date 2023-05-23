@@ -199,7 +199,7 @@ apx install --sideload <path/to/package.deb>
 You can install RPM packages with the following command:-
 
 ```bash
-apx install --dnf --sideload <path/to/package.deb>
+apx install --dnf --sideload <path/to/package.rpm>
 ```
 
 If your application's desktop entry isn't detected automatically, you can export it manually with the following command:-
