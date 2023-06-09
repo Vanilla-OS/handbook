@@ -59,13 +59,6 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 **_Note_**:- Set the location for saved Images and Containers to `/home` to avoid filling up the root partition.
 
-Alternatively, you can install the Docker engine using the nix subcommand through the following steps:-
-
-```bash
-Initialize (One time step): apx init --nix
-Install Docker Engine: apx install --nix docker
-```
-
 ## Installing Docker Desktop
 
 You can install the Docker Desktop application using the following steps:-
