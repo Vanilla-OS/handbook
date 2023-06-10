@@ -57,7 +57,9 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 - Now, `exit` the transactional shell and `reboot` your system.
 - After the reboot, type `sudo docker run hello-world` in your terminal window. It will pull the image locally and display a message meaning the installation is successful.
 
-**_Note_**:- Set the location for saved Images and Containers to `/home` to avoid filling up the root partition.
+**_Notes_**:
+- Add the `docker` group to your user's groups to allow running the `docker` command without `sudo` using the command `sudo usermod -aG docker $USER`
+- Set the location for saved Images and Containers to `/home` to avoid filling up the root partition.
 
 ## Installing Docker Desktop
 
