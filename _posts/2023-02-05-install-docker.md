@@ -60,7 +60,7 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 **_Notes_**:-
 
-- Add the `docker` group to your user's groups to allow running the `docker` command without `sudo` using the command `sudo usermod -aG docker $USER`
+- Add the `docker` group to your user's groups to allow running the `docker` command without `sudo` using the command `sudo usermod -aG docker $USER`.
 - Set the location for saved Images and Containers to `/home` to avoid filling up the root partition.
 
 ## Installing Docker Desktop
