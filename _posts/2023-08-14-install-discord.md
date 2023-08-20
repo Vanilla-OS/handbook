@@ -10,7 +10,8 @@ published: true
 
 ## What is Discord?
 
-[**Discord**](https://discord.com/) is a popular social platform for socialising with both friends and communities allowing people to interact online through messaging, voice calls, video call, and games.
+[**Discord**](https://discord.com/) is a popular social platform for socialising with both friends and communities
+allowing people to interact online through messaging, voice calls, video call, and games.
 
 ## Install the Flatpak using the Command line
 
@@ -51,4 +52,6 @@ apx --dnf install discord
 and so on...
 
 **_NOTE_**: you may make use of the **`--help`** flag to see the list of available package managers
-if this is your first time using apx to install with a certain package manager, a container corresponding to that package manager will be created first. Discord will then begin to install after the container is ready.
+if this is your first time using apx to install with a certain package manager,
+a container corresponding to that package manager will be created first.
+Discord will then begin to install after the container is ready.
