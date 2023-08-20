@@ -15,22 +15,27 @@ published: true
 ## Install the Flatpak using the Command line
 
 Discord can be installed through both the command line and GNOME Software.
-To install Discord as a flatpak you must have flatpak installed and the [**Flathub**](https://flathub.org/) repo added, you may see how to do so [**here**](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html).
+To install Discord as a flatpak you must have flatpak installed and the [**Flathub**](https://flathub.org/) repo added,
+you may see how to do so [**here**](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html).
 Once you have installed Flatpak you may proceed with the installation by executing the following command:
 
 ```bash
 flatpak install --user flathub com.discordapp.Discord
 ```
 
-**_NOTE_**: On Vanilla OS GNOME Software has been preconfigured to install flatpaks for the current user. As mentioned [**here**](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html/),
-if you plan to install a flatpak using the command line you must include the **`--user`** flag, this is because the root partitions in Vanilla OS are small in size and must only get updated in a transactional way.
+**_NOTE_**: On Vanilla OS GNOME Software has been preconfigured to install flatpaks for the current user.
+As mentioned [**here**](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html/),
+if you plan to install a flatpak using the command line you must include the **`--user`** flag,
+this is because the root partitions in Vanilla OS are small in size and must only get updated in a transactional way.
 
 ## Install the Flatpak through GNOME Software
 
 If you do not have flatpak installed yet, you may see how to do so [**here**](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html).
-GNOME Software on Vanilla OS has already been configured to install flatpaks for the current user. As mentioned [**here**](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html/) and in the section above,
+GNOME Software on Vanilla OS has already been configured to install flatpaks for the current user.
+As mentioned [**here**](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html/) and in the section above,
 this is done because the root partitions in Vanilla OS are small in size and must only get updated in a transactional way.
-To install lauch GNOME Software and use the search utility and search for "Discord" to locate the Discord flatpak. At the time of writing it is the first result.
+To install lauch GNOME Software and use the search utility and search for "Discord" to locate the Discord flatpak.
+At the time of writing it is the first result.
 
 ## Installing Discord as a native package
 
