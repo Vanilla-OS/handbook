@@ -1,6 +1,6 @@
 ---
 Title: Change your Default Shell
-Description Learn how to change your Default Shell in Vanilla OS.
+Description: Learn how to change your Default Shell in Vanilla OS.
 PublicationDate: 2023-01-19
 Authors:
     - MonsterObserver

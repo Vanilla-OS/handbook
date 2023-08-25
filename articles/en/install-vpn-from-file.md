@@ -1,6 +1,6 @@
 ---
 Title: Installing an OpenVPN File without using Terminal
-Description Learn how to install an OpenVPN File graphically.
+Description: Learn how to install an OpenVPN File graphically.
 PublicationDate: 2023-01-11
 Authors:
     - gonzoknows

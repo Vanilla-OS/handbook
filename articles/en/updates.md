@@ -1,6 +1,6 @@
 ---
 Title: Update and Upgrade Vanilla OS
-Description Learn how to update the operating system.
+Description: Learn how to update the operating system.
 PublicationDate: 2022-12-10
 Authors:
     - mirkobrombin

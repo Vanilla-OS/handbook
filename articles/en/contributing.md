@@ -1,6 +1,6 @@
 ---
 Title: Contribute to Handbook
-Description Learn how to contribute to Vanilla OS Handbook.
+Description: Learn how to contribute to Vanilla OS Handbook.
 PublicationDate: 2022-11-11
 Authors:
     - kbdharun
@@ -48,7 +48,7 @@ For example:-
 ```md
 ---
 Title: Installing a package
-Description Learn how to install a package in Vanilla OS
+Description: Learn how to install a package in Vanilla OS
 PublicationDate: 2023-01-13
 
 Authors:

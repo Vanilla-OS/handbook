@@ -1,6 +1,6 @@
 ---
 Title: Install Lutris
-Description Learn how to install Lutris on Vanilla OS.
+Description: Learn how to install Lutris on Vanilla OS.
 PublicationDate: 2023-01-28
 Authors:
     - mirkobrombin

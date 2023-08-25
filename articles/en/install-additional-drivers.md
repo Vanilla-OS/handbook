@@ -1,6 +1,6 @@
 ---
 Title: Install additional drivers in Vanilla OS
-Description Learn how to install Additional drivers in Vanilla OS.
+Description: Learn how to install Additional drivers in Vanilla OS.
 PublicationDate: 2022-12-10
 Authors:
     - mirkobrombin
