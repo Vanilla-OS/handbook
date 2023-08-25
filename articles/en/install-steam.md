@@ -2,10 +2,8 @@
 Title: Install Steam
 Description Learn how to install Steam on Vanilla OS.
 PublicationDate: 2023-01-07
-layout: article
-authors: 
+Authors:
     - mirkobrombin
-published: true
 ---
 
 ## What is Steam?

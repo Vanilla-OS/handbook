@@ -2,12 +2,10 @@
 Title: Install Vanilla OS in a VM
 Description Learn how to install Vanilla OS in a VM.
 PublicationDate: 2023-01-21
-layout: article
-authors: 
+Authors:
     - MonsterObserver
     - kbdharun
     - johnaaron-git
-published: true
 ---
 
 ## Introduction

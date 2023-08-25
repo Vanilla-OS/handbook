@@ -2,12 +2,10 @@
 Title: Contribute to Handbook
 Description Learn how to contribute to Vanilla OS Handbook.
 PublicationDate: 2022-11-11
-layout: article
-authors: 
+Authors:
     - kbdharun
     - kra-mo
     - MonsterObserver
-published: true
 ---
 
 Thank you for your interest in our project. This guide will help you with writing articles.
@@ -34,12 +32,12 @@ If you want to write a guide for the handbook, follow these instructions:-
 Title:
 Description
 PublicationDate: YYYY-MM-DD
-layout: article
-authors: 
+
+Authors:
     - 1st author GitHub username
     - 2nd author GitHub username
     - ...
-published: true
+
 ---
 ```
 
@@ -52,10 +50,10 @@ For example:-
 Title: Installing a package
 Description Learn how to install a package in Vanilla OS
 PublicationDate: 2023-01-13
-layout: article
-authors: 
+
+Authors:
     - MonsterObserver
-published: true
+
 ---
 ```
 

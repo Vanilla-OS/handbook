@@ -2,10 +2,8 @@
 Title: Install Flatpak(s) in Vanilla OS
 Description Learn how to install Flatpak packages in Vanilla OS.
 PublicationDate: 2022-12-09
-layout: article
-authors: 
+Authors:
     - mirkobrombin
-published: true
 ---
 
 Flatpak is a universal package format for Linux desktop applications. It works on most Linux distributions, Vanilla OS included. Flatpak applications get distributed as bundles, similar to native packages, but they are sandboxed and can be updated independently from the host system.

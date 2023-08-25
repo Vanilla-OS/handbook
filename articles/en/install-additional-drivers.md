@@ -2,12 +2,10 @@
 Title: Install additional drivers in Vanilla OS
 Description Learn how to install Additional drivers in Vanilla OS.
 PublicationDate: 2022-12-10
-layout: article
-authors: 
+Authors:
     - mirkobrombin
     - kbdharun
     - mrunix00
-published: true
 ---
 Drivers are software components that allow the operating system to communicate with hardware devices.
 

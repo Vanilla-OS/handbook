@@ -2,11 +2,9 @@
 Title: Update and Upgrade Vanilla OS
 Description Learn how to update the operating system.
 PublicationDate: 2022-12-10
-layout: article
-authors: 
+Authors:
     - mirkobrombin
     - kbdharun
-published: true
 ---
 
 Vanilla OS is a point release distribution that receives two new releases annually with security updates and bug fixes for system components distributed between releases, usually without any new features introduced.
