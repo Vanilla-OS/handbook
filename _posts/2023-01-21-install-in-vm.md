@@ -118,7 +118,7 @@ In the first setup, click "Install" on the Open VM Tools page to install the nec
 
 ### Prerequisites
 
-- A Virtual Machine Manager Installation from [**here**](https://virt-manager.org/). 
+- A Virtual Machine Manager Installation from [**here**](https://virt-manager.org/).
 
 - The necessary QEMU dependencies installed.
 
@@ -131,6 +131,7 @@ Launch Virtual Machine Manager from the App Grid. Alternatively, you can run it 
 ```bash
 virt-manager
 ```
+
 Click on the "Create a new virtual machine" button in the left corner below the top bar.
 
 ![Virt manager 1](/assets/uploads/VM_Post/Virt-Manager/virt_manager_1.webp)
@@ -327,7 +328,6 @@ Type `reboot` and press enter. You have successfully configured your VM!
 
 You can change more virtual machine performance/sharing/integration options using the Parallels settings menu in the Control Center. Please refer to the [Parallels Knowledge Base](https://kb.parallels.com) for details.
 
-
 ![Parallels 35](/assets/uploads/VM_Post/Parallels/vanilla-parallels-install-35.webp)
 
 ## Install Vanilla OS in VirtualBox
@@ -345,6 +345,7 @@ Launch VirtualBox from the App Grid. Alternatively, you can run it with the foll
 ```bash
 virtualbox
 ```
+
 Click on "New". (This will open the "Create Virtual Machine" Popup)
 
 ![VirtualBox 5](/assets/uploads/VM_Post/Virtualbox/VirtualBox_5.webp)

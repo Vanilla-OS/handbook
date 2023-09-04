@@ -152,6 +152,7 @@ apx init --aur
 apx init --dnf
 apx init --apk
 ```
+
 **_Warning_**: This will remove all applications installed inside the container!
 
 If you wish to use a specific Shell for your container, you can manually set the SHELL variable before creating the container with the following commands:-

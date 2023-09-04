@@ -1,0 +1,40 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, ready_for_review, edited]
+
+jobs:
+    markdownlint:
+        runs-on: ubuntu-latest
+    
+        steps:
+          - uses: actions/checkout@v3
+    
+          - name: Run markdownlint
+            run: |
+              sudo npm install -g markdownlint-cli
+              markdownlint $(find . -name '*.md' | grep -vF './.git')
+    
+    codespell:
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v3
+
+        - name: Get changed files
+          id: changed-files
+          uses: tj-actions/changed-files@v38
+          with:
+            # Ignore all other languages except English
+            files: |
+              articles/en/*.md
+
+        - uses: codespell-project/actions-codespell@v2
+          with:
+            # Only check files in the PR
+            path: |
+                ${{ steps.changed-files.outputs.all_changed_files }}

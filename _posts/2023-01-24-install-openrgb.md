@@ -30,7 +30,7 @@ flatpak install flathub org.openrgb.OpenRGB
 
 ### Prerequisites
 
-AppImage Support: If you have enabled AppImage in the "First Setup" when installing Vanilla OS, this step isn't necessary. 
+AppImage Support: If you have enabled AppImage in the "First Setup" when installing Vanilla OS, this step isn't necessary.
 
 If you haven't enabled AppImages, run the following command:-
 
