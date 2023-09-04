@@ -25,18 +25,7 @@ jobs:
         steps:
         - uses: actions/checkout@v3
 
-        - name: Get changed files
-          id: changed-files
-          uses: tj-actions/changed-files@v38
-          with:
-            # Ignore all other languages except English
-            files: |
-              articles/en/*.md
-
         - uses: codespell-project/actions-codespell@v2
           with:
-             # Exit with 0 regardless of typos.
-             only_warn: 1
-             # Only check files in the PR
              path: |
-                 ${{ steps.changed-files.outputs.all_changed_files }}
+                 articles/en
