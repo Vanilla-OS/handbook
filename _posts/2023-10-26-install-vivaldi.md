@@ -15,8 +15,6 @@ published: true
 
 ## Installing Vivaldi
 
-You can install Vivaldi using the following steps:
-
 First, download the latest version of Vivaldi from [**here**](https://vivaldi.com/download/).
 
 Execute the following command to access to the directory where the downloaded package is located:
@@ -38,9 +36,7 @@ apx enter
 sudo apt update && sudo apt install chromium-codecs-ffmpeg-extra
 ```
 
-## Installing Pipewire for Vivaldi
-
-This step is necessary to get functioning audio.
+This step is essential to ensure that your audio functions properly.
 
 ```bash
 sudo apt install pipewire-audio-client-libraries pipewire-pulse wireplumber
