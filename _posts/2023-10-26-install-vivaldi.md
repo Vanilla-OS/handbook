@@ -36,7 +36,7 @@ apx enter
 sudo apt update && sudo apt install chromium-codecs-ffmpeg-extra
 ```
 
-This step is essential to ensure that your audio functions properly.
+Run the following command to install the required components for functioning audio:
 
 ```bash
 sudo apt install pipewire-audio-client-libraries pipewire-pulse wireplumber
