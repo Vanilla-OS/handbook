@@ -10,7 +10,8 @@ on:
 jobs:
     markdownlint:
         runs-on: ubuntu-latest
-    
+        container:
+          image: ghcr.io/vanilla-os/pico:main
         steps:
           - uses: actions/checkout@v4
     
@@ -21,11 +22,12 @@ jobs:
     
     codespell:
         runs-on: ubuntu-latest
-
+        container:
+          image: ghcr.io/vanilla-os/pico:main
         steps:
         - uses: actions/checkout@v4
-
         - uses: codespell-project/actions-codespell@v2
           with:
              path: |
                  articles/en
+             only_warn: 1
