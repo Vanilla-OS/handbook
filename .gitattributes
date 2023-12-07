@@ -1,2 +1,8 @@
 # Ref: https://git-scm.com/docs/gitattributes
 * text=auto eol=lf
+
+# GitHub linguist ignores markdown files by default, but files here
+# are mostly markdown, so we explicitly make the pages detectable
+# to show up in repository code metrics
+pages*/**/*.md linguist-detectable=true
+pages*/**/*.md linguist-documentation=false
