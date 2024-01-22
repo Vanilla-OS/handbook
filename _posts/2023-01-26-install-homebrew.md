@@ -37,6 +37,6 @@ Once `git` is present in your system, you can install Homebrew in the terminal w
 
 Once installation is complete, you will see this message:-
 
-![Homebrew Post Installation message](/assets/uploads/Miscellaneous/homebrew-post-installation-message.webp)
+![Homebrew Post Installation message](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Miscellaneous/homebrew-post-installation-message.webp)
 
 Now, execute the commands the message gives you to add Homebrew to your `$PATH`. To see if everything worked correctly, install a test package (`brew install hello`), then check the installation by typing `hello` in your terminal.
