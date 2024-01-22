@@ -58,7 +58,7 @@ On Optimus laptops, there are 2 GPUs: the integrated (Intel or AMD) and the dedi
 
 You can fix this in Lutris by opening the game's configuration and toggling the "Enable NVIDIA Prime Render Offload" option. You can find it under the "System Options" tab.
 
-![Lutris Prime Render Offload](/assets/uploads/Gaming/lutris-prime-gpu.webp)
+![Lutris Prime Render Offload](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Gaming/lutris-prime-gpu.webp)
 
 ### Other issues
 
