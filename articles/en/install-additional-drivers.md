@@ -19,12 +19,12 @@ In Vanilla OS, primary drivers are installed automatically during the first setu
 
 **Vanilla Drivers Utility** is a graphical tool that allows you to install additional drivers. Launch it from the "About" section in Settings, then click on "Additional Drivers".
 
-![Settings](/assets/uploads/Miscellaneous/gnome-settings.webp)
+![Settings](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Miscellaneous/gnome-settings.webp)
 
 Here you can see a list of all the drivers available, organized by category. To install a driver, click on it, then press the "Apply Changes" button in
 the top-right corner.
 
-![Drivers Utility](/assets/uploads/Miscellaneous/drivers-utility.webp)
+![Drivers Utility](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Miscellaneous/drivers-utility.webp)
 
 Once the installation is complete, you will be requested to reboot the system.
 

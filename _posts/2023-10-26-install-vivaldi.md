@@ -74,4 +74,4 @@ This allows you to open links from other applications inside of the subsystem in
 
 - A new Vivaldi icon will open for each window, regardless of whether the icon in the Application Menu is pinned to the dock or not.
 
-![Vivaldi in the dock](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Miscellaneous/vivaldi-dock.webp)
+![Vivaldi in the dock](/assets/uploads/Miscellaneous/vivaldi-dock.webp)

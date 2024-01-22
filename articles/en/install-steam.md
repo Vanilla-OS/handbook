@@ -138,6 +138,6 @@ Steam comes with Proton preconfigured to run all the supported Windows games.
 
 You may want to enable the Steam Play feature to also run games that are not officially supported.
 
-![Steam Play](/assets/uploads/Gaming/steam-play.webp)
+![Steam Play](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Gaming/steam-play.webp)
 
 To do so, open Steam and go to `Steam` > `Settings` > `Steam Play`. Then enable the `Enable Steam Play for all other titles` option.

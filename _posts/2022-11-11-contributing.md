@@ -60,7 +60,7 @@ published: true
 ```
 
 - Add your GitHub username with the co-author's username(s) in the author's field to have working links when the post is published.
-- Ensure images are in **WebP format** and placed in a dedicated directory under the `assets/uploads` directory with a descriptive name for future reference.
+- Ensure images are in **WebP format** and placed in a dedicated directory under the `/assets/uploads` directory with a descriptive name for future reference.
 
 **_Tip_**: We suggest using [**cwebp**](https://developers.google.com/speed/webp/docs/cwebp) for converting the images to WebP.
 

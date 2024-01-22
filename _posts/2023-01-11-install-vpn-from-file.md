@@ -18,7 +18,7 @@ Press the Windows/Super key.
 
 Search for "VPN" or "vpn" in the search.
 
-![Search for vpn](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/OpenVPN/install-openvpn-from-file-search.webp)
+![Search for vpn](/assets/uploads/OpenVPN/install-openvpn-from-file-search.webp)
 
 Select "Network" from the Settings search result.
 
@@ -30,7 +30,7 @@ Alternatively, you can directly navigate to the "Network" panel by opening Setti
 
 Once you have navigated to the Network panel, click on the plus (`+`) button beside the VPN.
 
-![Plus Button beside VPN](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/OpenVPN/install-openvpn-from-file-vpn-add.webp)
+![Plus Button beside VPN](/assets/uploads/OpenVPN/install-openvpn-from-file-vpn-add.webp)
 
 Various options will be displayed in the menu, select "**Import from file...**"
 

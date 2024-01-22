@@ -85,6 +85,6 @@ sudo apt install ./docker-desktop-<version>-<arch>.deb
 
 `exit` the transactional shell and `reboot` your system to see Docker Desktop.
 
-![Docker Desktop](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Miscellaneous/Docker-Desktop.webp)
+![Docker Desktop](/assets/uploads/Miscellaneous/Docker-Desktop.webp)
 
 Now, sign up and proceed with the setup.

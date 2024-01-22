@@ -54,7 +54,7 @@ Vanilla OS comes with the option to enable Flatpak and AppImage in the initial s
 
 Flatpaks can be installed with ease using GNOME Software. It is the recommended method for installing packages.
 
-![GNOME Software](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Applications_Post/gnome-software-43.webp)
+![GNOME Software](/assets/uploads/Applications_Post/gnome-software-43.webp)
 
 ### Searching Applications
 
@@ -70,7 +70,7 @@ Updates are visible in the `Updates` panel in GNOME Software. In Vanilla OS, Upd
 
 Automatic Updates are configured in the `Update Preferences` tab located in the burger menu in the top right corner.
 
-![GNOME Software Update Proferences](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Applications_Post/gnome-software-update-preferences.webp)
+![GNOME Software Update Proferences](/assets/uploads/Applications_Post/gnome-software-update-preferences.webp)
 
 ### Removing Applications
 
@@ -92,7 +92,7 @@ If you have enabled AppImage in the first setup, you can run AppImages graphical
 
 - Right-click on the file, then click on **Properties**.
 
-![AppImages Properties](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Applications_Post/appimages-nautilus-properties.webp)
+![AppImages Properties](/assets/uploads/Applications_Post/appimages-nautilus-properties.webp)
 
 - Enable the **Executable as Program** option.
 
@@ -174,11 +174,11 @@ apx init --<package_manager>
 
 You can also initialize the containers graphically by clicking on the `+` icon in the Vanilla Control Center. (Vanilla Control Center allows you to enter the apx container graphically.)
 
-![Vanilla Control Center - Sub System](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Applications_Post/vanilla-control-center-subsystem.webp)
+![Vanilla Control Center - Sub System](/assets/uploads/Applications_Post/vanilla-control-center-subsystem.webp)
 
 After initialization, you can enter the container graphically by clicking on the `terminal` icon.
 
-![Vanilla Control Center - Sub System post initialization](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Applications_Post/vanilla-control-center-subsystem-example.webp)
+![Vanilla Control Center - Sub System post initialization](/assets/uploads/Applications_Post/vanilla-control-center-subsystem-example.webp)
 
 ### Installing Applications with Apx
 

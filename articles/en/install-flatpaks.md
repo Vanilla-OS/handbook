@@ -49,7 +49,7 @@ There are two ways to install a Flatpak applications: using GNOME Software or th
 
 Open GNOME Software, search for the application you want to install and click on the "Install" button.
 
-![GNOME Software](/assets/uploads/Miscellaneous/flatpak-gnome-software.webp)
+![GNOME Software](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Miscellaneous/flatpak-gnome-software.webp)
 
 ### Command line
 
