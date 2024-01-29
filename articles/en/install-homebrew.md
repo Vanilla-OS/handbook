@@ -6,6 +6,8 @@ Authors:
     - kbdharun
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 ## Terminologies
 
 - **Package Manager**:- A package manager or package-management system is a utility with a collection of software tools that automates installing, upgrading, configuring, and removing applications or packages.

@@ -6,6 +6,8 @@ Authors:
     - MonsterObserver
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 ## Introduction
 
 [**OpenRGB**](https://openrgb.org/) is an essential application for managing your RGB appliances. This guide will help you install the Flatpak and AppImage of OpenRGB correctly.

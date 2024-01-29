@@ -7,6 +7,8 @@ Authors:
     - kbdharun
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 ## Introduction
 
 Jekyll is a popular static site generator for creating blogs, documentation, and personal websites.

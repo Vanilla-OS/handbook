@@ -8,6 +8,8 @@ Authors:
     - mrunix00
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 Drivers are software components that allow the operating system to communicate with hardware devices.
 
 In Vanilla OS, primary drivers are installed automatically during the first setup, but some devices may need additional drivers to work ideally. You can install them using two methods:-

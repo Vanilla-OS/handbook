@@ -6,6 +6,8 @@ Authors:
     - mirkobrombin
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 ## What is Distrobox?
 
 [**Distrobox**](https://github.com/89luca89/distrobox) is a utility that allows you to run multiple Linux distributions in your system without the need to dual boot or install them in a virtual machine. It enables backward and forward compatibility with software and provides freedom to use whatever distribution you need.

@@ -6,6 +6,8 @@ Authors:
     - mirkobrombin
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 ## What is Lutris?
 
 [**Lutris**](https://lutris.net/) is an open-source game launcher for Linux that allows you to download and play games from various platforms such as the Epic Games Store, GOG Galaxy client, Origin, Humble Bundle and many others through a simple interface.
