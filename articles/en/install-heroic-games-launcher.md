@@ -6,6 +6,8 @@ Authors:
     - mirkobrombin
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 ## What is Heroic Games Launcher?
 
 [**Heroic Games Launcher**](https://heroicgameslauncher.com/) is an open source game launcher for Linux. It allows you to download and play games from the Epic Games Store and the GOG Galaxy client through a user-friendly interface.

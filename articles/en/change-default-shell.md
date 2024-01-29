@@ -6,6 +6,8 @@ Authors:
     - MonsterObserver
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 ## Introduction
 
 Vanilla OS allows you to change your Default Shell to optimize your workflow. This guide will show you how to change your Default Shell to [**Zsh**](https://zsh.sourceforge.io/) or [**Fish**](https://fishshell.com/).

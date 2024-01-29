@@ -8,6 +8,8 @@ Authors:
     - MonsterObserver
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 Thank you for your interest in our project. This guide will help you with writing articles.
 
 The [**Handbook**](https://github.com/Vanilla-OS/handbook) uses Jekyll and GitHub pages for generating the website.

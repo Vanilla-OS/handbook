@@ -6,6 +6,8 @@ Authors:
     - mirkobrombin
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 ## What is Steam?
 
 [**Steam**](https://steampowered.com) is the most popular gaming platform. It allows you to download and play a vast library of games. It's client is available natively on Linux.

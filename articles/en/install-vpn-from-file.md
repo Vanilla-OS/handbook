@@ -6,6 +6,8 @@ Authors:
     - gonzoknows
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 ## Introduction
 
 This guide provides a step-by-step process for installing an OpenVPN file graphically without using the terminal. It helps users who may be uncomfortable with command-line interfaces or who prefer a more user-friendly approach.

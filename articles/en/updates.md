@@ -7,6 +7,8 @@ Authors:
     - kbdharun
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 Vanilla OS is a point release distribution that receives two new releases annually with security updates and bug fixes for system components distributed between releases, usually without any new features introduced.
 
 ## Difference between Update and Upgrade

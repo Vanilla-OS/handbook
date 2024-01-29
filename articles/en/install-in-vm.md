@@ -8,6 +8,8 @@ Authors:
     - johnaaron-git
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 ## Introduction
 
 If you are interested in Vanilla OS, it's a good idea to try it out in a VM before using it on your hardware to get used to the Vanilla OS components. This guide will guide you through installing Vanilla OS with various VM software.

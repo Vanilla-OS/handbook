@@ -7,6 +7,8 @@ Authors:
     - zedtux
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 ## Introduction
 
 [**Docker**](https://www.docker.com/) is an open platform for developing, shipping, and running applications in containerized environments. This guide provides the steps to install the Docker engine and Docker desktop in Vanilla OS.

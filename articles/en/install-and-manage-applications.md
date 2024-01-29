@@ -7,6 +7,8 @@ Authors:
     - MonsterObserver
 ---
 
+> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
+
 ## Introduction
 
 Vanilla OS allows installing packages and software from various sources. This guide will discuss them in detail.
