@@ -37,7 +37,7 @@ The next set is to create a Task that opens VSO Shell on the startup of Visual S
 - Open the Command Palette (`Ctrl`+`Shift`+`P`).
 - Search for "Tasks: Open User Tasks" and select it.
 
-This opens the tasks.json file. Clear up the file, and paste the following content:
+This opens the `tasks.json` file. Clear up the file, and paste the following content:
 
 ```json
 {
