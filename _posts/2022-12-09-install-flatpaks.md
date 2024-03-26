@@ -8,7 +8,7 @@ authors:
 published: true
 ---
 
-> This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
+**_Note_**: This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
 
 Flatpak is a universal package format for Linux desktop applications. It works on most Linux distributions, Vanilla OS included. Flatpak applications get distributed as bundles, similar to native packages, but they are sandboxed and can be updated independently from the host system.
 
