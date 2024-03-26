@@ -8,6 +8,8 @@ authors:
 published: true
 ---
 
+> This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
+
 ## What is Heroic Games Launcher?
 
 [**Heroic Games Launcher**](https://heroicgameslauncher.com/) is an open source game launcher for Linux. It allows you to download and play games from the Epic Games Store and the GOG Galaxy client through a user-friendly interface.

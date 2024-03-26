@@ -8,6 +8,8 @@ authors:
 published: true
 ---
 
+> This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
+
 ## Introduction
 
 Vanilla OS allows you to change your Default Shell to optimize your workflow. This guide will show you how to change your Default Shell to [**Zsh**](https://zsh.sourceforge.io/) or [**Fish**](https://fishshell.com/).

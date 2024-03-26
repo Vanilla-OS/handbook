@@ -8,6 +8,8 @@ authors:
 published: true
 ---
 
+> This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
+
 ## What is Steam?
 
 [**Steam**](https://steampowered.com) is the most popular gaming platform. It allows you to download and play a vast library of games. It's client is available natively on Linux.

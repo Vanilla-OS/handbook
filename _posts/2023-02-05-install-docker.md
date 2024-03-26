@@ -10,6 +10,8 @@ authors:
 published: true
 ---
 
+> This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
+
 ## Introduction
 
 [**Docker**](https://www.docker.com/) is an open platform for developing, shipping, and running applications in containerized environments. This guide provides the steps to install the Docker engine and Docker desktop in Vanilla OS.

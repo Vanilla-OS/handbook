@@ -8,6 +8,8 @@ authors:
 published: true
 ---
 
+> This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
+
 ## Introduction
 
 This guide provides a step-by-step process for installing an OpenVPN file graphically without using the terminal. It helps users who may be uncomfortable with command-line interfaces or who prefer a more user-friendly approach.

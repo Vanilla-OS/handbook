@@ -8,6 +8,8 @@ authors:
 published: true
 ---
 
+> This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
+
 ## What is Lutris?
 
 [**Lutris**](https://lutris.net/) is an open-source game launcher for Linux that allows you to download and play games from various platforms such as the Epic Games Store, GOG Galaxy client, Origin, Humble Bundle and many others through a simple interface.

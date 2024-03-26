@@ -9,6 +9,8 @@ authors:
 published: true
 ---
 
+> This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
+
 ## Introduction
 
 Vanilla OS allows installing packages and software from various sources. This guide will discuss them in detail.

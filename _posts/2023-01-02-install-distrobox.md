@@ -8,6 +8,8 @@ authors:
 published: true
 ---
 
+> This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
+
 ## What is Distrobox?
 
 [**Distrobox**](https://github.com/89luca89/distrobox) is a utility that allows you to run multiple Linux distributions in your system without the need to dual boot or install them in a virtual machine. It enables backward and forward compatibility with software and provides freedom to use whatever distribution you need.

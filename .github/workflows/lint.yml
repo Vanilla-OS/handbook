@@ -2,9 +2,9 @@ name: Lint
 
 on:
   push:
-    branches: [main]
+    branches: [kinetic]
   pull_request:
-    branches: [main]
+    branches: [kinetic]
     types: [opened, synchronize, ready_for_review, edited]
 
 jobs:

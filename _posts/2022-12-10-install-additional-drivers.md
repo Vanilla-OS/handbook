@@ -9,6 +9,9 @@ authors:
     - mrunix00
 published: true
 ---
+
+> This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
+
 Drivers are software components that allow the operating system to communicate with hardware devices.
 
 In Vanilla OS, primary drivers are installed automatically during the first setup, but some devices may need additional drivers to work ideally. You can install them using two methods:-

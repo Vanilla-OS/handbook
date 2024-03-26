@@ -10,6 +10,8 @@ authors:
 published: true
 ---
 
+> This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
+
 ## Introduction
 
 If you are interested in Vanilla OS, it's a good idea to try it out in a VM before using it on your hardware to get used to the Vanilla OS components. This guide will guide you through installing Vanilla OS with various VM software.

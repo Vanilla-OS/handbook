@@ -9,6 +9,8 @@ authors:
 published: true
 ---
 
+> This guide is for Kinetic (22.10). For newer versions of Vanilla OS, refer to <https://docs.vanillaos.org/collections/handbook> for the latest documentation.
+
 ## Introduction
 
 [**Vivaldi**](https://vivaldi.com) is a freeware, cross-platform web browser based on Chromium, the open-source project behind Google Chrome. Vivaldi is intended to be a customizable, functional, and practical browser for the web.
