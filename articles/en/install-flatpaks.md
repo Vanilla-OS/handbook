@@ -7,42 +7,15 @@ Authors:
     - mirkobrombin
 ---
 
-> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
-
 Flatpak is a universal package format for Linux desktop applications. It works on most Linux distributions, Vanilla OS included. Flatpak applications get distributed as bundles, similar to native packages, but they are sandboxed and can be updated independently from the host system.
 
 ## Install Flatpak
 
-The preferred way to install Flatpak is to toggle it in the **First Setup**
-wizard. If you didn't toggle it, you can install it manually using the transactional shell:
-
-```bash
-sudo abroot exec apt install flatpak gnome-software-plugin-flatpak
-```
-
-Reboot once the installation is complete.
-
-Alternatively, you can install Flatpak inside a managed container using `apx`:
-
-```bash
-apx install flatpak
-```
-
-In this case, you will always need to run Flatpak commands inside the `apx` container:
-
-```bash
-apx run flatpak install flathub org.gnome.gedit
-```
+You don't have to install it manually, as Flatpak is already installed by default in Vanilla OS.
 
 ## Configure Flathub
 
-Flatpak needs to know where to look for applications. The default and most popular repository for installing Flatpaks is Flathub, which you can add using the following command:
-
-```bash
-flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
-```
-
-**_NOTE_**: The `--user` flag, which tells Flatpak to install applications only for the current user, is needed because the root partitions in Vanilla OS are small-sized and must get updated in a transactional way only.
+Flathub is the largest and most popular catalog of Flatpak applications. It is enabled by default in Vanilla OS.
 
 ## Install an application
 
@@ -59,7 +32,7 @@ Open GNOME Software, search for the application you want to install and click on
 You can also install Flatpak applications using the command line. For example, to install Steam, run the following command:
 
 ```bash
-flatpak install flathub com.valvesoftware.Steam
+flatpak install --user com.valvesoftware.Steam
 ```
 
 ## Run an application
