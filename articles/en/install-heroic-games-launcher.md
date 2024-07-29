@@ -2,6 +2,7 @@
 Title: Install Heroic Games Launcher
 Description: Learn how to install Heroic games Launcher on Vanilla OS.
 PublicationDate: 2023-01-28
+Listed: true
 Authors:
     - mirkobrombin
 ---

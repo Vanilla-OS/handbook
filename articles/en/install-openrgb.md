@@ -2,6 +2,7 @@
 Title: Install OpenRGB
 Description: Learn how to install OpenRGB on Vanilla OS.
 PublicationDate: 2023-01-20
+Listed: true
 Authors:
     - MonsterObserver
 ---

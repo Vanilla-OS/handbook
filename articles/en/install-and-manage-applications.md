@@ -2,6 +2,7 @@
 Title: Install and manage Applications
 Description: Learn how to install and manage applications on Vanilla OS
 PublicationDate: 2023-01-11
+Listed: true
 Authors:
     - kbdharun
     - MonsterObserver

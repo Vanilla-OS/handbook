@@ -2,6 +2,7 @@
 Title: Installing Homebrew in Vanilla OS
 Description: Learn how to Install and setup Homebrew in Vanilla OS.
 PublicationDate: 2022-01-26
+Listed: true
 Authors:
     - kbdharun
 ---

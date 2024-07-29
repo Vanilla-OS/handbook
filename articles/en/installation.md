@@ -2,6 +2,7 @@
 Title: Vanilla OS Installation
 Description: Learn how to install Vanilla OS to your device.
 PublicationDate: 2022-11-05
+Listed: true
 Authors:
     - kra-mo
     - kbdharun

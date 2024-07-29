@@ -2,6 +2,7 @@
 Title: First Setup
 Description: Set up Vanilla OS after installation.
 PublicationDate: 2022-11-18
+Listed: true
 Authors:
     - kra-mo
     - kbdharun

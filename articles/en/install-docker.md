@@ -2,6 +2,7 @@
 Title: Installing Docker Engine and Docker Desktop
 Description: Learn how to Install and set up Docker Engine and Docker Desktop in Vanilla OS.
 PublicationDate: 2022-02-05
+Listed: true
 Authors:
     - kbdharun
     - zedtux

@@ -2,6 +2,7 @@
 Title: Install Flatpak(s) in Vanilla OS
 Description: Learn how to install Flatpak packages in Vanilla OS.
 PublicationDate: 2022-12-09
+Listed: true
 Authors:
     - mirkobrombin
 ---
