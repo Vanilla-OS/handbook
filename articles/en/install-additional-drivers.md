@@ -9,81 +9,57 @@ Authors:
     - mrunix00
 ---
 
-> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
-
 Drivers are software components that allow the operating system to communicate with hardware devices.
 
-In Vanilla OS, primary drivers are installed automatically during the first setup, but some devices may need additional drivers to work ideally. You can install them using two methods:-
+Vanilla OS comes with a large number of drivers pre-installed, but sometimes you may need to install additional drivers to get the best performance from your hardware.
 
-- **Vanilla Drivers Utility**
-- **Manual installation in the transactional shell.**
+## NVIDIA® Drivers
 
-## Vanilla Drivers Utility
-
-**Vanilla Drivers Utility** is a graphical tool that allows you to install additional drivers. Launch it from the "About" section in Settings, then click on "Additional Drivers".
-
-![Settings](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Miscellaneous/gnome-settings.webp)
-
-Here you can see a list of all the drivers available, organized by category. To install a driver, click on it, then press the "Apply Changes" button in
-the top-right corner.
-
-![Drivers Utility](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Miscellaneous/drivers-utility.webp)
-
-Once the installation is complete, you will be requested to reboot the system.
-
-## Manual installation
-
-### APT Package
-
-If you prefer to install drivers manually, you can do so using the transactional shell. Open the terminal and run the following command:-
+Nvidia drivers are detected and installed automatically in Vanilla OS during the installation process. However, if you have recently switched to a new Nvidia graphics card, you may need to install the drivers manually. We have plans to provide a simple way to install Nvidia drivers in the future, but for now, you can install them using the following command in your VSO Shell:
 
 ```bash
-sudo abroot exec apt install <driver>
+abroot config-editor
 ```
 
-Where `<driver>` is the package name that offers the driver you want to
-install. For example, installing the NVIDIA driver at version 525 can be done by executing the following command:-
+here change the `name` parameter to `vanilla-os/nvidia` and save the file. A new update will start automatically, once done, reboot your system to start using the new drivers.
+
+## VM Tools
+
+Open VM Tools are a set of tools that enhance the performance of a virtual machine running on a hypervisor. They provide features such as file sharing, clipboard sharing, and better graphics performance.
+
+Virtual machines running Vanilla OS will be prompted to install Open VM Tools during the installation process. If you skipped this step or need to install them later, you can do so by running the following command in your VSO Shell:
 
 ```bash
-sudo abroot exec apt install nvidia-driver-525
+abroot config-editor
 ```
 
-After installation, exit the shell using the `exit` command and wait for the changes to be applied, then reboot once the installation is complete.
+here change the `name` parameter to `vanilla-os/open-vm` and save the file. A new update will start automatically, once done, reboot your system to start using the new tools.
 
-### DEBs
+## Specific Drivers (e.g., Printer, Scanner)
 
-You can install drivers present as DEB files through ABRoot using the following steps:-
+If for some reason, your device is not covered by our default drivers, you can install specific drivers for your hardware. You can find drivers for most devices on our [packages repository](https://packages.vanillaos.org/). If you can't find the driver you need, you can [report to us](https://github.com/Vanilla-OS/desktop-image/issues/new/choose) and we will try to figure out a solution for you.
 
-In a non-privileged terminal, you can copy the DEB file to `/tmp` using the following command:-
+Once you have identified the package you need, you can install it using the following command in your VSO Shell:
 
 ```bash
-cp <path/to/driver.deb> /tmp
+abroot pkg add PACKAGE_NAME
 ```
 
-Now, Enter ABRoot Shell using the following command and `cd` to the required directory:-
+/*
+vos% abroot pkg list
+ INFO  To utilize ABRoot's abroot pkg command, explicit user agreement is required. This command facilitates package installations but introduces non-deterministic elements, impacting system trustworthiness. By consenting, you acknowledge and accept these implications, confirming your awareness of the command's potential impact on system behavior. [y/N]: 
+*/
+
+You will promped to accept the User Agreement:
 
 ```bash
-sudo abroot shell
-cd /tmp
+INFO  To utilize ABRoot's abroot pkg command, explicit user agreement is required. This command facilitates package installations but introduces non-deterministic elements, impacting system trustworthiness. By consenting, you acknowledge and accept these implications, confirming your awareness of the command's potential impact on system behavior. [y/N]: 
 ```
 
-Now, you can install DEBs using `apt`:-
+After reading and accepting the User Agreement, the package will be queued for installation. You can then proceed with the installation by running the following command:
 
 ```bash
-sudo apt install ./<driver>.deb
+abroot pkg apply
 ```
 
-(This will automatically install the required dependencies.)
-
-Alternatively, you can install DEBs using `dpkg`:-
-
-```bash
-sudo dpkg -i <driver>.deb
-sudo apt-get install -f
-```
-
-**_Note_**:- `sudo apt-get install -f` is required to fix broken or missing dependencies.
-
-After installing the drivers, exit the shell using the `exit` command and wait for the changes to apply. Reboot your system for the transaction to take place.
-
-Congratulations, You have successfully installed the necessary drivers.
+Once the installation is complete, reboot your system to start using the new drivers.
