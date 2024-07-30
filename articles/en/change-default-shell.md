@@ -5,9 +5,8 @@ PublicationDate: 2023-01-19
 Listed: true
 Authors:
     - MonsterObserver
+    - mirkobrombin
 ---
-
-> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
 
 ## Introduction
 
@@ -17,125 +16,45 @@ Vanilla OS allows you to change your Default Shell to optimize your workflow. Th
 
 ## Change your Default Shell to Zsh
 
-### ABRoot
-
-First, we need to install Zsh on the Host System with the following command:-
+First, we need to install Zsh on the VSO Shell with the following command:
 
 ```bash
-sudo abroot exec apt install zsh
+sudo apt install zsh
 ```
 
-After installing Zsh, we need to reboot the system to apply the changes. You can do this by simply running `reboot`.
-
-After rebooting the system, we need to change the Default Shell to Zsh with the following command:-
+now we need to change the Default Shell to Zsh with the following command:-
 
 ```bash
 chsh -s /usr/bin/zsh
 ```
 
-After changing the Default Shell to Zsh, we need to reboot the system to apply the changes.
-
-The next time you open your Terminal Emulator, you will be prompted to set up Zsh.
-
-### Nix
-
-First, we need to initialize Nix with Apx by running the following command:-
-
-```bash
-apx init --nix
-```
-
-After initializing Nix, we need to reboot the system to use it. You can do this by simply running `reboot`.
-
-After rebooting the system, we need to install Zsh with Nix by running the following command:-
-
-```bash
-apx install --nix zsh
-```
-
-After installing Zsh, we need to add the path to Zsh in `/etc/shells` by following these steps:-
-
-```text
-- Execute: sudo nano /etc/shells
-- Add: `/home/<username>/.nix-profile/bin/zsh` (Note:- Replace the given placeholder with  your username).
-- Save and Exit.
-```
-
-After adding the path and saving the file, we need to change the Default Shell to Zsh with the following command:-
-
-```bash
-chsh -s /home/<username>/.nix-profile/bin/zsh
-```
-
-After changing the Default Shell to Zsh, we need to reboot the system to apply the changes.
-
-The next time you open your Terminal Emulator, you will be prompted to set up Zsh.
+The next time you open your VSO Shell, you will be in a Zsh shell.
 
 ## Change your Default Shell to Fish
 
-First, we need to install Fish on the Host System with the following command:-
+First, we need to install Fish on the VSO Shell with the following command:
 
 ```bash
-sudo abroot exec apt install fish
+sudo apt install fish
 ```
 
-After installing Fish, we need to reboot the system to apply the changes. You can do this by simply running `reboot`.
-
-After rebooting the system, we need to change the Default Shell to Fish with the following command:-
+Now we need to change the Default Shell to Fish with the following command:
 
 ```bash
 chsh -s /usr/bin/fish
 ```
 
-After changing the Default Shell to Fish, we need to reboot the system to apply the changes.
-
-The next time you open your Terminal Emulator, you will be in Fish Shell.
-
-### Nix
-
-First, we need to initialize Nix with Apx by running the following command:-
-
-```bash
-apx init --nix
-```
-
-After initializing Nix, we need to reboot the system to use it. You can do this by simply running `reboot`.
-
-After rebooting the system, we need to install Fish with Nix by running the following command:-
-
-```bash
-apx install --nix fish
-```
-
-After installing Fish, we need to add the path to Fish in `/etc/shells` by following these steps:-
-
-```bash
-- Execute: sudo nano /etc/shells
-- Add: `/home/<username>/.nix-profile/bin/fish` (Note:- Replace the given placeholder with  your username).
-- Save and Exit.
-```
-
-After adding the path and saving the file, we need to change the Default Shell to Fish with the following command:-
-
-```bash
-chsh -s /home/<username>/.nix-profile/bin/fish
-```
-
-After changing the Default Shell to Fish, we need to reboot the system to apply the changes.
-
-The next time you open your Terminal Emulator, you will be in Fish Shell.
+The next time you open your VSO Shell, you will be in a Fish shell.
 
 ## Revert your Default Shell to Bash
 
-You can run the following command to revert your Default Shell to Bash:-
+If you wish to revert your Default Shell to Bash, you can do so by running the following command:
 
 ```bash
 chsh -s /usr/bin/bash
 ```
 
-You will now have to reboot the system to apply the changes. You can do this by simply running `reboot`.
-
-The next time you open your Terminal Emulator, you will be in Bash Shell.
+The next time you open your VSO Shell, you will be in a Bash shell.
 
 ## Changing Container's Default Shell
 
@@ -145,22 +64,16 @@ The next time you open your Terminal Emulator, you will be in Bash Shell.
 echo $SHELL
 ```
 
-If you already initialized your containers before changing your Default Shell, you will have to reinitialize them with the following commands:-
+If you already initialized your containers before changing your Default Shell, you can follow the specific distribution guide to change the Shell inside the container, for Debian and Ubuntu based containers, you can follow the same steps as above. For Arch-based containers, you can use the following command:-
 
 ```bash
-apx init
-apx init --aur
-apx init --dnf
-apx init --apk
+sudo pacman -S zsh
+chsh -s /usr/bin/zsh
 ```
 
-**_Warning_**: This will remove all applications installed inside the container!
-
-If you wish to use a specific Shell for your container, you can manually set the SHELL variable before creating the container with the following commands:-
+For Alpine-based containers, you can use the following command:-
 
 ```bash
-env SHELL=/path/to/shell apx init
-env SHELL=/path/to/shell apx init --aur
-env SHELL=/path/to/shell apx init --dnf
-env SHELL=/path/to/shell apx init --apk
+sudo apk add zsh
+chsh -s /usr/bin/zsh
 ```
