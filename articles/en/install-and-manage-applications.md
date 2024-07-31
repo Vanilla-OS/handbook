@@ -8,13 +8,11 @@ Authors:
     - MonsterObserver
 ---
 
-> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
-
 ## Introduction
 
 Vanilla OS allows installing packages and software from various sources. This guide will discuss them in detail.
 
-Vanilla OS comes with the option to enable Flatpak and AppImage in the initial setup. It also allows the installation of native packages using the `apx` package manager.
+Vanilla OS comes with Flatpak support enabled by default along with the Flathub catalog.
 
 ## Terminologies
 
@@ -22,32 +20,13 @@ Vanilla OS comes with the option to enable Flatpak and AppImage in the initial s
 
 - **Flathub**:- Flathub is the largest repository of Flatpak applications spanning various categories.
 
-- **AppImage**:- AppImage is a format for distributing portable software or executables on Linux without needing superuser permissions to install the application.
+- **APX**:- APX is a unique tool created by the Team of Vanilla OS to configure Linux environments based on any Linux distribution, allowing users to install packages from various sources. The main goal of APX is to allow developers and creators to create their own environments for specific tasks. Please [read our article](https://vanillaos.org/blog/article/2024-07-11/discover-apx-v2-the-new-essential-tool-for-developers-and-creators-on-vanilla-os-orchid) to learn more about APX.
 
-- **GNOME Software**:- GNOME Software allows you to find, install and remove new applications and system extensions. It showcases screenshots, metadata and user reviews of various applications. In Vanilla OS, it supports installing Flatpaks and Vanilla OS (Apx) meta packages. GNOME Software is the Linux equivalent of the Microsoft Store, Play Store and App Store.
+- **VSO Shell**:- VSO Shell is what you see when you open the terminal in Vanilla OS, it is a separate environment from the host system, and it is where you can run commands to install packages and software compatible with Debian-based systems.
 
-- **Package Manager**:- A package manager or package-management system is a utility with a collection of software tools that automates installing, upgrading, configuring, and removing applications or packages.
-`apx` is the package manager which comes with Vanilla OS. It is the equivalent command for Winget on Windows.
+- **DEB**:- DEB is the package format used by Debian-based systems like Vanilla OS.
 
-- **APX**:- `apx` is the default package manager in Vanilla OS. It allows installing applications from multiple sources in managed containers.
-
-- **APT**:- `apt` is an Advanced Package Tool which allows installing and managing software on Debian and Debian-based systems like Ubuntu.
-
-- **DNF**:- `dnf` (Dandified YUM) is the successor to YUM. It is a powerful package manager for installing and managing applications on rpm-based distributions.
-
-- **AUR**:- `aur` (Arch User Repository) is the largest community-maintained repository with thousands of native packages for Arch Linux and its derivatives.
-
-- **APK**:- `apk` (Alpine Linux package keeper) is a package manager which allows installing and managing applications on Alpine Linux.
-
-- **ZYPPER**:- `zypper` is a package manager on openSUSE for installing, updating and removing packages, and also for managing repositories.
-
-- **XBPS**:- `xbps` (X Binary Package System) is a fast package manager on Void Linux that has been designed and implemented from scratch for efficiently managing your packages.
-
-- **NIX**:- `nix` is a powerful package manager for Linux and other Unix systems that makes package management reliable and reproducible.
-
-- **DEB**:- `deb` (Debian Packages) is a file format for installing and managing applications on Debian-based systems. It's an equivalent file extension to `.exe` in Windows and `.rpm` in GNU/Linux.
-
-- **RPM**:- `rpm` (Red Hat package manager) is a file format for installing and managing applications on RHEL-based systems. It's an equivalent file extension to `.exe` in Windows and `.deb` in GNU/Linux.
+- **APK**:- APK is the package format used by Android applications.
 
 ## Managing Applications through GNOME Software
 
@@ -77,162 +56,159 @@ Automatic Updates are configured in the `Update Preferences` tab located in the 
 
 You can remove installed Flatpaks from the `Installed` panel.
 
-(**_Note_**: Some native applications installed on the host cannot be removed using this method, but applications installed through the meta plugin can be removed through the panel.)
+## Installing Applications through VSO Shell
 
-## Manage AppImages
+The VSO Shell is a Vanilla OS installation based on Debian, and it is where you can run commands to install packages and software compatible with Debian-based systems using the `apt` package manager like in any other Debian-based system.
 
-### Installing AppImages
+### Installing Applications
 
-You can download AppImages from project pages on GitHub. Another source for AppImages is [**AppImageHub**](https://www.appimagehub.com/).
-
-Once downloaded, they won't have to be installed since they are executable binaries.
-
-### Running AppImages
-
-If you have enabled AppImage in the first setup, you can run AppImages graphically by following these steps:-
-
-- Right-click on the file, then click on **Properties**.
-
-![AppImages Properties](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Applications_Post/appimages-nautilus-properties.webp)
-
-- Enable the **Executable as Program** option.
-
-You can now run the AppImage by right-clicking it and pressing run or by pressing enter/return key on your keyboard.
-
-Alternatively, you can open AppImages from the terminal with the following commands:-
+Search for the package in our [packages repository](https://packages.vanillaos.org/) and install it using the following command:
 
 ```bash
-cd <directory>
-chmod +x <file>.appimage
-./<file>.appimage
+sudo apt install PACKAGE_NAME
 ```
 
-**_Note_**:- `chmod +x <file>.AppImage` makes the file executable.
+Graphical applications will be available in the application menu after installation.
 
-## Managing Flatpaks through CLI
+### Removing Applications
 
-If you enabled Flatpak in the First Setup, you won't have to do anything. If you have disabled Flatpak in the First Setup, follow the guide [**here**](/2022/12/09/install-flatpaks.html).
-
-### Installing Flatpaks
-
-You can install Flatpaks with the following command:-
+To remove an installed package, use the following command:
 
 ```bash
-flatpak install <application-id>
+sudo apt remove PACKAGE_NAME
 ```
 
-### Running Flatpaks
+### Updating Applications
 
-You can run the Flatpaks using the desktop entry (icon) from the Application menu.
-
-You can alternatively run Flatpaks in the terminal with the following command:-
+To update all installed packages, use the following command:
 
 ```bash
-flatpak run <application-id>
+sudo apt update && sudo apt upgrade
 ```
 
-### Removing Flatpaks
+## Installing Applications from Other Linux Distributions
 
-You can remove installed Flatpaks with the following command:-
+APX in Vanilla OS comes with different environments pre-configured, the following list shows the available environments but you can create your own environment at any time:
+
+- Alpine Linux
+- Arch Linux (currently experimental, might not work as expected)
+- Fedora
+- Ubuntu
+- OpenSUSE
+- Vanilla Dev (a Vanilla OS environment pre-configured with tools for developers like golang, python, the GTK library, and more)
+- Vanilla (a clean Vanilla OS environment)
+
+First let's introduce some concepts:
+
+- **Package Manager**: A package manager is a tool that automates the process of installing, upgrading, configuring, and removing software packages.
+
+- **Stack**: A stack is what defines the environment you are working in, it includes the package manager and packages that will be installed in the subsystem.
+
+- **Subsystem**: A subsystem is a container (or environment) created using a stack. You can have multiple subsystems with different stacks or the same stack.
+
+### Creating a Subsystem
+
+#### Using APX GUI
+
+To create a subsystem, open the APX GUI application from your application menu and click on the plus button on the top left corner. A new windows like the one below will appear:
+
+![Showcasing the APX's subsystem creation dialog](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/ApxGUI/create-subsystem.png)
+
+Here you can choose the name for your subsystem and the stack you want to use. Once done, click on the `Create` button on the top right corner.
+
+When the subsystem is created, you will see it in the left sidebar of the APX GUI:
+
+![Showcasing the APX's main screen](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/ApxGUI/main-screen.png)
+
+click on the subsystem to see the details, you can start the subsystem by clicking on the terminal icon on the bottom right corner of the window.
+
+#### Using the APX CLI
+
+To create a subsystem using the APX CLI, open the VSO Shell and run the following command:
 
 ```bash
-flatpak uninstall <application-id>
+apx subsystems create
 ```
 
-You can remove unused Flatpak dependencies with the following command:-
+and follow the instructions.
+
+### Installing Applications
+
+You can install applications directly using the subsystem's package manager from inside its terminal, for example, to install `neofetch` in an Ubuntu subsystem, you can run the following command inside your Ubuntu based subsystem:
 
 ```bash
-flatpak uninstall --unused
+sudo apt install neofetch
 ```
 
-You can remove leftover data of Flatpaks with the following command (**_Disclaimer_**: Proceed with caution, since this removes all application data):-
+Another way to install applications is by using the APX CLI, you can run the following command to install `neofetch` in an Ubuntu subsystem (let's say the subsystem is named `my-ubuntu`):
 
 ```bash
-flatpak uninstall --delete-data <application-id>
+apx my-ubuntu install neofetch
 ```
 
-## Managing Applications through Apx
+this way you do not have to remember the package manager for each subsystem.
 
-`Apx` allows installing applications from various Linux distributions. These applications are tightly integrated with the host and can access the host's hardware.
+### Make Applications and Commands Available in the Host System
 
-In the commands below, `<package_manager>` will be a placeholder. It can be replaced by the following options:-
-
-- `apt`
-- `dnf`
-- `aur`
-- `apk`
-- `zypper`
-- `xbps`
-- `nix`
-
-### Creating a Container
-
-You can create a container with the following command:-
+To make applications and commands available in the host system, you can use the `apx export` command, for example, to make the `neofetch` command available in the host system, you can run the following command (assuming the subsystem is named `my-ubuntu`):
 
 ```bash
-apx init --<package_manager>
+apx my-ubuntu export -b neofetch
 ```
 
-You can also initialize the containers graphically by clicking on the `+` icon in the Vanilla Control Center. (Vanilla Control Center allows you to enter the apx container graphically.)
-
-![Vanilla Control Center - Sub System](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Applications_Post/vanilla-control-center-subsystem.webp)
-
-After initialization, you can enter the container graphically by clicking on the `terminal` icon.
-
-![Vanilla Control Center - Sub System post initialization](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Applications_Post/vanilla-control-center-subsystem-example.webp)
-
-### Installing Applications with Apx
-
-You can install applications with the following command:-
+to export a graphical application, you can use the `-a` flag:
 
 ```bash
-apx install --<package_manager> <package>
+apx my-ubuntu export -a htop
 ```
 
-This command will automatically detect the desktop file entry in the package and add it to the Application menu and Vanilla Control Center.
+### Removing Applications
 
-You can install DEB packages with the following command:-
+To remove an installed package, for example in your Ubuntu subsystem, you can run the following command:
 
 ```bash
-apx install --sideload <path/to/package.deb>
+sudo apt remove PACKAGE_NAME
 ```
 
-You can install RPM packages with the following command:-
+in the subsystem's terminal, or using the APX CLI:
 
 ```bash
-apx install --dnf --sideload <path/to/package.rpm>
+apx my-ubuntu remove PACKAGE_NAME
 ```
 
-If your application's desktop entry isn't detected automatically, you can export it manually with the following command:-
+### Updating Applications
+
+To update all installed packages in the subsystem, you can run the following command:
 
 ```bash
-apx export --<package_manager> <package>
+sudo apt update && sudo apt upgrade
 ```
 
-You can export binaries to run them without the `apx run` prefix with the following command:-
+in the subsystem's terminal, or using the APX CLI:
 
 ```bash
-apx export --<package_manager> --bin <package>
+apx my-ubuntu upgrade
 ```
 
-### Uninstalling Applications with Apx
+## Installing DEB and APK Packages
 
-You can uninstall applications with the following command:-
+> Note: Android support in Vanilla OS is currently experimental and might not work as expected. Please report any issues you encounter.
+
+To install a DEB and APK package, you can simply double-click on the package file and follow the instructions on the screen.
+
+### Manually Installing DEB Packages
+
+To manually install a DEB package, you can use the following command in the VSO Shell:
 
 ```bash
-apx remove <packages>
+sudo dpkg -i PACKAGE_NAME.deb
 ```
 
-This command will automatically detect and remove the desktop file entry.
+### Manually Installing APK Packages
 
-If your application's desktop entry is not automatically removed, you can unexport it manually with the following command:-
+To manually install an APK package, you can use the following command in the VSO Shell:
 
 ```bash
-apx unexport --<package_manager> <package>
+vso android install -l PACKAGE_NAME.apk
 ```
 
-You can unexport binaries with the following command:-
-
-```bash
-apx unexport --<package_manager> --bin <package>
-```
