@@ -1,5 +1,5 @@
 ---
-Title: Install Flatpak(s) in Vanilla OS
+Title: Install Flatpak(s) and configure Flathub in Vanilla OS
 Description: Learn how to install Flatpak packages in Vanilla OS.
 PublicationDate: 2022-12-09
 Listed: true
@@ -11,7 +11,11 @@ Flatpak is a universal package format for Linux desktop applications. It works o
 
 ## Install Flatpak
 
-You don't have to install it manually, as Flatpak is already installed by default in Vanilla OS.
+You don't have to install it manually, as Flatpak is already installed by default in Vanilla OS. Anyway you can install it manualy using these commands:
+
+```bash
+host-shell flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+```
 
 ## Configure Flathub
 
