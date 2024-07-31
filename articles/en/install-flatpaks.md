@@ -9,6 +9,8 @@ Authors:
 
 Flatpak is a universal package format for Linux desktop applications. It works on most Linux distributions, Vanilla OS included. Flatpak applications get distributed as bundles, similar to native packages, but they are sandboxed and can be updated independently from the host system.
 
+> Note: flatpaks in Vanilla OS are installed in the user space, so everytime you'll have to install a Flatpak or a new Repository like Flathub, you'll have to use the `--user` flag to point to the user space.
+
 ## Install Flatpak and configure Flathub
 
 You don't have to install Flatpak or configure Flathub manually since they are already installed by default in Vanilla OS. Anyway if for some reasons Flathub is not there, you can configure it manually using the following command:
