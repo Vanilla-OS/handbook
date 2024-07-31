@@ -1,6 +1,6 @@
 ---
-Title: Install additional drivers in Vanilla OS
-Description: Learn how to install Additional drivers in Vanilla OS.
+Title: Install additional drivers and libraries in Vanilla OS
+Description: Learn how to install Additional drivers and libraries in Vanilla OS.
 PublicationDate: 2022-12-10
 Listed: true
 Authors:
@@ -9,7 +9,7 @@ Authors:
     - mrunix00
 ---
 
-Drivers are software components that allow the operating system to communicate with hardware devices.
+Drivers are software components that allow the operating system to communicate with hardware devices. Libraries are collections of precompiled functions that can be used by applications to perform specific tasks, for example `libfuse` is a library that allows applications to interact with the FUSE filesystem.
 
 Vanilla OS comes with a large number of drivers pre-installed, but sometimes you may need to install additional drivers to get the best performance from your hardware.
 
@@ -35,7 +35,7 @@ abroot config-editor
 
 here change the `name` parameter to `vanilla-os/open-vm` and save the file. A new update will start automatically, once done, reboot your system to start using the new tools.
 
-## Specific Drivers (e.g., Printer, Scanner)
+## Specific Drivers (e.g., Printer, Scanner) and Libraries
 
 If for some reason, your device is not covered by our default drivers, you can install specific drivers for your hardware. You can find drivers for most devices on our [packages repository](https://packages.vanillaos.org/). If you can't find the driver you need, you can [report to us](https://github.com/Vanilla-OS/desktop-image/issues/new/choose) and we will try to figure out a solution for you.
 
