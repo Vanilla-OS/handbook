@@ -6,9 +6,8 @@ Listed: true
 Authors:
     - gonzoknows
     - kbdharun
+    - mirkobrombin
 ---
-
-> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
 
 ## Introduction
 
@@ -20,14 +19,12 @@ This guide goes through the process of installing Jekyll and Bundler in Vanilla 
 
 ## Installing Jekyll and Bundler
 
-Open your preferred Terminal emulator/application, and follow the steps to install it in a specific container.
-
-### Ubuntu container
+We'll use apx to install Jekyll and Bundler on a Ubuntu-based subsystem, assuming you have already configured an Ubuntu subsystem using apx. we'll refer to it as `my-ubuntu`, so change this to your container name if it's different.
 
 Enter the container using the following command:-
 
 ```bash
-apx enter
+apx my-ubuntu enter
 ```
 
 Install the required prerequisite packages using the following command:-
@@ -51,93 +48,13 @@ Now, install Jekyll and Bundler using the following command:-
 gem install jekyll bundler
 ```
 
-You have now successfully installed the packages. You can execute them using `apx run <command>`, or directly by entering the container using `apx enter`.
+You have now successfully installed the packages. You can execute them using `apx my-ubuntu run <command>`, or directly by entering the container using `apx my-ubuntu enter`.
 
-Optionally, you can export the binary to use it from the host directly without requiring the `apx run` command. You can do this by using the following commands:-
-
-```bash
-apx export --bin jekyll
-apx export --bin bundler
-```
-
-### Fedora container
-
-Enter the container using the following command:-
+Optionally, you can export the binary to use it from the host directly without requiring the `apx my-ubuntu run` command. You can do this by using the following commands on a new terminal window:-
 
 ```bash
-apx enter --dnf
+apx my-ubuntu export -b jekyll
+apx my-ubuntu export -b bundler
 ```
 
-Install the required prerequisite packages using the following command:-
-
-```bash
-sudo dnf install ruby ruby-devel make gcc g++
-```
-
-Now, install Jekyll using the following command:-
-
-```bash
-gem install jekyll
-```
-
-You have now successfully installed the packages. You can execute them using `apx run --dnf <command>`, or directly by entering the container using `apx enter --dnf`.
-
-Optionally, you can export the binary to use it from the host directly without requiring the `apx run --dnf` command. You can do this by using the following commands:-
-
-```bash
-apx export --dnf --bin jekyll
-apx export --dnf --bin bundler
-```
-
-### Arch Linux container
-
-Enter the container using the following command:-
-
-```bash
-apx enter --aur
-```
-
-Install the required prerequisite packages using the following command:-
-
-```bash
-sudo pacman -S ruby base-devel
-```
-
-Now, install Jekyll using the following command:-
-
-```bash
-gem install jekyll
-```
-
-You have now successfully installed the packages. You can execute them using `apx run --aur <command>`, or directly by entering the container using `apx enter --aur`.
-
-Optionally, you can export the binary to use it with the host directly without requiring the `apx run --aur` command. You can do this by using the following commands:-
-
-```bash
-apx export --aur --bin jekyll
-apx export --aur --bin bundler
-```
-
-## Testing sites using Jekyll locally
-
-Navigate to the required directory for the site.
-
-Optionally, Run `bundler install` to install necessary packages (This step is required only once and doesn't require re-running it in future. You must have a Gemfile in the repository for this command to work).
-
-Run `jekyll build` or `bundler exec jekyll build` to build the page to `./_site` once.
-
-Then you can either test the pages manually or use `jekyll serve` or `bundler exec jekyll serve` command to build your site any time a source file changes and serve it locally.
-
-Navigate to `http://127.0.0.1:4000/` or `http://localhost:4000/` in your browser to preview and test the page.
-
-**_Tip_**:-
-
-You can test your pages on your phone using `bundler exec jekyll serve --host=<ip>`.
-
-Using `0.0.0.0` instead of a specific IP binds port 4000 to any interface, which is prone to be blocked by your routers firewalls. That's why we recommended using a particular IP address with the `--host` flag. After executing the command in any browser on your phone, go to this address `<ip>:4000`.
-
-For example, if the IP you used is `192.168.0.123`, you will need to visit `192.168.0.123:4000` on your mobile.
-
-## Conclusion
-
-You have now successfully installed Jekyll & Bundler via the command line and successfully served and tested your site locally.
+You can now use Jekyll and Bundler directly from the host terminal by executing `jekyll` or `bundler`.
