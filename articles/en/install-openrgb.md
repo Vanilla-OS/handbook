@@ -5,51 +5,20 @@ PublicationDate: 2023-01-20
 Listed: true
 Authors:
     - MonsterObserver
+    - mirkobrombin
 ---
-
-> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
 
 ## Introduction
 
 [**OpenRGB**](https://openrgb.org/) is an essential application for managing your RGB appliances. This guide will help you install the Flatpak and AppImage of OpenRGB correctly.
 
-## Flatpak
-
-### Prerequisites
-
-- Flatpak: You can find out how to install it [**here**](/2022/12/09/install-flatpaks.html).
 
 ### Installing OpenRGB
 
-You can install OpenRGB from the "Gnome Software" application. Alternatively, you can install it from the command line with the following command:-
+You can install OpenRGB from the GNOME Software as documented [here](https://docs.vanillaos.org/handbook/en/install-and-manage-applications#managing-applications-through-gnome-software). Alternatively, you can install it from the command line with the following command:-
 
 ```bash
 flatpak install flathub org.openrgb.OpenRGB
-```
-
-## AppImage
-
-### Prerequisites
-
-AppImage Support: If you have enabled AppImage in the "First Setup" when installing Vanilla OS, this step isn't necessary.
-
-If you haven't enabled AppImages, run the following command:-
-
-```bash
-sudo abroot exec apt install libfuse2
-```
-
-After the successful installation, reboot your system. You can do this by typing `reboot`.
-
-### Installing OpenRGB
-
-Install "Linux 64-bit" from the "Linux Binaries (AppImage)" section [**here**](https://gitlab.com/CalcProgrammer1/OpenRGB/-/releases/permalink/latest#Linux-64-bit).
-
-Go to the directory where the AppImage is installed and make it an executable with the following commands:-
-
-```bash
-cd ~/Downloads/
-chmod +x <appimage-filename>
 ```
 
 ## Setting Up UDEV Rules
@@ -61,13 +30,13 @@ First, install the UDEV rules by clicking [**here**](https://gitlab.com/CalcProg
 After downloading the UDEV rules, you need to move them to the correct directory with the following command:-
 
 ```bash
-sudo mv ~/Downloads/60-openrgb.rules /etc/udev/rules.d/
+host-shell pkexec mv ~/Downloads/60-openrgb.rules /etc/udev/rules.d/
 ```
 
 After moving the UDEV rules, you need to reload the rules by running the following command:-
 
 ```bash
-sudo udevadm control --reload-rules && sudo udevadm trigger
+pkexec udevadm control --reload-rules && pkexec udevadm trigger
 ```
 
 After reloading the rules, OpenRGB works correctly.
