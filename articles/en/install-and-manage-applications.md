@@ -22,7 +22,7 @@ Vanilla OS comes with Flatpak support enabled by default along with the Flathub 
 
 - **APX**:- APX is a unique tool created by the Team of Vanilla OS to configure Linux environments based on any Linux distribution, allowing users to install packages from various sources. The main goal of APX is to allow developers and creators to create their own environments for specific tasks. Please [read our article](https://vanillaos.org/blog/article/2024-07-11/discover-apx-v2-the-new-essential-tool-for-developers-and-creators-on-vanilla-os-orchid) to learn more about APX.
 
-- **VSO Shell**:- VSO Shell is what you see when you open the terminal in Vanilla OS, it is a separate environment from the host system, and it is where you can run commands to install packages and software compatible with Debian-based systems.
+- **VSO Shell**:- VSO Shell is what you see when you open the terminal in Vanilla OS, it is a separate environment from the host system, and it is where you can run commands to install packages and software compatible with Debian-based systems. Please [read our article](https://vanillaos.org/blog/article/2024-07-16/discover-vso-v2-managing-your-vanilla-os-installation-like-never-before) to learn more about VSO Shell.
 
 - **DEB**:- DEB is the package format used by Debian-based systems like Vanilla OS.
 
