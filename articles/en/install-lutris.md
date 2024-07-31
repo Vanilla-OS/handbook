@@ -7,47 +7,23 @@ Authors:
     - mirkobrombin
 ---
 
-> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
-
 ## What is Lutris?
 
 [**Lutris**](https://lutris.net/) is an open-source game launcher for Linux that allows you to download and play games from various platforms such as the Epic Games Store, GOG Galaxy client, Origin, Humble Bundle and many others through a simple interface.
 
 ## Installation
 
-The recommended way to install Lutris is through the official Debian package. But it is also available in many other formats.
+The recommended way to install Lutris is through [**Flatpak**](https://flatpak.org/).
 
-In Vanilla OS, you can install packages from other distributions using [**Apx**](https://vanillaos.org/2023/01/28/apx-the-unconventional-pkg-manager.html), the default package manager for Vanilla OS. In the following sections, we will show you how to install the Debian and Fedora packages of Lutris using Apx.
-
-### Debian package
-
-First, you need to download the latest version of the package from the [**official website**](https://lutris.net/downloads/) under the "Debian/Ubuntu" section.
-
-Once you have downloaded the package, you can install it using the command line. Open a console and navigate to the directory where you have downloaded the package. Then, use the following command to install the package:
+You can proceed using the GNOME Software application as documented [here](https://docs.vanillaos.org/handbook/en/install-and-manage-applications#managing-applications-through-gnome-software) or use the command line as shown below:
 
 ```bash
-apx install --sideload lutris_<version>_all.deb
-```
-
-Make sure to replace `<version>` with the version number of the package you have downloaded.
-
-### Fedora package
-
-The `lutris` package is also available in the Fedora repositories, so you can install it in Apx using the following command:
-
-```bash
-apx install --dnf lutris
+flatpak install flathub net.lutris.Lutris
 ```
 
 ## Troubleshooting
 
 In this section, we will show you how to fix some common issues you may encounter when using Lutris.
-
-### Poor performance
-
-If you are experiencing poor performance, ensure that you have the latest graphics drivers installed. To do so, refer to the [**Install additional drivers in Vanilla OS**](https://handbook.vanillaos.org/2022/12/10/install-additional-drivers.html) page.
-
-Also, check the game's system requirements and ensure that your system meets them.
 
 ### Game crashes
 
