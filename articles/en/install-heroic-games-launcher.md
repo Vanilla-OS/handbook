@@ -7,51 +7,23 @@ Authors:
     - mirkobrombin
 ---
 
-> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
-
 ## What is Heroic Games Launcher?
 
 [**Heroic Games Launcher**](https://heroicgameslauncher.com/) is an open source game launcher for Linux. It allows you to download and play games from the Epic Games Store and the GOG Galaxy client through a user-friendly interface.
 
 ## Installation
 
-The recommended way to install Heroic Games Launcher is through [**Flatpak**](https://flatpak.org/), but it is also available as an AppImage.
+The recommended way to install Heroic Games Launcher is through [**Flatpak**](https://flatpak.org/).
 
-### Flatpak
-
-If you chose to install Flatpak during [**First Setup**](https://handbook.vanillaos.org/2022/11/18/first-setup.html), you could install applications directly from GNOME Software, as explained [**here**](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html#title3).
-
-You can also install the Heroic Games Launcher Flatpak from the terminal using the following command:
+You can proceed using the GNOME Software application as documented [here](https://docs.vanillaos.org/handbook/en/install-and-manage-applications#managing-applications-through-gnome-software) or use the command line as shown below:
 
 ```bash
 flatpak install flathub com.heroicgameslauncher.hgl
 ```
 
-### AppImage
-
-You can download the latest AppImage from the [**official website**](https://heroicgameslauncher.com/downloads).
-
-If you chose to install AppImage during [**First Setup**](https://handbook.vanillaos.org/2022/11/18/first-setup.html), you will be able to run the AppImage just by double-clicking on it. If you didn't, you could install the required dependencies using an ABRoot transaction using the following command:
-
-```bash
-sudo abroot exec apt install -y fuse3 libfuse2 appimagelauncher
-```
-
-Then reboot your system. You can now run the AppImage by setting it as executable from Properties and double-clicking on it. Alternatively, you can make it executable using the following command:
-
-```bash
-chmod +x Heroic-*.AppImage
-```
-
 ## Troubleshooting
 
 In this section, we will show you how to fix some common issues you may encounter when using Heroic Games Launcher.
-
-### Poor performance
-
-If you are experiencing poor performance, ensure that you have the latest graphics drivers installed. To do so, refer to the [**Install additional drivers in Vanilla OS**](https://handbook.vanillaos.org/2022/12/10/install-additional-drivers.html) page.
-
-Also, check the game's system requirements and ensure that your system meets them.
 
 ### Epic Games Store Login doesn't work
 
