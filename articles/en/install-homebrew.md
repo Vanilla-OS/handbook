@@ -1,21 +1,22 @@
 ---
 Title: Installing Homebrew in Vanilla OS
 Description: Learn how to Install and setup Homebrew in Vanilla OS.
-PublicationDate: 2022-01-26
+PublicationDate: 2024-08-01
 Listed: true
 Authors:
     - kbdharun
+    - GabsEdits
 ---
-
-> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
 
 ## Terminologies
 
 - **Package Manager**:- A package manager or package-management system is a utility with a collection of software tools that automates installing, upgrading, configuring, and removing applications or packages.
 
-`apx` is the package manager which comes with Vanilla OS.
+- **Homebrew**:- Homebrew is a popular package manager for installing and managing packages in MacOS and Linux. It contains thousands of packages and comes built-in with powerful tools and functionality. It supports installing packages in the `home` directory and is fully compatible with Vanilla OS.
 
-- **Homebrew**:- Homebrew is a popular package manager for installing and managing packages in Mac and Linux. It contains thousands of packages and comes built-in with powerful tools and functionality. It supports installing packages in the `home` directory and is fully compatible with Vanilla OS.
+## Prerequisites
+
+- All the commands in this guide should be executed in the inside the VSO Shell, which is the deafult shell when you open the terminal in Vanilla OS.
 
 ## Installing Git
 
@@ -23,10 +24,10 @@ Authors:
 Run the `git` command in your terminal to check if it exists already. If `git` doesn't exist in your system, you can install it using the following command:-
 
 ```bash
-sudo abroot exec apt install git
+sudo apt install git
 ```
 
-After executing the above command, reboot your system to proceed with the guide below.
+After executing the above command, you can proceed with the guide below.
 
 ## Installing Homebrew
 
