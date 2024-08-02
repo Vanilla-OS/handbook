@@ -21,7 +21,17 @@ Nvidia drivers are detected and installed automatically in Vanilla OS during the
 abroot config-editor
 ```
 
-here change the `name` parameter to `vanilla-os/nvidia` and save the file. A new update will start automatically, once done, reboot your system to start using the new drivers.
+here change the `name` parameter to `vanilla-os/nvidia` for recent Nvidia GPUs (e.g. GTX 600 series/RTX and newer) or `vanilla-os/nvidia-propietary` for older Nvidia GPUs (e.g. GTX 400 and 500 series) and save the file. 
+
+> Note: both images works with recent images, but the `vanilla-os/nvidia` is the one that should work with most recent GPUs.
+
+Then run:
+
+```bash
+abroot upgrade -f
+```
+
+once done, reboot your system to start using the new drivers.
 
 ## VM Tools
 
@@ -33,7 +43,13 @@ Virtual machines running Vanilla OS will be prompted to install Open VM Tools du
 abroot config-editor
 ```
 
-here change the `name` parameter to `vanilla-os/open-vm` and save the file. A new update will start automatically, once done, reboot your system to start using the new tools.
+here change the `name` parameter to `vanilla-os/open-vm` and save the file. Then run:
+
+```bash
+abroot upgrade -f
+```
+
+once done, reboot your system to start using the new drivers.
 
 ## Specific Drivers (e.g., Printer, Scanner) and Libraries
 
