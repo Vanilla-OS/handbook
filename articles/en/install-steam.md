@@ -43,6 +43,12 @@ then install Steam using the following command:-
 ```bash
 sudo apt install software-properties-common
 sudo add-apt-repository multiverse
+```
+
+If an issue about nvidia-toolkit arises, just ignore it. Then type:
+
+```
+sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install steam-launcher
 exit
