@@ -140,7 +140,21 @@ remove any additional flags that you might have added by using the command:
 abroot kargs edit
 ```
 
-then save, wait for the changes to be applied and restart your system.
+then save, wait for the changes to be applied (or apply them with `abroot upgrade -f`) and restart your system.
+
+If the issue persists, might be a very specific issue with your GPU, please open a new issue [here](https://github.com/Vanilla-OS/nvidia-image/issues).
+
+### Cannot select Wayland session
+
+If you cannot select the Wayland session from the login screen, be sure that you are using the correct system image, look at the previous sections to check if you are using the correct system image and change it if needed.
+
+Some users reported that adding the `nvidia-drm.modeset=1` kernel flag, fixed the issue, you can add it by issuing the following command:
+
+```
+abroot kargs edit
+```
+
+then add the flag at the end of the line (ensure), save, wait for the changes to be applied (or apply them with `abroot upgrade -f`) and restart your system.
 
 If the issue persists, might be a very specific issue with your GPU, please open a new issue [here](https://github.com/Vanilla-OS/nvidia-image/issues).
 
