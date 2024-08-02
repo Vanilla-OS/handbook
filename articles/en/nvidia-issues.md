@@ -146,4 +146,4 @@ If the issue persists, might be a very specific issue with your GPU, please open
 
 ### Any other issue
 
-If you are experiencing any other issue with your NVIDIA GPU, please open a new issue [here](https://github.com/Vanilla-OS/nvidia-image/issues), or ask our [https://vanillaos.org/community]).
+If you are experiencing any other issue with your NVIDIA GPU, please open a new issue [here](https://github.com/Vanilla-OS/nvidia-image/issues), or ask our [https://vanillaos.org/community].
