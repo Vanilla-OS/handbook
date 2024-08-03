@@ -80,6 +80,6 @@ After completing all the steps, you will be prompted to restart your computer. C
 
 ## Other Settings
 
-You can find other options in Settings or tweak your graphical environment in GNOME Tweaks.
+You can find other options in Settings or tweak your graphical environment in GNOME Tweaks, by following the [Installing GNOME Tweaks](https://docs.vanillaos.org/handbook/en/install-gnome-tweaks) guide.
 
 We hope you will have a great time using Vanilla OS!
