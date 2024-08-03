@@ -1,14 +1,14 @@
 ---
 Title: First Setup
 Description: Set up Vanilla OS after installation.
-PublicationDate: 2022-11-18
+PublicationDate: 2024-08-03
 Listed: true
 Authors:
     - kra-mo
     - kbdharun
+    - GabsEdits
 ---
 
-> This guide is for Kinetic (22.10), not Orchid. The documentation for Orchid is still being written.
 
 ## Introduction
 
@@ -21,52 +21,65 @@ After booting into Vanilla OS for the first time, you will be presented with a F
 
 ![Welcome](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-welcome.webp)
 
+### Language
+
+Choose your preferred language. This will be the language used in the system and applications. You can change this later in the Settings app.
+
+![Language](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-languages.webp)
+
+### Keyboard Layout
+
+Choose your preferred keyboard layout. This will be the layout used for typing. You can change this later in the Settings app.
+
+![Keyboard Layout](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-keyboard-layout.webp)
+
+### Date and Time
+
+Choose your preferred time zone. This will be the time zone used for the system clock. You can change this later in the Settings app.
+
+![Date and Time](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-date-time.webp)
+
 ### Color Scheme
 
-Your preferred color scheme. Default meaning that apps decide for themselves or Dark. This can be changed later in the Settings app.
+Your preferred color scheme. Default meaning that apps decide for themselves (usually Light) or Dark. This can be changed later in the Settings app.
 
 ![Color Scheme](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-color-scheme.webp)
 
-### Package Manager
+### Create User
 
-Choose your preferred package managers. These are the ways you will be able to install applications. If unsure, leave it on the default "Flatpak". You can install the required dependencies for each one later if you change your mind.
+Create a user account for yourself. This will be the account you will use to log in to Vanilla OS. You will need to set a name, username and password.
 
-![Package Manager](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-package-managers.webp)
+![Create User](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-create-user.webp)
 
-## Applications
+### Device Name
 
-Choose which applications you need to install in your Vanilla OS Installation. There are various categories for installing applications.
+Choose a name for your device. This will be the name used to identify your device on the network.
 
-![Install Applications](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-applications.webp)
+![Device Name](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-device-name.webp)
 
-![Install Core Applications Flatpak](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-applications-flatpak-core.webp)
+### Applications
 
-### Restricted Codecs
+Choose which applications will be installed on your Vanilla OS Installation. You can choose from the following categories:
 
-This will install popular patented codecs and fonts, that Vanilla OS cannot ship for copyright reasons. **Recommended for most users.**
+- Core Applications (Calculator, Calendar, Clock etc.)
+- Office Applications (LibreOffice, OnlyOffice etc.)
+- Common Utilities (Bottles, Recorder etc.)
+- Browsers (Firefox, Chromium, Chrome etc.)
 
-![Restricted Codecs](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-restricted-codecs.webp)
+![Applications](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-applications.webp)
 
-### Extra Settings
+You can also click the arrow from the right side of each category to specify which applications you want to install.
 
-Extra system settings for automatic crash detection and bug reporting. If unsure, it is recommended to leave it disabled.
+![Select Applications](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-applications-browsers-select.webp)
 
-![Extra Settings](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-extra-settings.webp)
+### Finishing
 
-### NVIDIA® Drivers
+After completing all the steps, you will be prompted to restart your computer. Click the Restart button to restart your computer.
 
-If you have an NVIDIA® graphics card, you will be prompted to install proprietary drivers for your card to improve compatibility and performance. **Recommended for most users.**
-
-![NVIDIA® Drivers](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-nvidia-drivers.webp)
-
-### Open VM Tools
-
-If you are running Vanilla OS inside a virtual machine, you will be prompted to install Open VM Tools to use with VMWare applications. If unsure, it is recommended to skip this step.
-
-![Open VM Tools](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-open-vm-tools.webp)
+![Finishing](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-finish.webp)
 
 ## Other Settings
 
-You can find other options in Settings, Vanilla OS Control Center or tweak your graphical environment in GNOME Tweaks.
+You can find other options in Settings or tweak your graphical environment in GNOME Tweaks.
 
 We hope you will have a great time using Vanilla OS!
