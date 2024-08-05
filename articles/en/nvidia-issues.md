@@ -63,6 +63,10 @@ if you don't see any output, it means that you don't have an NVIDIA GPU.
 
 ## Common issues
 
+### Drivers installed but NVIDIA GPU is not working
+
+Ensure Secure Boot is disabled in your BIOS settings. NVIDIA drivers are not signed, so they won't work with Secure Boot enabled.
+
 ### Applications are using the wrong GPU
 
 Vanilla OS tries to use the integrated GPU by default, leaving the NVIDIA GPU for more demanding tasks. However, if you want to force an application to use the NVIDIA GPU, you can do so by right-clicking on the application icon and selecting "Launch using Discrete Graphics Card". From the terminal, you can use the following command:
