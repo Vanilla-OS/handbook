@@ -159,3 +159,21 @@ abroot upgrade -f
 ```
 
 once done, reboot your system to start using the new drivers.
+
+### I am running a no more supported image
+
+If you are running an image that is no more supported, you can switch to the default `nvidia` image, which includes the standard NVIDIA drivers, which should work with most NVIDIA GPUs.
+
+To switch to the `nvidia` image, you can run the following command:
+
+```bash
+abroot config-editor
+```
+
+here change the `name` parameter to `vanilla-os/nvidia` and save the file. Then run:
+
+```bash
+abroot upgrade -f
+```
+
+once done, reboot your system to start using the new drivers.
