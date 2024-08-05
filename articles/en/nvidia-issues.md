@@ -23,7 +23,7 @@ If you have an NVIDIA GPU, you should see an output similar to this:
 
 ```bash
 +-----------------------------------------------------------------------------------------+
-| NVIDIA-SMI 555.42.06              Driver Version: 555.42.06      CUDA Version: N/A      |
+| NVIDIA-SMI 535.183.01              Driver Version: 535.183.01      CUDA Version: N/A    |
 |-----------------------------------------+------------------------+----------------------+
 | GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
 | Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
@@ -44,7 +44,7 @@ If you have an NVIDIA GPU, you should see an output similar to this:
 +-----------------------------------------------------------------------------------------+
 ```
 
-in this case, the GPU is an NVIDIA GeForce RTX 4050 and it's working fine using the `555.42.06` driver.
+in this case, the GPU is an NVIDIA GeForce RTX 4050 and it's working fine using the `535.183.01` driver.
 
 If you don't have a working NVIDIA GPU, you can still check the model by running the following command:
 
@@ -90,33 +90,7 @@ If you want to force the NVIDIA GPU for the whole system, you can do so by openi
 
 If you installed Vanilla OS without opting for the NVIDIA drivers, you can install them later by following [this](https://docs.vanillaos.org/handbook/en/install-additional-drivers#nvidia%C2%AE-drivers) guide.
 
-### Second monitor not working
-
-If you have a second monitor connected to your NVIDIA GPU and it's not working, you are probably using the wrong system image. To check the system image you are using, run the following command:
-
-```
-abroot status
-```
-
-and check the parameter `Image` under the **ABImage** section, it should be `ghcr.io/vanilla-os/nvidia` for recent NVIDIA GPUs (e.g. GTX 600 series/RTX and newer) or `ghcr.io/vanilla-os/nvidia-propietary` for older NVIDIA GPUs (e.g. GTX 400 and 500 series).
-
-If you are not using the correct system image, you can change it by issuing the following command:
-
-```
-abroot config-editor
-```
-
-then change the `tag` parameter to `main` and the `name` parameter to `ghcr.io/vanilla-os/nvidia` or `ghcr.io/vanilla-os/nvidia-propietary` depending on your GPU as mentioned above. Then save the changes and run a system update by issuing the following command:
-
-```
-abroot upgrade -f
-```
-
-restart your system once the upgrade is complete.
-
-If the issue persists, might be a very specific issue with your GPU, please open a new issue [here](https://github.com/Vanilla-OS/nvidia-image/issues), we will do our best to help you.
-
-### Freezing at boot logo
+### Freezing at boot logo or Mouse cursor lagging
 
 If your system is freezing at the boot logo, you might be using the wrong system image, look at the previous section to check if you are using the correct system image and change it if needed.
 
@@ -129,39 +103,59 @@ abroot kargs show
 they should be similar to the following:
 
 ```
-quiet splash bgrt_disable $vt_handoff
+quiet splash bgrt_disable $vt_handoff nvidia-drm.modeset=1
 ```
 
-or
-
-```
-quiet splash bgrt_disable $vt_handoff lsm=integrity nvidia.NVreg_DynamicPowerManagement=0x02 nvidia.NVreg_PreserveVideoMemoryAllocations=1 nvidia.NVreg_TemporaryFilePath=/var/tmp nvidia-drm.fbdev=1
-```
-
-remove any additional flags that you might have added by using the command:
+remove the `nvidia-drm.modeset=1` flag by issuing the following command:
 
 ```
 abroot kargs edit
 ```
 
-then save, wait for the changes to be applied (or apply them with `abroot upgrade -f`) and restart your system.
+and remove the flag, then save, wait for the changes to be applied (or apply them with `abroot upgrade -f`) and restart your system.
 
 If the issue persists, might be a very specific issue with your GPU, please open a new issue [here](https://github.com/Vanilla-OS/nvidia-image/issues).
 
 ### Cannot select Wayland session
 
-If you cannot select the Wayland session from the login screen, be sure that you are using the correct system image, look at the previous sections to check if you are using the correct system image and change it if needed.
-
-Some users reported that adding the `nvidia-drm.modeset=1` kernel flag, fixed the issue, you can add it by issuing the following command:
-
-```
-abroot kargs edit
-```
-
-then add the flag at the end of the line (ensure), save, wait for the changes to be applied (or apply them with `abroot upgrade -f`) and restart your system.
-
-If the issue persists, might be a very specific issue with your GPU, please open a new issue [here](https://github.com/Vanilla-OS/nvidia-image/issues).
+If the wayland session does not appear in the login screen, might be a very specific issue with your GPU, please open a new issue [here](https://github.com/Vanilla-OS/nvidia-image/issues).
 
 ### Any other issue
 
 If you are experiencing any other issue with your NVIDIA GPU, please open a new issue [here](https://github.com/Vanilla-OS/nvidia-image/issues), or ask our [https://vanillaos.org/community].
+
+### My GPU is too new
+
+If your GPU is too new and not supported by the current drivers, you can try to switch to our `nvidia-exp` image, which contains the latest drivers available, but keep in mind that this image is experimental as well the drivers it contains, so you might experience some issues and we might not be able to help you with them.
+
+To switch to the `nvidia-exp` image, you can run the following command:
+
+```bash
+abroot config-editor
+```
+
+here change the `name` parameter to `vanilla-os/nvidia-exp` and save the file. Then run:
+
+```bash
+abroot upgrade -f
+```
+
+once done, reboot your system to start using the new drivers.
+
+### My GPU is too old
+
+If your GPU is too old and not supported by the current drivers, you might want to switch to the default `desktop` image, which includes the standard Nouveau drivers, which are open-source and should work with older NVIDIA GPUs.
+
+To switch to the `desktop` image, you can run the following command:
+
+```bash
+abroot config-editor
+```
+
+here change the `name` parameter to `vanilla-os/desktop` and save the file. Then run:
+
+```bash
+abroot upgrade -f
+```
+
+once done, reboot your system to start using the new drivers.
