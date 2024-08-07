@@ -16,15 +16,15 @@ GNOME Tweaks is a tool that allows you to customize various aspects of your GNOM
 
 To install GNOME Tweaks in Vanilla OS, follow these steps:
 
-1. Open the terminal and run the following commands:
+Open the terminal and run the following commands:
 
 ```bash
 abroot pkg add gnome-tweaks
 abroot pkg apply
 ```
 
-2. Enter your password when prompted.
+Enter your password when prompted.
 
-3. Reboot your system using the `reboot` command or the quick settings menu.
+Lastly, reboot your system using the `reboot` command or the quick settings menu.
 
 After rebooting, you should see GNOME Tweaks in your applications menu. You can now use GNOME Tweaks to customize your desktop environment.
