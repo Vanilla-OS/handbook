@@ -1,7 +1,0 @@
-# Ref: https://git-scm.com/docs/gitattributes
-* text=auto eol=lf
-
-# GitHub linguist ignores markdown files by default, but artices
-# are in markdown, so we explicitly make the pages detectable
-articles/**/*.md linguist-detectable=true
-articles/**/*.md linguist-documentation=false
