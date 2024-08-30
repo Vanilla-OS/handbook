@@ -36,7 +36,9 @@ host-shell pkexec mv ~/Downloads/60-openrgb.rules /etc/udev/rules.d/
 After moving the UDEV rules, you need to reload the rules by running the following command:-
 
 ```bash
+host-shell
 pkexec udevadm control --reload-rules && pkexec udevadm trigger
+exit
 ```
 
 After reloading the rules, OpenRGB works correctly.
