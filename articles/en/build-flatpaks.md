@@ -72,10 +72,10 @@ which is the number `15` (GNOME 46). Then do the same for the SDK and the extens
 Finally, you can build the application with the following command:
 
 ```bash
-flatpak-builder --user --install build-dir com.usebottles.bottles com.usebottles.bottles.yaml
+flatpak run org.flatpak.Builder build com.usebottles.bottles.yml --user --install --force-clean
 ```
 
-where `build-dir` is the directory where the application will be built, `com.usebottles.bottles` is the application ID, and `com.usebottles.bottles.yaml` is the manifest file.
+where `com.usebottles.bottles.yml` is the manifest file of the application. This command will build the application, install it in the user space, and clean the build directory.
 
 ## Run the application
 
