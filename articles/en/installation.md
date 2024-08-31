@@ -62,17 +62,9 @@ Click "Install" and set your preferred language, keyboard layout, internet conne
 
 ![Language](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Installation/installation-language.webp)
 
-### NVIDIA drivers
+### NVIDIA drivers and VM tools
 
-The installer will detect if you have an NVIDIA GPU and ask if you zwant to install the NVIDIA drivers. If you have an NVIDIA GPU, click "Install (Recommended)" to install the drivers. If you don't have an NVIDIA GPU, click "Skip".
-
-/* This is needed to be updated with more context, I'll leave it for Mirko */
-
-![NVIDIA Drivers](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Installation/installation-nvidia.webp)
-
-### VM Tools
-
-If you are installing Vanilla OS in a virtual machine, you can install the VM tools by clicking "Install (Recommended)". This will install the necessary drivers and tools to improve the performance of Vanilla OS in a virtual machine. If you don't want to install the VM tools, click "Skip".
+The installer will detect if you have an NVIDIA GPU or if you are installing Vanilla OS in a virtual machine and prompt you to install the necessary drivers and tools to improve the performance of Vanilla OS. Just click "Install (Recommended)" to install the required drivers and tools. If you don't want to install them, click "Skip".
 
 ![VM Tools](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Installation/installation-vmtools.webp)
 
@@ -92,7 +84,7 @@ You can also manually partition your disk by selecting "Manual Partitioning" and
 
 #### Manual partitioning
 
-/* I'll leave this for anyone else to fill in */
+/* WIP */
 
 ### Device encryption
 
