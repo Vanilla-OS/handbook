@@ -1,4 +1,14 @@
-# Create a swapfile (increase swap space)
+---
+Title: Create a swapfile (increase swap space)
+Description: Creating a swapfile to increase swap space without creating a new partition
+PublicationDate: 2025-03-02
+Listed: true
+Authors:
+    - taukakao
+    - acerspyro
+---
+
+## Create a swapfile (increase swap space)
 
 When creating a swapfile on vanilla, you have to keep in mind:
 - to put the file in /var, not the root (/) (Otherwise, you might run into space issues when doing an upgrade in the future)
