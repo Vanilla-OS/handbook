@@ -10,7 +10,7 @@ Authors:
 
 ## Use host shell in the integrated terminal
 
-- Open VSCode and go to **File > Preferences > Settings** (or **Code > Preferences > Settings** on macOS).
+- Open VSCode and go to **File > Preferences > Settings**
 - Search for "**Integrated Terminal**" or "**Terminal**" in the settings search bar.
 - Click on "**Open settings.json**" to directly edit the settings file.
 
