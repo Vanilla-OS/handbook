@@ -15,7 +15,7 @@ There are two ways to install a virtual machine on Vanilla OS. These include:
 [Vanilla Image Builder (VIB)](#vanilla-image-builder)
 
 
-### Host Shell {#host-shell}
+### Host Shell{#host-shell}
 Using the host shell to setup virtual machines is the easiest way to create a virtual machine on Vanilla OS.
 
 First select your image from +[hub.docker.com](https://hub.docker.com/search?categories=Operating+systems)
@@ -42,7 +42,7 @@ Username: `docker`
 Password: `admin`
 RPD IP: `127.0.0.1:3389`
 
-### Vanilla Image Builder (VIB) {#vanilla-image-builder}
+### Vanilla Image Builder (VIB){#vanilla-image-builder}
 Setting up virtual machines in Vanilla OS can be a bit complicated. Support for "VMware, Virtmanager, etc" must be done via [VIB](https://docs.vanillaos.org/collections/vib), using the following in your recipie modules.
 
 ```YAML
