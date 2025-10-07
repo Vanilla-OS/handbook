@@ -4,7 +4,7 @@ Description: Learn how to install Steam on Vanilla OS.
 PublicationDate: 2023-01-07
 Listed: true
 Authors:
-    - MrMK0R
+    - mrmk0r
 ---
 ## Requirements
 - libfuse2t64 via ABRoot
