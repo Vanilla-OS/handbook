@@ -8,14 +8,14 @@ Authors:
 ---
 
 
-## Introduction
+# Introduction
 
 There are two ways to install a virtual machine on Vanilla OS. These include:
 [Host Shell](#host-shell)
 [Vanilla Image Builder (VIB)](#vanilla-image-builder)
 
 
-### Host Shell{#host-shell}
+## Host Shell{#host-shell}
 Using the host shell to setup virtual machines is the easiest way to create a virtual machine on Vanilla OS.
 
 First select your image from +[hub.docker.com](https://hub.docker.com/search?categories=Operating+systems)
@@ -25,12 +25,12 @@ First select your image from +[hub.docker.com](https://hub.docker.com/search?cat
 
 To setup a virtual machine via host shell, use the following commands:
 
-Syntax:
+### Syntax (don't run this command):
 ```SH
 host-shell pkexec podman run -it --rm --name windows -p 8006:8006 -p 3389:3389/tcp -p 3389:3389/udp --device=/dev/kvm --device=/dev/net/tun --cap-add NET_ADMIN -v "/var/windows:/storage" --stop-timeout 120 <dockeruser/dockerimage>
 ```
 
-Example:
+### Example:
 ```SH
 host-shell podman run -it --rm --name windows -p 8006:8006 -p 3389:3389/tcp -p 3389:3389/udp --device=/dev/kvm --device=/dev/net/tun --cap-add NET_ADMIN -v "/var/windows:/storage" --stop-timeout 120 dockurr/windows
 
@@ -42,7 +42,7 @@ Username: `docker`
 Password: `admin`
 RPD IP: `127.0.0.1:3389`
 
-### Vanilla Image Builder (VIB){#vanilla-image-builder}
+## Vanilla Image Builder (VIB){#vanilla-image-builder}
 Setting up virtual machines in Vanilla OS can be a bit complicated. Support for "VMware, Virtmanager, etc" must be done via [VIB](https://docs.vanillaos.org/collections/vib), using the following in your recipie modules.
 
 ```YAML
