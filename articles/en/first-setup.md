@@ -7,6 +7,7 @@ Authors:
     - kra-mo
     - kbdharun
     - GabsEdits
+    - NN708
 ---
 
 
@@ -74,12 +75,12 @@ You can also click the arrow from the right side of each category to specify whi
 
 ### Finishing
 
-After completing all the steps, you will be prompted to restart your computer. Click the Restart button to restart your computer.
+Wait a few minutes for the setup to complete, and you're all set!
 
 ![Finishing](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/First_Setup/first-setup-finish.webp)
 
-## Other Settings
+## Install More Applications
 
-You can find other options in Settings or tweak your graphical environment in GNOME Tweaks, by following the [Installing GNOME Tweaks](https://docs.vanillaos.org/handbook/en/install-gnome-tweaks) guide.
+Once Vanilla OS is set up, you can refer to [**this guide**](https://docs.vanillaos.org/handbook/en/install-and-manage-applications) to install additional applications.
 
-We hope you will have a great time using Vanilla OS!
+We hope you have a great time using Vanilla OS!
