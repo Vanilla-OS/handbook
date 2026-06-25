@@ -77,7 +77,7 @@ Once you found the perfect setup for your development environment, you can autom
 In the Apx GUI, you can create a new stack by clicking on the arrow next to the `+` button on the top left corner of the window. Then, select **New Stack**, then fill in the required fields:
 
 - **Name**: The name of your new stack.
-- **Base**: The base image of your new stack (any OCI image, for example `ghcr.io/vanilla-os/dev:main` to use the same base as the `vanilla-dev` stack).
+- **Base**: The base image of your new stack (any OCI image, for example `ghcr.io/vanilla-os/pico:latest` to use the same base as the `vanilla-dev` stack).
 - **Package Manager**: The package manager used by the base image (for example, `apt` for the `vanilla-dev` stack and other debian-based stacks).
 - **Packages**: The packages you want to install in your new stack (for example, `rustc` to install the Rust language).
 
