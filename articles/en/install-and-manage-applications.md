@@ -63,7 +63,7 @@ The VSO Shell is a Vanilla OS installation based on Debian, and it is where you 
 
 ### Installing Applications
 
-Search for the package in our [packages repository](https://packages.vanillaos.org/) and install it using the following command:
+Search for the package in [Debian packages repository](https://packages.debian.org/) and install it using the following command:
 
 ```bash
 sudo apt install PACKAGE_NAME
@@ -128,7 +128,7 @@ click on the subsystem to see the details, you can start the subsystem by clicki
 To create a subsystem using the APX CLI, open the VSO Shell and run the following command:
 
 ```bash
-apx subsystems create
+apx subsystems new
 ```
 
 and follow the instructions.
