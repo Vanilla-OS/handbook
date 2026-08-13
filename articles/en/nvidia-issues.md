@@ -5,6 +5,7 @@ PublicationDate: 2024-08-02
 Listed: true
 Authors:
   - mirkobrombin
+  - NN708
 ---
 
 First of all, we have to say that, even if Vanilla OS is designed to work out of the box with most NVIDIA GPUs, there are some common issues that can arise with some specific setups. Please keep in mind that NVIDIA has still poor support for Linux, every Linux distributions does its best to provide a good experience with NVIDIA GPUs, but sometimes issues can arise and this, for now, it's the normality, but things are getting better every day.
@@ -126,54 +127,36 @@ If you are experiencing any other issue with your NVIDIA GPU, please open a new 
 
 ### My GPU is too new
 
-If your GPU is too new and not supported by the current drivers, you can try to switch to our `nvidia-exp` image, which contains the latest drivers available, but keep in mind that this image is experimental as well the drivers it contains, so you might experience some issues and we might not be able to help you with them.
+If your GPU is too new and not supported by the current drivers, you can try to switch to our `gnome-nvidia-modern` image, which contains the latest drivers available.
 
-To switch to the `nvidia-exp` image, you can run the following command:
-
-```bash
-abroot config-editor
-```
-
-here change the `name` parameter to `vanilla-os/nvidia-exp` and save the file. Then run:
+To switch to the `gnome-nvidia-modern` image, you can run the following command:
 
 ```bash
-abroot upgrade -f
+abroot rebase ghcr.io/vanilla-os/gnome-nvidia-modern:latest
 ```
 
 once done, reboot your system to start using the new drivers.
 
 ### My GPU is too old
 
-If your GPU is too old and not supported by the current drivers, you might want to switch to the default `desktop` image, which includes the standard Nouveau drivers, which are open-source and should work with older NVIDIA GPUs.
+If your GPU is too old and not supported by the current drivers, you might want to switch to the default `gnome` image, which includes the standard Nouveau drivers, which are open-source and should work with older NVIDIA GPUs.
 
-To switch to the `desktop` image, you can run the following command:
-
-```bash
-abroot config-editor
-```
-
-here change the `name` parameter to `vanilla-os/desktop` and save the file. Then run:
+To switch to the `gnome` image, you can run the following command:
 
 ```bash
-abroot upgrade -f
+abroot rebase ghcr.io/vanilla-os/gnome:latest
 ```
 
 once done, reboot your system to start using the new drivers.
 
 ### I am running a no more supported image
 
-If you are running an image that is no more supported, you can switch to the default `nvidia` image, which includes the standard NVIDIA drivers, which should work with most NVIDIA GPUs.
+If you are running an image that is no more supported, you can switch to the default `gnome-nvidia` image, which includes the standard NVIDIA drivers, which should work with most NVIDIA GPUs.
 
-To switch to the `nvidia` image, you can run the following command:
-
-```bash
-abroot config-editor
-```
-
-here change the `name` parameter to `vanilla-os/nvidia` and save the file. Then run:
+To switch to the `gnome-nvidia` image, you can run the following command:
 
 ```bash
-abroot upgrade -f
+abroot rebase ghcr.io/vanilla-os/gnome-nvidia:latest
 ```
 
 once done, reboot your system to start using the new drivers.

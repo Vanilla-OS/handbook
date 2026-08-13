@@ -7,6 +7,7 @@ Authors:
     - mirkobrombin
     - kbdharun
     - mrunix00
+    - NN708
 ---
 
 Drivers are software components that allow the operating system to communicate with hardware devices. Libraries are collections of precompiled functions that can be used by applications to perform specific tasks, for example `libfuse` is a library that allows applications to interact with the FUSE filesystem.
@@ -15,18 +16,10 @@ Vanilla OS comes with a large number of drivers pre-installed, but sometimes you
 
 ## NVIDIA® Drivers
 
-Nvidia drivers are detected and installed automatically in Vanilla OS during the installation process. However, if you have recently switched to a new Nvidia graphics card, you may need to install the drivers manually. We have plans to provide a simple way to install Nvidia drivers in the future, but for now, you can install them using the following command in your VSO Shell:
+NVIDIA drivers are detected and installed automatically in Vanilla OS during the installation process. However, if you have recently switched to a new NVIDIA graphics card, you may need to install the drivers manually using the following command in your VSO Shell:
 
 ```bash
-abroot config-editor
-```
-
-here change the `name` parameter to `vanilla-os/nvidia` and save the file. 
-
-Then run:
-
-```bash
-abroot upgrade -f
+abroot rebase ghcr.io/vanilla-os/gnome-nvidia:latest
 ```
 
 once done, reboot your system to start using the new drivers.
@@ -38,13 +31,7 @@ Open VM Tools are a set of tools that enhance the performance of a virtual machi
 Virtual machines running Vanilla OS will be prompted to install Open VM Tools during the installation process. If you skipped this step or need to install them later, you can do so by running the following command in your VSO Shell:
 
 ```bash
-abroot config-editor
-```
-
-here change the `name` parameter to `vanilla-os/open-vm` and save the file. Then run:
-
-```bash
-abroot upgrade -f
+abroot rebase ghcr.io/vanilla-os/gnome-vm:latest
 ```
 
 once done, reboot your system to start using the new drivers.
