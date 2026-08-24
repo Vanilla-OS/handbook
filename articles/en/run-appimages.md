@@ -9,7 +9,11 @@ Authors:
 
 ## Warning
 
-Before we start, check if the app you are attempting to install does not have another way, like [flatpak](https://docs.vanillaos.org/handbook/en/install-and-manage-applications#managing-applications-through-gnome-software) or [apx](https://docs.vanillaos.org/handbook/en/install-and-manage-applications#installing-applications-from-other-linux-distributions). AppImages may have compatibility or dependency issues that are not covered here. AppImages will have complete access to your data. Be careful and make sure you trust the developer of your AppImage.
+Before installing an AppImage, check whether the application is available as a
+[Flatpak](install-and-manage-applications#flatpak-applications) or through an
+[Apx subsystem](install-and-manage-applications#apx-subsystems). AppImages may
+have compatibility or dependency issues and can access your user data. Only run
+an AppImage obtained from a source you trust.
 
 ## Installation
 

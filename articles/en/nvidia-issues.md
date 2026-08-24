@@ -1,7 +1,7 @@
 ---
 Title: Common NVIDIA issues in Vanilla OS
 Description: Learn how to troubleshoot common NVIDIA issues in Vanilla OS.
-PublicationDate: 2024-08-02
+PublicationDate: 2026-08-24
 Listed: true
 Authors:
   - mirkobrombin
@@ -89,7 +89,8 @@ If you want to force the NVIDIA GPU for the whole system, you can do so by openi
 
 ### Install NVIDIA drivers Vanilla OS post-installation
 
-If you installed Vanilla OS without opting for the NVIDIA drivers, you can install them later by following [this](https://docs.vanillaos.org/handbook/en/install-additional-drivers#nvidia%C2%AE-drivers) guide.
+If you installed Vanilla OS without the NVIDIA image, follow the
+[additional drivers guide](install-additional-drivers#nvidia-drivers).
 
 ### Freezing at boot logo or Mouse cursor lagging
 
@@ -97,19 +98,19 @@ If your system is freezing at the boot logo, you might be using the wrong system
 
 If the issue persists, double check your kernel flags, by issuing the following command:
 
-```
+```bash
 abroot kargs show
 ```
 
 they should be similar to the following:
 
-```
+```text
 quiet splash bgrt_disable $vt_handoff nvidia-drm.modeset=1
 ```
 
 remove the `nvidia-drm.modeset=1` flag by issuing the following command:
 
-```
+```bash
 abroot kargs edit
 ```
 
@@ -123,7 +124,9 @@ If the wayland session does not appear in the login screen, might be a very spec
 
 ### Any other issue
 
-If you are experiencing any other issue with your NVIDIA GPU, please open a new issue [here](https://github.com/Vanilla-OS/nvidia-image/issues), or ask our [https://vanillaos.org/community].
+If you are experiencing another NVIDIA GPU issue, open a report in the
+[NVIDIA image issue tracker](https://github.com/Vanilla-OS/nvidia-image/issues)
+or ask the [Vanilla OS community](https://vanillaos.org/community).
 
 ### My GPU is too new
 

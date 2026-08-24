@@ -1,7 +1,7 @@
 ---
 Title: Install OpenRGB
 Description: Learn how to install OpenRGB on Vanilla OS.
-PublicationDate: 2023-01-20
+PublicationDate: 2026-08-24
 Listed: true
 Authors:
     - MonsterObserver
@@ -33,12 +33,11 @@ After downloading the UDEV rules, you need to move them to the correct directory
 host-shell pkexec mv ~/Downloads/60-openrgb.rules /etc/udev/rules.d/
 ```
 
-After moving the UDEV rules, you need to reload the rules by running the following command:-
+After moving the UDEV rules, reload them on the host:
 
 ```bash
-host-shell
-pkexec udevadm control --reload-rules && pkexec udevadm trigger
-exit
+host-shell pkexec udevadm control --reload-rules
+host-shell pkexec udevadm trigger
 ```
 
 After reloading the rules, OpenRGB works correctly.

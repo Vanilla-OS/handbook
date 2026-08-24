@@ -1,41 +1,44 @@
 ---
 Title: Create a swapfile (increase swap space)
 Description: Creating a swapfile to increase swap space without creating a new partition
-PublicationDate: 2025-03-02
+PublicationDate: 2026-08-24
 Listed: true
 Authors:
     - taukakao
     - acerspyro
 ---
 
-## Create a swapfile (increase swap space)
+## Create the file
 
-When creating a swapfile on vanilla, you have to keep in mind:
-- to put the file in /var, not the root (/) (Otherwise, you might run into space issues when doing an upgrade in the future)
-- to chattr +C if you are using btrfs for /var, which is the default
+Store the swap file under `/var`, which persists across ABRoot system states.
+Disable copy-on-write before allocating the file when `/var` uses Btrfs, as it
+does by default.
 
-Example:
 ```bash
 host-shell pkexec
 truncate -s 0 /var/swapfile
 chattr +C /var/swapfile
-```
-Here, change the 3G to the size that you want: 
-```bash
 fallocate -l 3G /var/swapfile
-```
-```bash
 chmod 0600 /var/swapfile
 mkswap /var/swapfile
 nano /etc/fstab
 ```
-add this line to the end of the file:
-`/var/swapfile none swap defaults 0 0`
-then save the file with Ctrl+X then Y then Enter
+
+Change `3G` to the required size. Add this line to `/etc/fstab`:
+
+```text
+/var/swapfile none swap defaults 0 0
+```
+
+Save the file, enable the entry, and leave the host shell:
+
 ```bash
 swapon -a
 exit
 ```
 
-You can test if it worked by running:
-`host-shell pkexec swapon --show`
+Verify the active swap file:
+
+```bash
+host-shell pkexec swapon --show
+```
