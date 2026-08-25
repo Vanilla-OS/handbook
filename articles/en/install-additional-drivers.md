@@ -1,7 +1,7 @@
 ---
-Title: Install additional drivers and libraries in Vanilla OS
-Description: Learn how to install Additional drivers and libraries in Vanilla OS.
-PublicationDate: 2022-12-10
+Title: Install Additional Drivers and Libraries in Vanilla OS
+Description: Add supported driver images and required host packages.
+PublicationDate: 2026-08-24
 Listed: true
 Authors:
     - mirkobrombin
@@ -10,57 +10,58 @@ Authors:
     - NN708
 ---
 
-Drivers are software components that allow the operating system to communicate with hardware devices. Libraries are collections of precompiled functions that can be used by applications to perform specific tasks, for example `libfuse` is a library that allows applications to interact with the FUSE filesystem.
+Vanilla OS includes drivers for common hardware. Use a supported system image
+for NVIDIA hardware or virtual machines. Add individual host packages only when
+the required driver or library cannot run in a container.
 
-Vanilla OS comes with a large number of drivers pre-installed, but sometimes you may need to install additional drivers to get the best performance from your hardware.
+## NVIDIA drivers
 
-## NVIDIA® Drivers
-
-NVIDIA drivers are detected and installed automatically in Vanilla OS during the installation process. However, if you have recently switched to a new NVIDIA graphics card, you may need to install the drivers manually using the following command in your VSO Shell:
+The installer detects NVIDIA hardware and offers the appropriate image. If you
+add a supported NVIDIA GPU later, rebase to the standard NVIDIA image:
 
 ```bash
 abroot rebase ghcr.io/vanilla-os/gnome-nvidia:latest
 ```
 
-once done, reboot your system to start using the new drivers.
+Recent GPUs that need the latest available driver can use:
 
-## VM Tools
+```bash
+abroot rebase ghcr.io/vanilla-os/gnome-nvidia-modern:latest
+```
 
-Open VM Tools are a set of tools that enhance the performance of a virtual machine running on a hypervisor. They provide features such as file sharing, clipboard sharing, and better graphics performance.
+Reboot after the rebase finishes. See [Common NVIDIA issues](nvidia-issues)
+before changing images.
 
-Virtual machines running Vanilla OS will be prompted to install Open VM Tools during the installation process. If you skipped this step or need to install them later, you can do so by running the following command in your VSO Shell:
+## Virtual machine tools
+
+The VM image includes guest tools for supported hypervisors. If this option was
+skipped during installation, rebase manually:
 
 ```bash
 abroot rebase ghcr.io/vanilla-os/gnome-vm:latest
 ```
 
-once done, reboot your system to start using the new drivers.
+Reboot after the rebase finishes.
 
-## Specific Drivers (e.g., Printer, Scanner) and Libraries
+## Specific host drivers and libraries
 
-If for some reason, your device is not covered by our default drivers, you can install specific drivers for your hardware. You can find drivers for most devices on our [packages repository](https://packages.vanillaos.org/). If you can't find the driver you need, you can [report to us](https://github.com/Vanilla-OS/desktop-image/issues/new/choose) and we will try to figure out a solution for you.
+Search the [Vanilla OS package repository](https://packages.vanillaos.org/) for
+the required host component. Report missing hardware support in the
+[desktop image issue tracker](https://github.com/Vanilla-OS/desktop-image/issues/new/choose).
 
-Once you have identified the package you need, you can install it using the following command in your VSO Shell:
+Add a package to the host package list:
 
 ```bash
 abroot pkg add PACKAGE_NAME
 ```
 
-/*
-vos% abroot pkg list
- INFO  To utilize ABRoot's abroot pkg command, explicit user agreement is required. This command facilitates package installations but introduces non-deterministic elements, impacting system trustworthiness. By consenting, you acknowledge and accept these implications, confirming your awareness of the command's potential impact on system behavior. [y/N]: 
-*/
-
-You will promped to accept the User Agreement:
+Read and accept the host package agreement when prompted. Review the pending
+list, then apply it:
 
 ```bash
-INFO  To utilize ABRoot's abroot pkg command, explicit user agreement is required. This command facilitates package installations but introduces non-deterministic elements, impacting system trustworthiness. By consenting, you acknowledge and accept these implications, confirming your awareness of the command's potential impact on system behavior. [y/N]: 
-```
-
-After reading and accepting the User Agreement, the package will be queued for installation. You can then proceed with the installation by running the following command:
-
-```bash
+abroot pkg list
 abroot pkg apply
 ```
 
-Once the installation is complete, reboot your system to start using the new drivers.
+Reboot after the future system state is ready. Use Flatpak, Apx, or the VSO
+native subsystem instead for software that does not require host access.

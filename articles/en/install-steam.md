@@ -17,7 +17,7 @@ On 21 August 2018, Steam introduced the [**Proton**](https://github.com/ValveSof
 
 In Vanilla OS there are many ways to install Steam. The easiest way is to use
 [**Flatpak**](https://flatpak.org), which is a universal package manager for Linux.
-But it is also possible to install Steam using [**apx**](https://documentation.vanillaos.org/docs/apx/)
+It is also possible to install Steam using [Apx](https://docs.vanillaos.org/docs/en/apx).
 the default package manager of Vanilla OS to get the best flexibility.
 
 ### Flatpak

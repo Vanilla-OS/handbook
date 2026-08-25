@@ -1,23 +1,37 @@
 ---
-Title: Rollback to the Previous Version
-Description: Learn how to rollback to the previous version of Vanilla OS.
-PublicationDate: 2024-09-31
+Title: Roll Back to the Previous System State
+Description: Return Vanilla OS to the previous ABRoot state.
+PublicationDate: 2026-08-24
 Listed: true
 Authors:
     - mirkobrombin
 ---
 
-Vanilla OS is designed to be reliable and stable, each upgrade is performed atomically to ensure the whole process is successful. However, if you encounter any issues after an upgrade, you can easily rollback to the previous version.
+ABRoot keeps the previous system state after an upgrade so you can return to it
+if the new image causes a problem.
 
-## Understanding the ABRoot System
+## Roll back from the running system
 
-ABRoot is the core of Vanilla OS, it provides immutability and atomic upgrades. The system is divided into two partitions: the active partition and the inactive partition. The active partition is the one currently in use, while the inactive partition is the one that will be used rebooting after an upgrade. This means we have two versions of the system installed at the same time and we can switch between them in case of issues.
+Check whether a previous state is available:
 
-## Rollback to the Previous Version
+```bash
+abroot rollback --check-only
+```
 
-To rollback to the previous version of Vanilla OS, you need to reboot the system and select the previous version from the boot menu (GRUB). The boot menu will show you the two root partitions:
+Select it for the next boot:
 
-- Current State (A)
-- Previous State (B)
+```bash
+sudo abroot rollback
+```
 
-Select the "Previous State (B)" and press Enter to boot the system with the previous version. After the system is booted, Vanilla OS will propose you to rollback to the previous version permanently. Confirm the rollback and the system will be downgraded to the previous version, which means the next upgrade will be performed on the previous version.
+Reboot to enter the selected state.
+
+## Roll back when the current state does not boot
+
+Restart the computer and open the boot menu. Select the previous Vanilla OS
+state. After it starts, confirm the rollback when prompted or run
+`sudo abroot rollback` to make the selection persistent.
+
+Do not delete the old system during upgrades until the new state has been
+tested. Options such as `abroot upgrade --delete-old-system` remove the state
+needed by this procedure.

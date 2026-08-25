@@ -84,7 +84,9 @@ Vanilla OS does not automatically support dual- or multibooting with other opera
 
 #### Manual partitioning
 
-If you know what you are doing, you can also partition your disk manually by selecting "Manual" and creating your own partitions. For more details on partitioning, refer to [this blog post](https://vanillaos.org/blog/article/2023-11-22/vanilla-os-orchid---devlog-22-nov).
+If you understand the ABRoot disk layout, select "Manual" and create the
+required partitions. Review every mount point before continuing; the installer
+will erase or format the partitions selected for Vanilla OS.
 
 ![Manual Partitioning](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Installation/installation-manual-partitioning.webp)
 
@@ -94,7 +96,7 @@ You can choose to encrypt your disk by clicking the "Encrypt Device". Make sure 
 
 ![Encrypt Device](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Installation/installation-encryption.webp)
 
-Once you have set up your partitions and encryption, you will be prompted to confirm your changes. Click "Install Vanila OS" to start the installation process.
+Once you have set up your partitions and encryption, you will be prompted to confirm your changes. Click "Install Vanilla OS" to start the installation process.
 
 ![Confirm Installation](https://raw.githubusercontent.com/Vanilla-OS/handbook/main/assets/uploads/Installation/installation-confirm.webp)
 
