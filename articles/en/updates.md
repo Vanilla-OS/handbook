@@ -77,8 +77,8 @@ sudo vso config set updates.schedule weekly
 If the new state causes a problem, check and activate the previous state:
 
 ```bash
-sudo abroot rollback --check-only
-sudo abroot rollback
+abroot rollback --check-only
+abroot rollback
 ```
 
 Reboot to complete the rollback. See [Roll back an update](rollback) for the
