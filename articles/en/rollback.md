@@ -15,7 +15,7 @@ if the new image causes a problem.
 Check whether a previous state is available:
 
 ```bash
-sudo abroot rollback --check-only
+abroot rollback --check-only
 ```
 
 Select it for the next boot:
